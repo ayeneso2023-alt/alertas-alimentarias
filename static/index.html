@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Food Safety & Food Fraud Intelligence Dashboard</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+            },
+            fraud: {
+              DEFAULT: '#f97316',
+              light: '#fdba74',
+              dark: '#ea580c'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Plus Jakarta Sans Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased flex flex-col selection:bg-indigo-500 selection:text-white">
+
+  <!-- TOP HEADER -->
+  <header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Brand & Title -->
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center shadow-lg shadow-emerald-500/20 text-slate-950 font-bold">
+          <i data-lucide="shield-alert" class="w-6 h-6 text-slate-950"></i>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="text-base sm:text-lg font-bold tracking-tight text-white flex items-center gap-2">
+              Global Food Alert & Food Fraud Intelligence
+            </h1>
+            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              Mundial v2.0
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 hidden sm:block">Monitor oficial de alertas de seguridad alimentaria y fraude alimentario (EMA)</p>
+        </div>
+      </div>
+
+      <!-- Sync Status & Action Controls -->
+      <div class="flex items-center space-x-3">
+        <!-- Live status badge -->
+        <div id="syncBadge" class="hidden sm:flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 text-xs text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 live-pulse"></span>
+          <span id="lastUpdatedText">Sincronizado con APIs oficiales</span>
+        </div>
+
+        <!-- Live Sync Button -->
+        <button id="btnSync" onclick="triggerLiveSync()" class="flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all shadow-md shadow-indigo-600/20">
+          <i data-lucide="refresh-cw" id="syncIcon" class="w-3.5 h-3.5"></i>
+          <span>Sincronizar en Vivo</span>
+        </button>
+
+        <!-- Export Dropdown -->
+        <div class="relative inline-block text-left">
+          <button id="btnExportMenu" onclick="toggleExportMenu()" class="flex items-center space-x-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 transition-colors">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>Exportar</span>
+            <i data-lucide="chevron-down" class="w-3 h-3"></i>
+          </button>
+          <div id="exportMenu" class="hidden absolute right-0 mt-2 w-44 rounded-xl bg-slate-900 border border-slate-800 shadow-2xl py-1 z-50 text-xs">
+            <button onclick="exportData('csv')" class="w-full text-left px-4 py-2 hover:bg-slate-800 text-slate-200 flex items-center space-x-2">
+              <i data-lucide="file-spreadsheet" class="w-4 h-4 text-emerald-400"></i>
+              <span>Descargar CSV (Excel)</span>
+            </button>
+            <button onclick="exportData('json')" class="w-full text-left px-4 py-2 hover:bg-slate-800 text-slate-200 flex items-center space-x-2">
+              <i data-lucide="code" class="w-4 h-4 text-blue-400"></i>
+              <span>Descargar JSON</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+    <!-- KPI METRIC CARDS -->
+    <section class="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
+      
+      <!-- Total Alerts -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+        <div class="flex items-center justify-between text-slate-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider">Total Alertas</span>
+          <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400">
+            <i data-lucide="bell" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" id="kpiTotalAlerts">0</div>
+          <div class="text-xs text-slate-400 mt-1 flex items-center gap-1">
+            <span class="text-emerald-400 font-medium">100% verificadas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Fraud Alerts -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col justify-between border-l-4 border-l-orange-500">
+        <div class="flex items-center justify-between text-slate-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-orange-400">Fraude Alimentario</span>
+          <div class="p-2 rounded-lg bg-orange-500/10 text-orange-400">
+            <i data-lucide="flame" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-orange-400 tracking-tight" id="kpiFraudAlerts">0</div>
+          <div class="text-xs text-slate-400 mt-1" id="kpiFraudSubtext">
+            Casos de adulteración económica
+          </div>
+        </div>
+      </div>
+
+      <!-- Microbiological & Allergens -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col justify-between border-l-4 border-l-rose-500">
+        <div class="flex items-center justify-between text-slate-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-rose-400">Patógenos & Alérgenos</span>
+          <div class="p-2 rounded-lg bg-rose-500/10 text-rose-400">
+            <i data-lucide="biohazard" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-rose-400 tracking-tight" id="kpiMicrobioAlerts">0</div>
+          <div class="text-xs text-slate-400 mt-1">Listeria, Salmonella, Alérgenos</div>
+        </div>
+      </div>
+
+      <!-- Affected Countries -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+        <div class="flex items-center justify-between text-slate-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider">Países Afectados</span>
+          <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+            <i data-lucide="globe" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" id="kpiCountries">0</div>
+          <div class="text-xs text-slate-400 mt-1">Notificadores y orígenes</div>
+        </div>
+      </div>
+
+      <!-- High Severity -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col justify-between col-span-2 lg:col-span-1">
+        <div class="flex items-center justify-between text-slate-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">Severidad Crítica</span>
+          <div class="p-2 rounded-lg bg-amber-500/10 text-amber-400">
+            <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 tracking-tight" id="kpiCriticalAlerts">0</div>
+          <div class="text-xs text-slate-400 mt-1">Retiradas de riesgo vital (Class I)</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FILTER CONSOLE -->
+    <section class="glass-panel rounded-2xl p-4 sm:p-5 shadow-xl space-y-4">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+        <div class="flex items-center space-x-2">
+          <i data-lucide="sliders-horizontal" class="w-4 h-4 text-indigo-400"></i>
+          <h2 class="text-sm font-bold uppercase tracking-wider text-slate-200">Consola de Filtros Inteligente</h2>
+        </div>
+        <div class="flex items-center space-x-2 text-xs">
+          <span class="text-slate-400" id="filterResultsCount">Mostrando todas las alertas</span>
+          <button onclick="resetFilters()" class="text-indigo-400 hover:text-indigo-300 font-medium ml-2 underline">
+            Restablecer filtros
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+        
+        <!-- Search Input -->
+        <div>
+          <label class="block text-xs font-medium text-slate-400 mb-1">Buscar por producto, lote o motivo</label>
+          <div class="relative">
+            <input type="text" id="searchInput" oninput="applyFilters()" placeholder="Ej. Aceite, Atún, Listeria, Lote..."
+                   class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all pl-9">
+            <i data-lucide="search" class="w-4 h-4 text-slate-500 absolute left-3 top-2.5"></i>
+          </div>
+        </div>
+
+        <!-- Category Filter -->
+        <div>
+          <label class="block text-xs font-medium text-slate-400 mb-1">Tipo de Producto / Alimento</label>
+          <select id="filterCategory" onchange="applyFilters()"
+                  class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500">
+            <option value="all">Todas las categorías</option>
+            <option value="Aceites y Grasas">Aceites y Grasas (AOVE)</option>
+            <option value="Miel y Endulzantes">Miel y Endulzantes</option>
+            <option value="Pescados y Mariscos">Pescados y Mariscos</option>
+            <option value="Carnes y Derivados">Carnes y Derivados</option>
+            <option value="Lácteos y Derivados">Lácteos y Derivados</option>
+            <option value="Frutas, Hortalizas y Verduras">Frutas, Hortalizas y Verduras</option>
+            <option value="Frutos Secos y Semillas">Frutos Secos y Semillas</option>
+            <option value="Cereales y Productos de Panadería">Cereales y Panadería</option>
+            <option value="Especias y Condimentos">Especias y Condimentos</option>
+            <option value="Bebidas y Licores">Bebidas y Licores</option>
+            <option value="Complementos Alimenticios">Complementos Alimenticios</option>
+            <option value="Otros">Otros Alimentos</option>
+          </select>
+        </div>
+
+        <!-- Alert Type Filter -->
+        <div>
+          <label class="block text-xs font-medium text-slate-400 mb-1">Tipo de Alerta / Peligro</label>
+          <select id="filterType" onchange="applyFilters()"
+                  class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500">
+            <option value="all">Todos los tipos de alerta</option>
+            <option value="Fraude / EMA">🚨 Fraude Alimentario (Food Fraud / EMA)</option>
+            <option value="Microbiológico">🦠 Microbiológico (Listeria, Salmonella...)</option>
+            <option value="Alérgeno">🌾 Alérgenos no declarados</option>
+            <option value="Químico">🧪 Químico (Pesticidas, toxinas, fármacos)</option>
+            <option value="Físico">🔩 Físico (Metales, plásticos, vidrio)</option>
+          </select>
+        </div>
+
+        <!-- Country Filter -->
+        <div>
+          <label class="block text-xs font-medium text-slate-400 mb-1">País (Notificador u Origen)</label>
+          <select id="filterCountry" onchange="applyFilters()"
+                  class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500">
+            <option value="all">Todos los países</option>
+          </select>
+        </div>
+
+        <!-- Month Filter -->
+        <div>
+          <label class="block text-xs font-medium text-slate-400 mb-1">Mes de Notificación</label>
+          <select id="filterMonth" onchange="applyFilters()"
+                  class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500">
+            <option value="all">Todos los meses</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Active filter chips -->
+      <div id="activeChips" class="flex flex-wrap gap-2 pt-1 hidden"></div>
+    </section>
+
+    <!-- ANALYTICS & CHARTS GRID -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      
+      <!-- Chart 1: Monthly Evolution -->
+      <div class="glass-panel rounded-2xl p-5 lg:col-span-7 flex flex-col justify-between shadow-xl">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-sm font-bold text-slate-100 flex items-center gap-2">
+              <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i>
+              Evolución Temporal de Alertas por Meses
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Volumen mensual clasificado por tipo de alerta y fraude alimentario</p>
+          </div>
+          <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-lg border border-slate-700 font-mono">
+            Serie 2026
+          </span>
+        </div>
+        <div class="chart-container">
+          <canvas id="chartMonthly"></canvas>
+        </div>
+      </div>
+
+      <!-- Chart 2: Alert Types & Food Fraud Breakdown -->
+      <div class="glass-panel rounded-2xl p-5 lg:col-span-5 flex flex-col justify-between shadow-xl">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-sm font-bold text-slate-100 flex items-center gap-2">
+              <i data-lucide="pie-chart" class="w-4 h-4 text-orange-400"></i>
+              Distribución por Tipo y Fraude Alimentario
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Proporción de peligros y mecanismos de adulteración</p>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="chartTypes"></canvas>
+        </div>
+      </div>
+
+      <!-- Chart 3: Top Countries (Full Width or Split) -->
+      <div class="glass-panel rounded-2xl p-5 lg:col-span-12 shadow-xl">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">
+          <div>
+            <h3 class="text-sm font-bold text-slate-100 flex items-center gap-2">
+              <i data-lucide="globe-2" class="w-4 h-4 text-blue-400"></i>
+              Cantidad de Alertas por País: Notificadores vs. Países de Origen
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Comparativa de países que interceptan riesgos frente a países de procedencia de los alimentos</p>
+          </div>
+          <div class="flex items-center space-x-2 bg-slate-900 p-1 rounded-xl border border-slate-800 text-xs">
+            <button id="btnViewNotif" onclick="setCountryChartMode('notif')" class="px-3 py-1 rounded-lg bg-indigo-600 text-white font-medium">País Notificador</button>
+            <button id="btnViewOrigin" onclick="setCountryChartMode('origin')" class="px-3 py-1 rounded-lg text-slate-400 hover:text-white font-medium">País de Origen</button>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="chartCountries"></canvas>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RESUMEN EJECUTIVO DE CANTIDADES Y VOLÚMENES -->
+    <section class="glass-panel rounded-2xl p-5 shadow-xl">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+        <div>
+          <h3 class="text-sm font-bold text-slate-100 flex items-center gap-2">
+            <i data-lucide="boxes" class="w-4 h-4 text-amber-400"></i>
+            Resumen Ejecutivo: Cantidades y Focos de Impacto Global
+          </h3>
+          <p class="text-xs text-slate-400 mt-0.5">Cantidades incautadas, retiradas y volumen de producto afectado por territorio y categoría</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="summaryPanels">
+        <!-- Panel 1: Top Países con más alertas -->
+        <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+          <h4 class="text-xs font-semibold uppercase text-slate-400 tracking-wider mb-3 flex items-center gap-1.5">
+            <i data-lucide="flag" class="w-3.5 h-3.5 text-indigo-400"></i>
+            Top Países con Alertas Activas
+          </h4>
+          <div id="summaryTopCountries" class="space-y-2.5 text-xs"></div>
+        </div>
+
+        <!-- Panel 2: Alimentos con Mayor Frecuencia de Fraude -->
+        <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+          <h4 class="text-xs font-semibold uppercase text-slate-400 tracking-wider mb-3 flex items-center gap-1.5">
+            <i data-lucide="alert-octagon" class="w-3.5 h-3.5 text-orange-400"></i>
+            Categorías Más Vulnerables a Fraude
+          </h4>
+          <div id="summaryFraudCategories" class="space-y-2.5 text-xs"></div>
+        </div>
+
+        <!-- Panel 3: Volúmenes e Incautaciones Destacadas -->
+        <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+          <h4 class="text-xs font-semibold uppercase text-slate-400 tracking-wider mb-3 flex items-center gap-1.5">
+            <i data-lucide="package" class="w-3.5 h-3.5 text-emerald-400"></i>
+            Grandes Retiradas e Incautaciones
+          </h4>
+          <div id="summaryVolumes" class="space-y-2.5 text-xs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA TABLE SECTION -->
+    <section class="glass-panel rounded-2xl shadow-xl overflow-hidden">
+      <!-- Table Header & Controls -->
+      <div class="p-4 sm:p-5 border-b border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div>
+          <h3 class="text-sm font-bold text-slate-100 flex items-center gap-2">
+            <i data-lucide="table" class="w-4 h-4 text-indigo-400"></i>
+            Registro Detallado de Alertas Alimentarias y Casos de Fraude
+          </h3>
+          <p class="text-xs text-slate-400 mt-0.5">Listado unificado con trazabilidad completa, lotes y enlaces a las autoridades sanitarias</p>
+        </div>
+        <div class="flex items-center space-x-2 text-xs">
+          <span class="text-slate-400">Filas por página:</span>
+          <select id="pageSizeSelect" onchange="changePageSize(this.value)" class="bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-slate-200 focus:outline-none">
+            <option value="10">10</option>
+            <option value="25" selected>25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Table responsive wrapper -->
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs text-slate-300">
+          <thead class="bg-slate-900/90 text-slate-400 font-semibold border-b border-slate-800 uppercase tracking-wider">
+            <tr>
+              <th scope="col" class="py-3 px-4">Fecha / Mes</th>
+              <th scope="col" class="py-3 px-4">Referencia</th>
+              <th scope="col" class="py-3 px-4">Producto & Categoría</th>
+              <th scope="col" class="py-3 px-4">Tipo & Peligro / Fraude</th>
+              <th scope="col" class="py-3 px-4">Notificador ➔ Origen</th>
+              <th scope="col" class="py-3 px-4">Severidad</th>
+              <th scope="col" class="py-3 px-4">Cantidad Afectada</th>
+              <th scope="col" class="py-3 px-4 text-right">Acción</th>
+            </tr>
+          </thead>
+          <tbody id="alertsTableBody" class="divide-y divide-slate-800/60 font-normal">
+            <!-- Rendered by app.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pagination Footer -->
+      <div class="p-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+        <div id="paginationInfo">Mostrando 0 - 0 de 0 registros</div>
+        <div class="flex items-center space-x-1" id="paginationControls">
+          <!-- Buttons rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL DE DETALLE TÉCNICO DE ALERTA -->
+  <div id="alertModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+      
+      <!-- Modal Header -->
+      <div class="p-5 border-b border-slate-800 flex items-start justify-between bg-slate-900/80">
+        <div>
+          <div class="flex items-center space-x-2">
+            <span id="modalSeverityBadge" class="px-2.5 py-0.5 rounded-full text-xs font-bold badge-critical">CRÍTICA</span>
+            <span id="modalTypeBadge" class="px-2.5 py-0.5 rounded-full text-xs font-semibold badge-fraud">FRAUDE</span>
+            <span id="modalSourceBadge" class="text-xs font-mono text-slate-400 bg-slate-800 px-2 py-0.5 rounded">EU_RASFF</span>
+          </div>
+          <h3 id="modalTitle" class="text-base sm:text-lg font-bold text-white mt-2">Título de la Alerta</h3>
+          <p id="modalRef" class="text-xs font-mono text-slate-400">ID: RASFF-2026-0000</p>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-5 space-y-4 overflow-y-auto flex-1 text-xs text-slate-300">
+        
+        <!-- Descripción y Motivo -->
+        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800 space-y-1.5">
+          <div class="text-slate-400 font-semibold uppercase text-[11px] tracking-wider flex items-center gap-1">
+            <i data-lucide="info" class="w-3.5 h-3.5 text-indigo-400"></i>
+            Motivo Técnico de la Alerta & Riesgo Toxicológico
+          </div>
+          <p id="modalDesc" class="text-slate-200 text-xs leading-relaxed"></p>
+        </div>
+
+        <!-- Grid de Metadatos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          
+          <div class="bg-slate-800/40 p-3 rounded-xl border border-slate-800 space-y-1">
+            <span class="text-slate-400 text-[11px] block">Peligro / Fraude Específico</span>
+            <span id="modalHazard" class="font-semibold text-white text-xs block"></span>
+          </div>
+
+          <div class="bg-slate-800/40 p-3 rounded-xl border border-slate-800 space-y-1">
+            <span class="text-slate-400 text-[11px] block">Mecanismo de Fraude (EMA)</span>
+            <span id="modalFraudMechanism" class="font-semibold text-orange-400 text-xs block"></span>
+          </div>
+
+          <div class="bg-slate-800/40 p-3 rounded-xl border border-slate-800 space-y-1">
+            <span class="text-slate-400 text-[11px] block">Empresa Responsable / Envasador</span>
+            <span id="modalCompany" class="font-semibold text-white text-xs block"></span>
+          </div>
+
+          <div class="bg-slate-800/40 p-3 rounded-xl border border-slate-800 space-y-1">
+            <span class="text-slate-400 text-[11px] block">Países Implicados (Notificador ➔ Origen)</span>
+            <span id="modalCountries" class="font-semibold text-white text-xs block"></span>
+          </div>
+
+          <div class="bg-slate-800/40 p-3 rounded-xl border border-slate-800 space-y-1">
+            <span class="text-slate-400 text-[11px] block">Lotes Afectados / Caducidades</span>
+            <span id="modalLots" class="font-mono text-emerald-400 text-xs block"></span>
+          </div>
+
+          <div class="bg-slate-800/40 p-3 rounded-xl border border-slate-800 space-y-1">
+            <span class="text-slate-400 text-[11px] block">Cantidad Afectada / Volumen</span>
+            <span id="modalQuantity" class="font-semibold text-white text-xs block"></span>
+          </div>
+
+          <div class="bg-slate-800/40 p-3 rounded-xl border border-slate-800 space-y-1 col-span-1 sm:col-span-2">
+            <span class="text-slate-400 text-[11px] block">Distribución Geográfica</span>
+            <span id="modalDistribution" class="text-slate-200 text-xs block"></span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 border-t border-slate-800 flex items-center justify-between bg-slate-900/90">
+        <span class="text-slate-400 text-xs flex items-center gap-1">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+          Notificado: <span id="modalDate" class="text-slate-200 font-medium ml-1"></span>
+        </span>
+        <div class="flex items-center space-x-2">
+          <a id="modalOfficialLink" href="#" target="_blank" rel="noopener noreferrer"
+             class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-xs font-semibold flex items-center space-x-1.5 transition-colors">
+            <span>Ver Ficha Oficial de la Autoridad</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+          <button onclick="closeModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-4 py-2 rounded-lg text-xs font-medium">
+            Cerrar
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center space-x-2">
+        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+        <span>Global Food Safety & Food Fraud Intelligence Platform</span>
+      </div>
+      <div>
+        Fuentes: US FDA • UK FSA • EU RASFF • Europol OPSON • CFIA Canadá • AESAN España
+      </div>
+    </div>
+  </footer>
+
+  <!-- Alerts Data (Synchronous Preload) -->
+  <script src="js/alerts_data.js"></script>
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>

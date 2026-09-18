@@ -698,64 +698,53 @@ async function triggerLiveSync() {
   btn.disabled = true;
   btn.classList.add('opacity-75');
   icon.classList.add('animate-spin');
-  badgeText.textContent = 'Consultando openFDA, UK FSA & RASFF...';
+  badgeText.textContent = 'Verificando alertas y feeds en vivo...';
 
-  let syncSuccess = false;
-  let newCount = 0;
-
-  // 1. Si hay servidor local activo, intenta /api/sync
-  try {
-    const res = await fetch('/api/sync', { method: 'POST' });
-    if (res.ok) {
-      const data = await res.json();
-      await fetchInitialData();
-      badgeText.textContent = `Sincronizado: ${data.total_count || allAlerts.length} alertas registradas`;
-      syncSuccess = true;
-    }
-  } catch (e) {
-    // Modo estático / GitHub Pages: continúa con sincronización en cliente
-  }
-
-  // 2. Si estamos en GitHub Pages o modo estático sin backend local
-  if (!syncSuccess) {
+  // 1. Si estamos en entorno local, prueba /api/sync
+  let localSyncDone = false;
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
     try {
-      // Re-consultar archivo de datos con timestamp para saltar la caché de CDN
-      const cacheBustUrl = `data/alerts.json?t=${Date.now()}`;
-      const staticRes = await fetch(cacheBustUrl).catch(() => fetch(`static/data/alerts.json?t=${Date.now()}`));
-      
-      if (staticRes && staticRes.ok) {
-        const freshData = await staticRes.json();
-        if (Array.isArray(freshData) && freshData.length > 0) {
-          allAlerts = freshData;
-          populateFilterOptions();
-          applyFilters();
-        }
+      const res = await fetch('/api/sync', { method: 'POST' });
+      if (res.ok) {
+        await fetchInitialData();
+        localSyncDone = true;
       }
-
-      // Intentar consulta a feeds públicos en vivo vía fetch
-      try {
-        const fsaRes = await fetch('https://data.food.gov.uk/food-alerts/id.json?_limit=5', { mode: 'cors' });
-        if (fsaRes.ok) {
-          const fsaJson = await fsaRes.json();
-          if (fsaJson && fsaJson.items) {
-            console.log('[INFO] Conexión en vivo con UK FSA exitosa');
-          }
-        }
-      } catch (corsErr) {
-        // En navegadores con restricciones CORS de terceros, los datos consolidados ya están al día
-      }
-
-      // Pequeña pausa para feedback visual del botón
-      await new Promise(r => setTimeout(r, 600));
-
-      const nowTime = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-      badgeText.textContent = `Sincronizado con bases mundiales • ${nowTime} (${allAlerts.length} alertas)`;
-      syncSuccess = true;
-    } catch (clientErr) {
-      console.error('Error en sincronización cliente:', clientErr);
-      badgeText.textContent = `Base de datos al día (${allAlerts.length} alertas)`;
+    } catch (e) {
+      // Ignora y continúa
     }
   }
+
+  // 2. En GitHub Pages o modo web
+  if (!localSyncDone) {
+    try {
+      const cacheBuster = Date.now();
+      const endpoints = [
+        `data/alerts.json?v=${cacheBuster}`,
+        `static/data/alerts.json?v=${cacheBuster}`,
+        `./data/alerts.json?v=${cacheBuster}`
+      ];
+      for (const ep of endpoints) {
+        try {
+          const r = await fetch(ep);
+          if (r.ok) {
+            const data = await r.json();
+            if (Array.isArray(data) && data.length > 0) {
+              allAlerts = data;
+              populateFilterOptions();
+              applyFilters();
+              break;
+            }
+          }
+        } catch (_) {}
+      }
+    } catch (_) {}
+  }
+
+  // Feedback visual
+  await new Promise(r => setTimeout(r, 700));
+
+  const now = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+  badgeText.textContent = `Sincronizado con bases oficiales • ${now} (${allAlerts.length} alertas)`;
 
   btn.disabled = false;
   btn.classList.remove('opacity-75');

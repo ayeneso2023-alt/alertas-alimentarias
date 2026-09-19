@@ -164,8 +164,246 @@ function updateMonthOptions() {
   }
 }
 
+// ---------------- MOTOR DE BÚSQUEDA MULTILINGÜE Y SINÓNIMOS ----------------
+// Permite que la búsqueda de producto, lote, motivo o país funcione
+// en cualquier idioma (Español, Inglés, Alemán, Francés, Italiano, Portugués, etc.)
+// Ej. Buscar "vino", "wine", "wein", "vin", "vinho" encuentra todas las alertas vinícolas.
+
+function normalizeSearchText(str) {
+  if (!str) return '';
+  return str.toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s_-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+const MULTILINGUAL_SYNONYM_GROUPS = [
+  // Vinos y Bebidas Alcohólicas
+  ['vino', 'vinos', 'wine', 'wines', 'wein', 'weine', 'vin', 'vins', 'vinho', 'vinhos', 'wijn', 'wijnen', 'wino'],
+  ['vino blanco', 'white wine', 'weisswein', 'weißwein', 'vin blanc', 'vino bianco', 'vinho branco', 'witte wijn'],
+  ['vino tinto', 'red wine', 'rotwein', 'vin rouge', 'vino rosso', 'vinho tinto', 'rode wijn'],
+  ['vino rosado', 'rose wine', 'rosé wine', 'rosewein', 'roséwein', 'vin rosé', 'vino rosato', 'vinho rosé'],
+  ['vino espumoso', 'sparkling wine', 'schaumwein', 'sekt', 'vin pétillant', 'champagne', 'prosecco', 'cava'],
+  ['vino de cocina', 'cooking wine', 'kochwein', 'vin de cuisine'],
+  ['cerveza', 'cervezas', 'beer', 'beers', 'bier', 'biere', 'bière', 'birra', 'birre', 'cerveja', 'cervejas'],
+  ['licor', 'licores', 'liquor', 'liqueur', 'liqueurs', 'likör', 'likor', 'spirit', 'spirits', 'spirituose', 'spirituosen', 'destilado'],
+  ['sidra', 'cider', 'cidre', 'apfelwein', 'sidro'],
+  ['bebida', 'bebidas', 'beverage', 'beverages', 'drink', 'drinks', 'getränk', 'getrank', 'getränke', 'boisson', 'boissons', 'bevanda', 'bevande'],
+  ['zumo', 'jugo', 'zumos', 'jugos', 'juice', 'juices', 'saft', 'säfte', 'jus', 'succo', 'succos', 'suco', 'sucos'],
+
+  // Aceites y Grasas
+  ['aceite', 'aceites', 'oil', 'oils', 'öl', 'öle', 'oel', 'oele', 'huile', 'huiles', 'olio', 'olii', 'azeite', 'azeites', 'olie'],
+  ['aceite de oliva', 'olive oil', 'olivenöl', 'olivenoel', 'huile d olive', 'olio d oliva', 'azeite de oliva', 'olijfolie', 'aove', 'evoo'],
+  ['girasol', 'aceite de girasol', 'sunflower', 'sunflower oil', 'sonnenblume', 'sonnenblumenöl', 'tournesol', 'girasole'],
+  ['palma', 'aceite de palma', 'palm oil', 'palmfett', 'huile de palme', 'olio di palma', 'dende'],
+  ['colza', 'canola', 'rapeseed', 'rapeseed oil', 'raps', 'rapsöl', 'huile de colza'],
+  ['orujo', 'pomace', 'pomace oil', 'trester', 'tresteröl', 'sansa', 'olio di sansa', 'bagaço'],
+
+  // Miel y Endulzantes
+  ['miel', 'mieles', 'honey', 'honeys', 'honig', 'miele', 'mel'],
+  ['sirope', 'jarabe', 'syrup', 'syrups', 'sirup', 'sirop', 'sciroppo', 'xarope'],
+  ['azucar', 'azúcar', 'sugar', 'zucker', 'sucre', 'zucchero', 'acucar', 'açúcar'],
+  ['jalea real', 'royal jelly', 'gelée royale', 'gelee royale', 'weiselfuttersaft', 'pappa reale', 'geleia real'],
+
+  // Pescados y Mariscos
+  ['pescado', 'pescados', 'fish', 'fishes', 'fisch', 'fische', 'poisson', 'poissons', 'pesce', 'pesci', 'peixe', 'peixes', 'vis', 'ryba'],
+  ['atun', 'atún', 'tuna', 'tunas', 'thunfisch', 'thon', 'tonno', 'atum'],
+  ['salmon', 'salmón', 'salmon', 'salmons', 'lachs', 'saumon', 'salmone', 'salmão', 'salmao'],
+  ['marisco', 'mariscos', 'seafood', 'shellfish', 'meeresfrüchte', 'meeresfruechte', 'fruits de mer', 'frutti di mare', 'frutos do mar'],
+  ['gamba', 'gambas', 'langostino', 'langostinos', 'shrimp', 'shrimps', 'prawn', 'prawns', 'garnele', 'garnelen', 'crevette', 'crevettes', 'gambero', 'gamberi', 'camarão'],
+  ['mejillon', 'mejillón', 'mejillones', 'mussel', 'mussels', 'muschel', 'muscheln', 'moule', 'moules', 'cozza', 'cozze', 'mexilhão'],
+  ['almeja', 'almejas', 'clam', 'clams', 'muschel', 'palourde', 'vongola', 'vongole', 'amêijoa'],
+  ['calamar', 'calamares', 'squid', 'squids', 'tintenfisch', 'calmar', 'calamaro', 'calamari', 'lula'],
+  ['pulpo', 'pulpos', 'octopus', 'octopuses', 'oktopus', 'kraken', 'poulpe', 'polpo', 'polpi', 'polvo'],
+  ['bacalao', 'cod', 'kabeljau', 'dorsch', 'morue', 'cabillaud', 'merluzzo', 'bacalhau'],
+  ['anchoa', 'anchoas', 'anchovy', 'anchovies', 'sardelle', 'sardellen', 'anchois', 'acciuga', 'acciughe', 'anchova'],
+  ['sardina', 'sardinas', 'sardine', 'sardines', 'sardine', 'sardina', 'sardinha'],
+  ['merluza', 'hake', 'seehecht', 'merlu', 'nasello', 'pescada'],
+
+  // Carnes y Aves
+  ['carne', 'carnes', 'meat', 'meats', 'fleisch', 'viande', 'viandes', 'carni', 'vlees', 'mieso'],
+  ['pollo', 'pollos', 'chicken', 'chickens', 'huhn', 'hähnchen', 'haehnchen', 'hühnerfleisch', 'poulet', 'frango'],
+  ['cerdo', 'cerdos', 'porcino', 'pork', 'swine', 'pig', 'schwein', 'schweinefleisch', 'porc', 'maiale', 'porco', 'varkensvlees'],
+  ['ternera', 'vaca', 'buey', 'res', 'vacuno', 'bovino', 'beef', 'bovine', 'cattle', 'rind', 'rindfleisch', 'boeuf', 'bœuf', 'manzo', 'rundvlees'],
+  ['pavo', 'turkey', 'truthahn', 'putenfleisch', 'dinde', 'tacchino', 'peru'],
+  ['cordero', 'lamb', 'mutton', 'lamm', 'lammfleisch', 'agneau', 'agnello', 'cordeiro'],
+  ['embutido', 'embutidos', 'salchicha', 'salchichas', 'sausage', 'sausages', 'wurst', 'würstchen', 'saucisse', 'salsiccia', 'enchido'],
+  ['jamon', 'jamón', 'ham', 'schinken', 'jambon', 'prosciutto', 'presunto'],
+
+  // Lácteos y Quesos
+  ['queso', 'quesos', 'cheese', 'cheeses', 'käse', 'kaese', 'fromage', 'fromages', 'formaggio', 'formaggi', 'queijo', 'queijos', 'kaas', 'ser'],
+  ['leche', 'milk', 'milch', 'lait', 'latte', 'leite', 'melk', 'mleko'],
+  ['yogur', 'yogurt', 'yoghurt', 'joghurt', 'yaourt', 'iogurte'],
+  ['mantequilla', 'butter', 'beurre', 'burro', 'manteiga', 'boter'],
+  ['nata', 'crema de leche', 'cream', 'sahne', 'crème', 'creme', 'panna', 'natas', 'room'],
+
+  // Frutas, Verduras y Hortalizas
+  ['fruta', 'frutas', 'fruit', 'fruits', 'frucht', 'früchte', 'fruechte', 'obst', 'frutto', 'frutti'],
+  ['verdura', 'verduras', 'hortaliza', 'hortalizas', 'vegetal', 'vegetales', 'vegetable', 'vegetables', 'gemüse', 'gemuese', 'légume', 'legumes', 'groente'],
+  ['manzana', 'manzanas', 'apple', 'apples', 'apfel', 'äpfel', 'aepfel', 'pomme', 'pommes', 'mela', 'mele', 'maçã', 'maca'],
+  ['fresa', 'fresas', 'fresón', 'strawberry', 'strawberries', 'erdbeere', 'erdbeeren', 'fraise', 'fraises', 'fragola', 'fragole', 'morango'],
+  ['platano', 'plátano', 'plátanos', 'banana', 'bananas', 'banane', 'bananen'],
+  ['naranja', 'naranjas', 'orange', 'oranges', 'arancia', 'arance'],
+  ['limon', 'limón', 'limones', 'lemon', 'lemons', 'zitrone', 'zitronen', 'citron', 'limone', 'limão'],
+  ['tomate', 'tomates', 'tomato', 'tomatoes', 'tomate', 'tomaten', 'pomodoro', 'pomodori'],
+  ['pimiento', 'pimientos', 'pepper', 'peppers', 'paprika', 'poivron', 'poivrons', 'peperone', 'peperoni', 'pimento'],
+  ['cebolla', 'cebollas', 'onion', 'onions', 'zwiebel', 'zwiebeln', 'oignon', 'cipolla', 'cebola'],
+  ['ajo', 'ajos', 'garlic', 'knoblauch', 'ail', 'aglio', 'alho'],
+  ['patata', 'patatas', 'papa', 'papas', 'potato', 'potatoes', 'kartoffel', 'kartoffeln', 'pomme de terre', 'batata'],
+  ['lechuga', 'lettuce', 'salat', 'laitue', 'lattuga', 'alface'],
+  ['espinaca', 'espinacas', 'spinach', 'spinat', 'épinard', 'spinaci', 'espinafre'],
+  ['zanahoria', 'zanahorias', 'carrot', 'carrots', 'karotte', 'karotten', 'möhre', 'carotte', 'carota', 'cenoura'],
+  ['uva', 'uvas', 'grape', 'grapes', 'weintraube', 'weintrauben', 'raisin', 'raisins', 'uva', 'uve', 'druif'],
+  ['higo', 'higos', 'fig', 'figs', 'feige', 'feigen', 'figue', 'fico', 'fichi', 'figo'],
+  ['datil', 'dátil', 'dátiles', 'date', 'dates', 'dattel', 'datteln', 'datte', 'dattero'],
+
+  // Frutos Secos y Semillas
+  ['fruto seco', 'frutos secos', 'nut', 'nuts', 'nuss', 'nüsse', 'nuesse', 'noix', 'noce', 'noci', 'noz', 'nozes', 'noten'],
+  ['almendra', 'almendras', 'almond', 'almonds', 'mandel', 'mandeln', 'amande', 'amandes', 'mandorla', 'mandorle', 'amêndoa'],
+  ['avellana', 'avellanas', 'hazelnut', 'hazelnuts', 'haselnuss', 'haselnüsse', 'noisette', 'noisettes', 'nocciola', 'nocciole', 'avelã'],
+  ['nuez', 'nueces', 'walnut', 'walnuts', 'walnuss', 'walnüsse', 'noix'],
+  ['cacahuete', 'cacahuetes', 'maní', 'mani', 'peanut', 'peanuts', 'groundnut', 'erdnuss', 'erdnüsse', 'cacahuète', 'arachide', 'arachidi', 'amendoim'],
+  ['pistacho', 'pistachos', 'pistachio', 'pistachios', 'pistazie', 'pistazien', 'pistache', 'pistacchio', 'pistacchi'],
+  ['anacardo', 'anacardos', 'cashew', 'cashews', 'kaschunuss', 'anacardier', 'anacardio', 'caju'],
+  ['sesamo', 'sésamo', 'ajonjoli', 'ajonjolí', 'sesame', 'sesam', 'sésame', 'sesamo'],
+
+  // Cereales y Harinas
+  ['cereal', 'cereales', 'grain', 'grains', 'getreide', 'céréale', 'céréales', 'cereale', 'cereali'],
+  ['trigo', 'wheat', 'weizen', 'blé', 'ble', 'grano', 'trigo'],
+  ['arroz', 'rice', 'reis', 'riz', 'riso', 'arroz'],
+  ['maiz', 'maíz', 'corn', 'maize', 'mais', 'milho'],
+  ['avena', 'oat', 'oats', 'hafer', 'avoine', 'avena', 'aveia'],
+  ['cebada', 'barley', 'gerste', 'orge', 'orzo', 'cevada'],
+  ['centeno', 'rye', 'roggen', 'seigle', 'segale', 'centeio'],
+  ['harina', 'harinas', 'flour', 'flours', 'mehl', 'farine', 'farina', 'farinha'],
+  ['pan', 'bread', 'brot', 'pain', 'pane', 'pão'],
+  ['pasta', 'pastas', 'noodles', 'nudeln', 'pâtes', 'pates', 'massa'],
+
+  // Especias y Condimentos
+  ['especia', 'especias', 'condimento', 'condimentos', 'spice', 'spices', 'seasoning', 'gewürz', 'gewürze', 'épice', 'épices', 'spezia', 'spezie', 'especiaria'],
+  ['pimienta', 'pepper', 'black pepper', 'pfeffer', 'poivre', 'pepe', 'pimenta'],
+  ['pimenton', 'pimentón', 'paprika', 'paprikapulver', 'poivron moulu'],
+  ['canela', 'cinnamon', 'zimt', 'cannelle', 'cannella'],
+  ['curcuma', 'cúrcuma', 'turmeric', 'kurkuma'],
+  ['jengibre', 'ginger', 'ingwer', 'gingembre', 'zenzero', 'gengibre'],
+  ['comino', 'cumin', 'kreuzkümmel', 'cumino'],
+  ['oregano', 'orégano', 'origan', 'origano'],
+  ['azafran', 'azafrán', 'saffron', 'safran', 'zafferano', 'açafrão'],
+
+  // Peligros / Contaminantes / Patógenos / Alérgenos
+  ['sulfito', 'sulfitos', 'sulphite', 'sulphites', 'sulfite', 'sulfites', 'sulfit', 'schwefeldioxid', 'dióxido de azufre', 'dioxido de azufre', 'sulfur dioxide', 'dioxyde de soufre', 'anidride solforosa', 'dioxido de enxofre', 'so2'],
+  ['gluten', 'gluten free', 'sin gluten', 'celiaquia', 'celiac', 'coeliac', 'zöliakie'],
+  ['listeria', 'listeriosis', 'listeria monocytogenes', 'listerien'],
+  ['salmonella', 'salmonela', 'salmonellen'],
+  ['escherichia coli', 'e coli', 'e. coli', 'stec', 'vtec', 'coliformes'],
+  ['plomo', 'lead', 'blei', 'plomb', 'piombo', 'chumbo', 'pb'],
+  ['mercurio', 'mercury', 'quecksilber', 'mercure', 'hg'],
+  ['cadmio', 'cadmium', 'kadmium', 'cd'],
+  ['arsenico', 'arsénico', 'arsenic', 'arsen', 'arsenico', 'as'],
+  ['pesticida', 'pesticidas', 'plaguicida', 'plaguicidas', 'pesticide', 'pesticides', 'pestizid', 'pestizide', 'fitosanitario'],
+  ['micotoxina', 'micotoxinas', 'mycotoxin', 'mycotoxins', 'mykotoxin', 'mykotoxine'],
+  ['aflatoxina', 'aflatoxinas', 'aflatoxin', 'aflatoxins'],
+  ['ocratoxina', 'ocratoxinas', 'ochratoxin', 'ochratoxins'],
+  ['cristal', 'vidrio', 'cristales', 'glass', 'glas', 'verre', 'vetro', 'vidro', 'scherben'],
+  ['metal', 'metales', 'metalico', 'metálico', 'metallic', 'metall', 'métal', 'metallo'],
+  ['plastico', 'plástico', 'plastic', 'plastics', 'plastik', 'plastique', 'plastica'],
+  ['cuerpo extraño', 'cuerpos extraños', 'foreign body', 'foreign bodies', 'foreign object', 'foreign objects', 'fremdkörper', 'corps étranger', 'corpo estraneo'],
+  ['fraude', 'food fraud', 'lebensmittelbetrug', 'adulteracion', 'adulteración', 'adulteration', 'falsificacion', 'falsificación', 'counterfeit', 'tampering', 'mislabeling', 'falso etiquetado'],
+
+  // Países Clave
+  ['espana', 'españa', 'spain', 'spanien', 'espagne', 'spagna', 'espanha'],
+  ['ucrania', 'ukraine', 'ukraina', 'ucrânia'],
+  ['alemania', 'germany', 'deutschland', 'allemagne', 'germania'],
+  ['francia', 'france', 'frankreich'],
+  ['italia', 'italy', 'italien', 'italie'],
+  ['china', 'chine'],
+  ['reino unido', 'united kingdom', 'uk', 'grossbritannien', 'royaume-uni'],
+  ['estados unidos', 'united states', 'usa', 'us', 'vereinigte staaten', 'etats-unis'],
+  ['polonia', 'poland', 'polen', 'pologne', 'polonia'],
+  ['paises bajos', 'países bajos', 'holanda', 'netherlands', 'holland', 'niederlande', 'pays-bas'],
+  ['belgica', 'bélgica', 'belgium', 'belgien', 'belgique'],
+  ['portugal'],
+  ['turquia', 'turquía', 'turkey', 'türkiye', 'turkei', 'turquie'],
+  ['marruecos', 'morocco', 'marokko', 'maroc'],
+  ['india', 'inde', 'indien'],
+  ['suiza', 'switzerland', 'schweiz', 'suisse', 'svizzera'],
+  ['austria', 'österreich', 'oesterreich', 'autriche'],
+  ['grecia', 'greece', 'griechenland', 'grèce'],
+  ['dinamarca', 'denmark', 'dänemark', 'daenemark', 'danemark', 'danimarca'],
+  ['suecia', 'sweden', 'schweden', 'suède'],
+  ['irlanda', 'ireland', 'irland', 'irlande']
+];
+
+// Mapa indexado de sinónimos
+const SYNONYM_MAP = new Map();
+MULTILINGUAL_SYNONYM_GROUPS.forEach(group => {
+  const normGroup = Array.from(new Set(group.map(w => normalizeSearchText(w)).filter(Boolean)));
+  normGroup.forEach(word => {
+    if (!SYNONYM_MAP.has(word)) SYNONYM_MAP.set(word, new Set());
+    normGroup.forEach(syn => SYNONYM_MAP.get(word).add(syn));
+  });
+});
+
+function getMultilingualSynonymsForQuery(rawQuery) {
+  const normQuery = normalizeSearchText(rawQuery);
+  if (!normQuery) return [];
+  const tokens = normQuery.split(/\s+/).filter(Boolean);
+  const foundSyns = new Set();
+  tokens.forEach(t => {
+    if (SYNONYM_MAP.has(t)) {
+      SYNONYM_MAP.get(t).forEach(s => {
+        if (s !== t) foundSyns.add(s);
+      });
+    }
+  });
+  return Array.from(foundSyns);
+}
+
+function matchesMultilingualSearch(alert, rawQuery) {
+  if (!rawQuery || !rawQuery.trim()) return true;
+
+  const targetNorm = normalizeSearchText([
+    alert.producto,
+    alert.descripcion,
+    alert.empresa_responsable,
+    alert.subtipo_peligro,
+    alert.categoria_alimento,
+    alert.pais_notificador,
+    alert.pais_origen,
+    alert.id,
+    alert.id_original,
+    alert.lotes_afectados
+  ].join(' '));
+
+  const targetPadded = ' ' + targetNorm + ' ';
+  const queryNorm = normalizeSearchText(rawQuery);
+
+  // Coincidencia literal directa
+  if (targetNorm.includes(queryNorm)) return true;
+
+  const tokens = queryNorm.split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return true;
+
+  return tokens.every(token => {
+    if (SYNONYM_MAP.has(token)) {
+      const syns = SYNONYM_MAP.get(token);
+      return Array.from(syns).some(syn => {
+        if (syn.includes(' ')) {
+          return targetNorm.includes(syn);
+        }
+        const re = new RegExp('(^|\\s)' + syn.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&') + '($|\\s)', 'i');
+        return re.test(targetPadded);
+      });
+    }
+    return targetNorm.includes(token);
+  });
+}
+
 function applyFilters() {
-  const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
+  const searchVal = document.getElementById('searchInput').value.trim();
   const categoryVal = document.getElementById('filterCategory').value;
   const typeVal = document.getElementById('filterType').value;
   const countryVal = document.getElementById('filterCountry').value;
@@ -174,18 +412,9 @@ function applyFilters() {
   const monthVal = document.getElementById('filterMonth').value;
 
   filteredAlerts = allAlerts.filter(a => {
-    // Search match
-    if (searchVal) {
-      const target = [
-        a.producto,
-        a.descripcion,
-        a.empresa_responsable,
-        a.subtipo_peligro,
-        a.id,
-        a.id_original,
-        a.lotes_afectados
-      ].join(' ').toLowerCase();
-      if (!target.includes(searchVal)) return false;
+    // Multilingual Search match (español, inglés, alemán, francés, etc.)
+    if (searchVal && !matchesMultilingualSearch(a, searchVal)) {
+      return false;
     }
 
     // Year match (2024, 2025, 2026)
@@ -293,7 +522,13 @@ function updateFilterBadges() {
   const mon = document.getElementById('filterMonth').value;
   const sea = document.getElementById('searchInput').value.trim();
 
-  if (sea) active.push({ label: `Búsqueda: "${sea}"`, reset: () => document.getElementById('searchInput').value = '' });
+  if (sea) {
+    const syns = getMultilingualSynonymsForQuery(sea);
+    const synHint = syns.length > 0 
+      ? ` (multilingüe: ${syns.slice(0, 3).join(', ')}${syns.length > 3 ? '...' : ''})` 
+      : '';
+    active.push({ label: `Búsqueda: "${sea}"${synHint}`, reset: () => document.getElementById('searchInput').value = '' });
+  }
   if (cat !== 'all') active.push({ label: `Alimento: ${cat}`, reset: () => document.getElementById('filterCategory').value = 'all' });
   if (typ !== 'all') active.push({ label: `Tipo: ${typ}`, reset: () => document.getElementById('filterType').value = 'all' });
   if (cou !== 'all') active.push({ label: `País: ${cou}`, reset: () => document.getElementById('filterCountry').value = 'all' });

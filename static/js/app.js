@@ -36,12 +36,26 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 async function fetchInitialData() {
-  const endpoints = ['/api/alerts', 'data/alerts.json', './data/alerts.json', '../data/alerts.json', '/static/data/alerts.json'];
+  const ts = Date.now();
+  const endpoints = [
+    `/api/alerts?t=${ts}`,
+    `data/alerts.json?t=${ts}`,
+    `./data/alerts.json?t=${ts}`,
+    `static/data/alerts.json?t=${ts}`,
+    'data/alerts.json',
+    'static/data/alerts.json'
+  ];
   let loaded = false;
 
   for (const ep of endpoints) {
     try {
-      const res = await fetch(ep);
+      const res = await fetch(ep, {
+        cache: 'no-store',
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache'
+        }
+      });
       if (res.ok) {
         const fetchedData = await res.json();
         if (Array.isArray(fetchedData) && fetchedData.length > 0) {
@@ -58,25 +72,43 @@ async function fetchInitialData() {
     }
   }
 
-  if (!loaded && allAlerts.length === 0) {
-    console.warn('[WARN] No se pudo cargar alertas desde endpoints ni desde cache.');
+  if (!loaded && allAlerts.length === 0 && window.INITIAL_ALERTS_DATA) {
+    allAlerts = window.INITIAL_ALERTS_DATA;
+    populateFilterOptions();
+    applyFilters();
   }
 }
 
 function populateFilterOptions() {
+  const yearSelect = document.getElementById('filterYear');
   const countrySelect = document.getElementById('filterCountry');
   const monthSelect = document.getElementById('filterMonth');
 
+  const years = new Set(['2026', '2025', '2024']);
   const countries = new Set();
   const months = new Set();
 
   allAlerts.forEach(a => {
+    const y = (a.fecha_notificacion || a.mes_ano || '').substring(0, 4);
+    if (['2024', '2025', '2026'].includes(y)) years.add(y);
     if (a.pais_notificador) countries.add(a.pais_notificador);
     if (a.pais_origen) countries.add(a.pais_origen);
     
     const m = a.mes_ano || (a.fecha_notificacion ? a.fecha_notificacion.substring(0, 7) : null);
     if (m) months.add(m);
   });
+
+  // Populate years (2026, 2025, 2024)
+  if (yearSelect) {
+    const currentYear = yearSelect.value || 'all';
+    yearSelect.innerHTML = `
+      <option value="all">Todos los años (2024 - 2026)</option>
+      <option value="2026">2026</option>
+      <option value="2025">2025</option>
+      <option value="2024">2024</option>
+    `;
+    if (currentYear) yearSelect.value = currentYear;
+  }
 
   // Populate countries
   const sortedCountries = Array.from(countries).sort();
@@ -89,18 +121,47 @@ function populateFilterOptions() {
   });
 
   // Populate months
+  updateMonthOptions();
+}
+
+function onYearChange() {
+  updateMonthOptions();
+  applyFilters();
+}
+
+function updateMonthOptions() {
+  const yearSelect = document.getElementById('filterYear');
+  const monthSelect = document.getElementById('filterMonth');
+  if (!monthSelect) return;
+
+  const selectedYear = yearSelect ? yearSelect.value : 'all';
+  const currentMonthVal = monthSelect.value;
+  const months = new Set();
+
+  allAlerts.forEach(a => {
+    const m = a.mes_ano || (a.fecha_notificacion ? a.fecha_notificacion.substring(0, 7) : null);
+    if (m) {
+      if (selectedYear === 'all' || m.startsWith(selectedYear)) {
+        months.add(m);
+      }
+    }
+  });
+
   const sortedMonths = Array.from(months).sort().reverse();
   monthSelect.innerHTML = '<option value="all">Todos los meses</option>';
   sortedMonths.forEach(m => {
     const opt = document.createElement('option');
     opt.value = m;
-    // Format "2026-09" to readable string "Septiembre 2026"
     const [year, month] = m.split('-');
     const dateObj = new Date(parseInt(year), parseInt(month) - 1, 1);
     const monthName = dateObj.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
     opt.textContent = monthName.charAt(0).toUpperCase() + monthName.slice(1);
     monthSelect.appendChild(opt);
   });
+
+  if (currentMonthVal && (selectedYear === 'all' || currentMonthVal.startsWith(selectedYear))) {
+    monthSelect.value = currentMonthVal;
+  }
 }
 
 function applyFilters() {
@@ -108,6 +169,8 @@ function applyFilters() {
   const categoryVal = document.getElementById('filterCategory').value;
   const typeVal = document.getElementById('filterType').value;
   const countryVal = document.getElementById('filterCountry').value;
+  const yearSelect = document.getElementById('filterYear');
+  const yearVal = yearSelect ? yearSelect.value : 'all';
   const monthVal = document.getElementById('filterMonth').value;
 
   filteredAlerts = allAlerts.filter(a => {
@@ -119,9 +182,20 @@ function applyFilters() {
         a.empresa_responsable,
         a.subtipo_peligro,
         a.id,
+        a.id_original,
         a.lotes_afectados
       ].join(' ').toLowerCase();
       if (!target.includes(searchVal)) return false;
+    }
+
+    // Year match (2024, 2025, 2026)
+    const aDate = a.fecha_notificacion || a.mes_ano || '';
+    const aYear = aDate.substring(0, 4);
+    if (!['2024', '2025', '2026'].includes(aYear)) {
+      return false;
+    }
+    if (yearVal !== 'all' && aYear !== yearVal) {
+      return false;
     }
 
     // Category match
@@ -150,7 +224,7 @@ function applyFilters() {
 
     // Month match
     if (monthVal !== 'all') {
-      const aMonth = a.mes_ano || (a.fecha_notificacion ? a.fecha_notificacion.substring(0, 7) : '');
+      const aMonth = a.mes_ano || aDate.substring(0, 7);
       if (aMonth !== monthVal) return false;
     }
 
@@ -174,6 +248,10 @@ function resetFilters() {
   document.getElementById('filterCategory').value = 'all';
   document.getElementById('filterType').value = 'all';
   document.getElementById('filterCountry').value = 'all';
+  if (document.getElementById('filterYear')) {
+    document.getElementById('filterYear').value = 'all';
+  }
+  updateMonthOptions();
   document.getElementById('filterMonth').value = 'all';
   applyFilters();
 }
@@ -597,10 +675,9 @@ function renderTable() {
           <span class="text-slate-500">➔</span>
           <span class="text-slate-400">${item.pais_origen || 'N/A'}</span>
         </div>
-      </td>
       <td class="py-3 px-4 whitespace-nowrap">
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold ${sevBadge}">
-          ${item.gravedad || 'Media'}
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold ${sevBadge}" title="${item.decision_rasff ? 'Decisión oficial RASFF: ' + escapeHtml(item.decision_rasff) : ''}">
+          ${item.decision_rasff && item.decision_rasff.toLowerCase().includes('potential') ? 'Riesgo Potencial' : (item.gravedad || 'Media')}
         </span>
       </td>
       <td class="py-3 px-4 whitespace-nowrap font-mono text-[11px] text-emerald-400">
@@ -665,7 +742,7 @@ function openModal(alertId) {
 
   document.getElementById('modalTitle').textContent = item.producto;
   document.getElementById('modalRef').textContent = `ID de Referencia: ${item.id_original || item.id}`;
-  document.getElementById('modalSeverityBadge').textContent = item.gravedad || 'MEDIA';
+  document.getElementById('modalSeverityBadge').textContent = item.decision_rasff ? `${item.gravedad} (Decisión RASFF: ${item.decision_rasff})` : (item.gravedad || 'MEDIA');
   document.getElementById('modalTypeBadge').textContent = item.tipo_alerta || 'GENERAL';
   document.getElementById('modalSourceBadge').textContent = item.fuente_origen || 'OFICIAL';
 

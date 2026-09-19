@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Global Food Safety & Food Fraud Intelligence Dashboard</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -196,13 +199,13 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
         
         <!-- Search Input -->
         <div>
           <label class="block text-xs font-medium text-slate-400 mb-1">Buscar por producto, lote o motivo</label>
           <div class="relative">
-            <input type="text" id="searchInput" oninput="applyFilters()" placeholder="Ej. Aceite, Atún, Listeria, Lote..."
+            <input type="text" id="searchInput" oninput="applyFilters()" placeholder="Ej. Aceite, Vino, Listeria, Lote..."
                    class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all pl-9">
             <i data-lucide="search" class="w-4 h-4 text-slate-500 absolute left-3 top-2.5"></i>
           </div>
@@ -249,6 +252,18 @@
           <select id="filterCountry" onchange="applyFilters()"
                   class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500">
             <option value="all">Todos los países</option>
+          </select>
+        </div>
+
+        <!-- Year Filter (Last 3 Years) -->
+        <div>
+          <label class="block text-xs font-medium text-slate-400 mb-1">Año de Notificación</label>
+          <select id="filterYear" onchange="onYearChange()"
+                  class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500">
+            <option value="all">Todos los años (2024 - 2026)</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
           </select>
         </div>
 
@@ -532,8 +547,8 @@
   </footer>
 
   <!-- Alerts Data (Synchronous Preload) -->
-  <script src="static/js/alerts_data.js?v=3.3"></script>
+  <script src="static/js/alerts_data.js?v=4.0"></script>
   <!-- App Script -->
-  <script src="static/js/app.js?v=3.3"></script>
+  <script src="static/js/app.js?v=4.0"></script>
 </body>
 </html>

@@ -20,6 +20,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8324",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Nicaragua)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -43,6 +44,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8322",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -66,6 +68,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8321",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -79,16 +82,17 @@ window.INITIAL_ALERTS_DATA = [
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "presence of mold in an isotonic beverage",
     "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Zumos",
+    "categoria_alimento": "Bebidas y Licores",
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "presence of mold in an isotonic beverage",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8320): presence of mold in an isotonic beverage",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8320",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -112,6 +116,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8319",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -135,6 +140,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8318",
     "distribucion_geografica": "Unión Europea (Notificado por Suecia; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -158,6 +164,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8317",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: China, Irlanda)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -175,12 +182,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "cadmium in raspberries, unsweetened, frozen from Serbia",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8316): cadmium in raspberries, unsweetened, frozen from Serbia",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8316",
     "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: Serbia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -198,12 +206,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Físico",
     "subtipo_peligro": "Foreign body (metal wire) in chocolate product from Poland",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8315): Foreign body (metal wire) in chocolate product from Poland",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8315",
     "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -227,6 +236,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8313",
     "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Hungría, Iran)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -250,6 +260,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8312",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -267,12 +278,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Nitrite (14 mg/kg) in frozen tuna from Vietnam",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8311): Nitrite (14 mg/kg) in frozen tuna from Vietnam",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8311",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Vietnam)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -286,16 +298,17 @@ window.INITIAL_ALERTS_DATA = [
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Obecnosć Salmonella spp. w mączce rybnej kraj pochodzenia Hiszpania///Presence of *Salmonella* spp. in fishmeal; country",
     "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Alimentos Procesados y Conservas",
+    "categoria_alimento": "Pescados y Mariscos",
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Obecnosć Salmonella spp. w mączce rybnej kraj pochodzenia Hiszpania///Presence of *Salmonella* ...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8309): Obecnosć Salmonella spp. w mączce rybnej kraj pochodzenia Hiszpania///Presence of *Salmonella* spp. in fishmeal; country of origin: Spain",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8309",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -319,6 +332,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8308",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Vietnam)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -342,6 +356,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8307",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -355,16 +370,17 @@ window.INITIAL_ALERTS_DATA = [
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Salmonella in raw petfood from the Netherlands",
     "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Alimentos Procesados y Conservas",
+    "categoria_alimento": "Pescados y Mariscos",
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Salmonella in raw petfood from the Netherlands",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8305): Salmonella in raw petfood from the Netherlands",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8305",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -388,6 +404,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8304",
     "distribucion_geografica": "Unión Europea (Notificado por Grecia; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -411,6 +428,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8302",
     "distribucion_geografica": "Unión Europea (Notificado por Grecia; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -434,6 +452,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8300",
     "distribucion_geografica": "Unión Europea (Notificado por Grecia; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -457,6 +476,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8297",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -466,7 +486,7 @@ window.INITIAL_ALERTS_DATA = [
     "mes_ano": "2026-09",
     "fuente_origen": "EU_RASFF",
     "pais_notificador": "Estonia",
-    "pais_origen": "Ukraine",
+    "pais_origen": "Ucrania",
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "metal piece in candy from Ukraine",
     "marca": "No especificada / Marca comunitaria",
@@ -474,12 +494,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Físico",
     "subtipo_peligro": "metal piece in candy from Ukraine",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.7960): metal piece in candy from Ukraine",
     "lotes_afectados": "Lote notificado en alerta europea 2026.7960",
-    "distribucion_geografica": "Unión Europea (Notificado por Estonia; Origen: Ukraine)",
+    "distribucion_geografica": "Unión Europea (Notificado por Estonia; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -503,6 +524,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8295",
     "distribucion_geografica": "Unión Europea (Notificado por Bulgaria; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -526,6 +548,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8294",
     "distribucion_geografica": "Unión Europea (Notificado por Austria; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -549,6 +572,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8292",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -572,6 +596,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8288",
     "distribucion_geografica": "Unión Europea (Notificado por Bulgaria; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -595,6 +620,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8287",
     "distribucion_geografica": "Unión Europea (Notificado por Bulgaria; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -618,6 +644,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8286",
     "distribucion_geografica": "Unión Europea (Notificado por Bulgaria; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -641,6 +668,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8283",
     "distribucion_geografica": "Unión Europea (Notificado por Croacia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -658,12 +686,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Alérgeno",
     "subtipo_peligro": "non-declared presence of milk allergen in snack from Kosovo",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8267): non-declared presence of milk allergen in snack from Kosovo",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8267",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovenia; Origen: Kosovo)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -681,12 +710,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Foreign bodies in cereal bars from the United Kingdom",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8266): Foreign bodies in cereal bars from the United Kingdom",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8266",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Dinamarca)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -710,6 +740,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8265",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Rumanía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -723,16 +754,17 @@ window.INITIAL_ALERTS_DATA = [
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Abnormal smell and taste in mineral water from Germany",
     "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Alimentos Procesados y Conservas",
+    "categoria_alimento": "Otros",
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Abnormal smell and taste in mineral water from Germany",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8262): Abnormal smell and taste in mineral water from Germany",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8262",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -750,12 +782,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Unauthorised additive titanium dioxide in the confectionary products from the UK",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8261): Unauthorised additive titanium dioxide in the confectionary products from the UK",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8261",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -779,6 +812,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8254",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Marruecos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -802,6 +836,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8252",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Brasil)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -825,6 +860,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8250",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Rumanía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -848,6 +884,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8249",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Brasil)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -861,7 +898,7 @@ window.INITIAL_ALERTS_DATA = [
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Maximum levels exceeded for ragweed (Ambrosia spp.) seeds in white millet from France",
     "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Alimentos Procesados y Conservas",
+    "categoria_alimento": "Frutos Secos y Semillas",
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Maximum levels exceeded for ragweed (Ambrosia spp.) seeds in white millet from France",
     "tipo_fraude": "No Aplica",
@@ -871,6 +908,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8238",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -888,12 +926,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Listeria in breaded haddock product",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8235): Listeria in breaded haddock product",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8235",
     "distribucion_geografica": "Unión Europea (Notificado por Suecia; Origen: Dinamarca)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -917,6 +956,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8234",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -940,6 +980,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8230",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Egipto)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -957,12 +998,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "PRZEKROCZNIE PESTYCYDÓW W TRUSKAWKACH Z EGIPTU // Pesticide levels exceeding limits in strawber...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8229): PRZEKROCZNIE PESTYCYDÓW W TRUSKAWKACH Z EGIPTU // Pesticide levels exceeding limits in strawberries from Egypt",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8229",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Egipto)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -976,16 +1018,17 @@ window.INITIAL_ALERTS_DATA = [
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Absence of documentation for food contact materials from Türkiye",
     "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Alimentos Procesados y Conservas",
+    "categoria_alimento": "Otros",
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Absence of documentation for food contact materials from Türkiye",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8227): Absence of documentation for food contact materials from Türkiye",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8227",
     "distribucion_geografica": "Unión Europea (Notificado por Grecia; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1009,6 +1052,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8226",
     "distribucion_geografica": "Unión Europea (Notificado por Noruega; Origen: Tailandia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1055,6 +1099,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8200",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Kazakhstan)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1078,6 +1123,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8197",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Bélgica)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1095,12 +1141,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Presence of Centrimonium Chloride in Tea originating from China and dispatched from UK",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8189): Presence of Centrimonium Chloride in Tea originating from China and dispatched from UK",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8189",
     "distribucion_geografica": "Unión Europea (Notificado por Malta; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1124,6 +1171,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8187",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1141,12 +1189,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Stwierdzenie niedozwolonego składnika (pankreatyny) w suplementach diety oferowanych on-line //...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8184): Stwierdzenie niedozwolonego składnika (pankreatyny) w suplementach diety oferowanych on-line // Detection of a prohibited ingredient (pancreatin) in food supplements from China offered online.",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8184",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1164,12 +1213,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Unauthorised novel food ingredient; Calcium di saccharate from India",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8182): Unauthorised novel food ingredient; Calcium di saccharate from India",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8182",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovenia; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1187,12 +1237,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Salmonella Infantis w mięsie drobiowym z Ukrainy // Salmonella Infantis in poultry meat from Uk...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8180): Salmonella Infantis w mięsie drobiowym z Ukrainy // Salmonella Infantis in poultry meat from Ukraine",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8180",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1210,12 +1261,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Salmonella spp in chilled chicken gizzards and hearts, or.RO  ///// Detectie Salmonella spp in ...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8173): Salmonella spp in chilled chicken gizzards and hearts, or.RO  ///// Detectie Salmonella spp in pipote si inimi pui, origine RO",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8173",
     "distribucion_geografica": "Unión Europea (Notificado por Rumanía; Origen: Rumanía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1239,6 +1291,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8171",
     "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1262,6 +1315,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8164",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Lituania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1279,12 +1333,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Unauthorised food additive titanium dioxide (E171) in cereal product from Poland",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8163): Unauthorised food additive titanium dioxide (E171) in cereal product from Poland",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8163",
     "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1308,6 +1363,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8223",
     "distribucion_geografica": "Unión Europea (Notificado por Rumanía; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1331,6 +1387,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8221",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1340,11 +1397,11 @@ window.INITIAL_ALERTS_DATA = [
     "mes_ano": "2026-09",
     "fuente_origen": "EU_RASFF",
     "pais_notificador": "Alemania",
-    "pais_origen": "Czechia",
+    "pais_origen": "República Checa",
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Suspected spoilage of organic tempeh from the Czech Republic",
     "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Alimentos Procesados y Conservas",
+    "categoria_alimento": "Aceites y Grasas",
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Suspected spoilage of organic tempeh from the Czech Republic",
     "tipo_fraude": "No Aplica",
@@ -1352,8 +1409,9 @@ window.INITIAL_ALERTS_DATA = [
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8219): Suspected spoilage of organic tempeh from the Czech Republic",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8219",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Czechia)",
+    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: República Checa)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1377,6 +1435,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8218",
     "distribucion_geografica": "Unión Europea (Notificado por Austria; Origen: Estados Unidos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1394,12 +1453,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Benzo(a)pyrene, polycyclic aromatic hydrocarbons (PAHs) in organic ribwort plantain from Poland...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8216): Benzo(a)pyrene, polycyclic aromatic hydrocarbons (PAHs) in organic ribwort plantain from Poland, processed in Germany",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8216",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1423,6 +1483,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8214",
     "distribucion_geografica": "Unión Europea (Notificado por Bulgaria; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1436,16 +1497,17 @@ window.INITIAL_ALERTS_DATA = [
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Composite Product ( Spicy plickled fish skin) from China- Health guarantee not filled out correctly",
     "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Alimentos Procesados y Conservas",
+    "categoria_alimento": "Pescados y Mariscos",
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Composite Product ( Spicy plickled fish skin) from China- Health guarantee not filled out corre...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8212): Composite Product ( Spicy plickled fish skin) from China- Health guarantee not filled out correctly",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8212",
     "distribucion_geografica": "Unión Europea (Notificado por Portugal; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1469,6 +1531,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8211",
     "distribucion_geografica": "Unión Europea (Notificado por Croacia; Origen: Croacia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1492,6 +1555,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8210",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1509,12 +1573,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "The goods present organoleptically altered lesions-swollen pouch (bombage)",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8209): The goods present organoleptically altered lesions-swollen pouch (bombage)",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8209",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Ecuador)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1524,7 +1589,7 @@ window.INITIAL_ALERTS_DATA = [
     "mes_ano": "2026-09",
     "fuente_origen": "EU_RASFF",
     "pais_notificador": "Hungría",
-    "pais_origen": "Ukraine",
+    "pais_origen": "Ucrania",
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Salmonella Infantis in chilled chicken breast from Ukraine",
     "marca": "No especificada / Marca comunitaria",
@@ -1536,8 +1601,9 @@ window.INITIAL_ALERTS_DATA = [
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8208): Salmonella Infantis in chilled chicken breast from Ukraine",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8208",
-    "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ukraine)",
+    "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1547,7 +1613,7 @@ window.INITIAL_ALERTS_DATA = [
     "mes_ano": "2026-09",
     "fuente_origen": "EU_RASFF",
     "pais_notificador": "Hungría",
-    "pais_origen": "Ukraine",
+    "pais_origen": "Ucrania",
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Salmonella Infantis in chilled chicken breast fillet from Ukraine",
     "marca": "No especificada / Marca comunitaria",
@@ -1559,8 +1625,9 @@ window.INITIAL_ALERTS_DATA = [
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8207): Salmonella Infantis in chilled chicken breast fillet from Ukraine",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8207",
-    "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ukraine)",
+    "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1569,7 +1636,7 @@ window.INITIAL_ALERTS_DATA = [
     "fecha_notificacion": "2026-09-16",
     "mes_ano": "2026-09",
     "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Czechia",
+    "pais_notificador": "República Checa",
     "pais_origen": "Polonia",
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Salmonella Infantis in chilled chicken breast steak",
@@ -1578,12 +1645,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Salmonella Infantis in chilled chicken breast steak",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8206): Salmonella Infantis in chilled chicken breast steak",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8206",
-    "distribucion_geografica": "Unión Europea (Notificado por Czechia; Origen: Polonia)",
+    "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1607,6 +1675,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8205",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1620,7 +1689,7 @@ window.INITIAL_ALERTS_DATA = [
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Salmonella spp. and enterobacteriaceae in pet food",
     "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Alimentos Procesados y Conservas",
+    "categoria_alimento": "Pescados y Mariscos",
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Salmonella spp. and enterobacteriaceae in pet food",
     "tipo_fraude": "No Aplica",
@@ -1630,6 +1699,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8204",
     "distribucion_geografica": "Unión Europea (Notificado por Croacia; Origen: Croacia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1653,6 +1723,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8201",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Brasil)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1661,21 +1732,22 @@ window.INITIAL_ALERTS_DATA = [
     "fecha_notificacion": "2026-09-16",
     "mes_ano": "2026-09",
     "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Polonia",
-    "pais_origen": "Polonia",
-    "empresa_responsable": "MeatPol Sp. z o.o.",
-    "producto": "Carne picada de cerdo refrigerada 500g",
-    "marca": "Polskie Mięso",
+    "pais_notificador": "Letonia",
+    "pais_origen": "Lituania",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Salmonella Infantis (detected in 1 out of 5 samples) of chilled minced pork",
+    "marca": "No especificada / Marca comunitaria",
     "categoria_alimento": "Carnes y Derivados",
     "tipo_alerta": "Microbiológico",
-    "subtipo_peligro": "Salmonella Infantis",
+    "subtipo_peligro": "Salmonella Infantis (detected in 1 out of 5 samples) of chilled minced pork",
     "tipo_fraude": "No Aplica",
     "gravedad": "Crítica / Alta",
     "estado_accion": "Activa / En curso",
-    "descripcion": "Detección de Salmonella Infantis en control oficial de carne de cerdo envasada lista para su distribución comercial.",
-    "lotes_afectados": "Lote PL-MP-2609; Caducidad 24/09/2026",
-    "distribucion_geografica": "Polonia, Eslovaquia, República Checa",
-    "cantidad_afectada": "14.200 kg",
+    "descripcion": "Notificación oficial RASFF (2026.8166): Salmonella Infantis (detected in 1 out of 5 samples) of chilled minced pork",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.8166",
+    "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Lituania)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1699,6 +1771,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8157",
     "distribucion_geografica": "Unión Europea (Notificado por Estonia; Origen: Ecuador)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1716,12 +1789,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Depasire LMA cadmiu in ficat de cal origine Romania///Exceeding the Cadmium MRL in horse liver ...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8155): Depasire LMA cadmiu in ficat de cal origine Romania///Exceeding the Cadmium MRL in horse liver origin Romanian",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8155",
     "distribucion_geografica": "Unión Europea (Notificado por Rumanía; Origen: Rumanía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1739,12 +1813,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Fraude / EMA",
     "subtipo_peligro": "Border Rejection due to Formaldehyde Migration from Royal Worcester Little Wren mug",
     "tipo_fraude": "Falso Etiquetado / Origen",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8152): Border Rejection due to Formaldehyde Migration from Royal Worcester Little Wren mug",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8152",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1768,6 +1843,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8151",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1791,6 +1867,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8150",
     "distribucion_geografica": "Unión Europea (Notificado por Malta; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1814,6 +1891,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8149",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1831,12 +1909,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Salmonella spp. in rapeseed extraction meal from the Czech Republic",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8148): Salmonella spp. in rapeseed extraction meal from the Czech Republic",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8148",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: República Checa)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1860,6 +1939,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8146",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovaquia; Origen: República Checa)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1877,12 +1957,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Incomplite documentation for rice consgnment fro China",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8145): Incomplite documentation for rice consgnment fro China",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8145",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovenia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1900,12 +1981,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Produkt prawdopodobnie zawierający w składzie ibutamoren, sprzedawany przez Internet, pochodząc...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8138): Produkt prawdopodobnie zawierający w składzie ibutamoren, sprzedawany przez Internet, pochodzący z Chin // A product likely containing ibutamoren, sold online and originating from China.",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8138",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1929,6 +2011,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8135",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1952,6 +2035,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8125",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Nicaragua)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1975,6 +2059,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8124",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -1998,6 +2083,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8123",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Dinamarca)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2015,12 +2101,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Elevado contenido de ácido gamma-aminobutírico (1000mg) en complemento alimenticio procedente d...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8121): Elevado contenido de ácido gamma-aminobutírico (1000mg) en complemento alimenticio procedente de España // High gamma-aminobutyric acid (GABA) content (1000mg) in a food supplement from Spain",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8121",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2044,6 +2131,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8120",
     "distribucion_geografica": "Unión Europea (Notificado por Suecia; Origen: Malaysia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2067,6 +2155,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8118",
     "distribucion_geografica": "Unión Europea (Notificado por Finlandia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2090,6 +2179,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8117",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2113,6 +2203,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8116",
     "distribucion_geografica": "Unión Europea (Notificado por Finlandia; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2130,12 +2221,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "The tuna in a sun-dried tomato dressing present organoleptically altered lesions- swollen cans ...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8103): The tuna in a sun-dried tomato dressing present organoleptically altered lesions- swollen cans (bombage)",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8103",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Ecuador)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2159,6 +2251,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8102",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Peru)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2176,12 +2269,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Poor temperature control in frozen hash browns from the United Kingdom // Ruptura de la cadena ...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8101): Poor temperature control in frozen hash browns from the United Kingdom // Ruptura de la cadena de frío en croquetas de patatas congeladas del Reino Unido",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8101",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Reino Unido)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2199,12 +2293,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Produkt zawierający w składzie składnik zakazany - pankreatynę, sprzedawany przez Internet // P...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8100): Produkt zawierający w składzie składnik zakazany - pankreatynę, sprzedawany przez Internet // Product containing pancreatin - sold online",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8100",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Estados Unidos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2228,6 +2323,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8097",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Bulgaria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2245,12 +2341,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "bombage in canned fish from Ecuador",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8096): bombage in canned fish from Ecuador",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8096",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Ecuador)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2274,6 +2371,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8094",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovenia; Origen: Bosnia and Herzegovina)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2291,12 +2389,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Fraude / EMA",
     "subtipo_peligro": "Too high content of zinc and unauthorized claims for food supplements from United Kingdom",
     "tipo_fraude": "Falso Etiquetado / Origen",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8091): Too high content of zinc and unauthorized claims for food supplements from United Kingdom",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8091",
     "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Reino Unido)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2314,12 +2413,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "The goods present organoleptically altered lesions-swollen pouch (bombage)",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8089): The goods present organoleptically altered lesions-swollen pouch (bombage)",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8089",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Ecuador)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2366,6 +2466,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8049",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Pakistan)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2389,6 +2490,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8065",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2412,6 +2514,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.8018",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2504,6 +2607,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.7923",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2550,6 +2654,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.7888",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2573,6 +2678,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.7859",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2597,6 +2703,30 @@ window.INITIAL_ALERTS_DATA = [
     "distribucion_geografica": "Estados Unidos (California, Texas, Florida, Arizona)",
     "cantidad_afectada": "24.000 kg",
     "fuente_url": "https://api.fda.gov/food/enforcement.json"
+  },
+  {
+    "id": "EU-RASFF-2026-7833",
+    "id_original": "2026.7833",
+    "fecha_notificacion": "2026-09-04",
+    "mes_ano": "2026-09",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Portugal",
+    "pais_origen": "South Korea",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Unauthorized use of E338 and E516 in Beer",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Fraude / EMA",
+    "subtipo_peligro": "Unauthorized use of E338 and E516 in Beer",
+    "tipo_fraude": "Falso Etiquetado / Origen",
+    "gravedad": "Riesgo Potencial / Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.7833): Unauthorized use of E338 and E516 in Beer",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.7833",
+    "distribucion_geografica": "Unión Europea (Notificado por Portugal; Origen: South Korea)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
     "id": "UK-FSA-FSA-PRIN-43-2026",
@@ -2734,6 +2864,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.7708",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Irlanda)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2757,6 +2888,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.7680",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2826,6 +2958,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.7596",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Philippines)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2872,6 +3005,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.7586",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2964,6 +3098,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.7328",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -2981,12 +3116,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Organoleptic alteration of onion cream flavoured snacks due to possible oxidation of frying oil...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.7255): Organoleptic alteration of onion cream flavoured snacks due to possible oxidation of frying oil from France",
     "lotes_afectados": "Lote notificado en alerta europea 2026.7255",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3079,6 +3215,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.7199",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3096,12 +3233,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Unauthorised novel food ingredient cannabidiol (CBD) in CBD oil from France, via the Czech Repu...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.7198): Unauthorised novel food ingredient cannabidiol (CBD) in CBD oil from France, via the Czech Republic",
     "lotes_afectados": "Lote notificado en alerta europea 2026.7198",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3119,12 +3257,37 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Físico",
     "subtipo_peligro": "Metal particles in ICA Cheddar-flavored hamburger cheese, 200g",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.7196): Metal particles in ICA Cheddar-flavored hamburger cheese, 200g",
     "lotes_afectados": "Lote notificado en alerta europea 2026.7196",
     "distribucion_geografica": "Unión Europea (Notificado por Suecia; Origen: Dinamarca)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2026-7141",
+    "id_original": "2026.7141",
+    "fecha_notificacion": "2026-08-12",
+    "mes_ano": "2026-08",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Países Bajos",
+    "pais_origen": "Países Bajos",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Glass fragments in canned beer from the Netherlands",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Físico",
+    "subtipo_peligro": "Glass fragments in canned beer from the Netherlands",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.7141): Glass fragments in canned beer from the Netherlands",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.7141",
+    "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3142,12 +3305,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "MOAH in pomace olive oil from Italy",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.7074): MOAH in pomace olive oil from Italy",
     "lotes_afectados": "Lote notificado en alerta europea 2026.7074",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3211,12 +3375,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Calcium lignosulfonate in immediate previous cargo tank - fish oil rejected",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.7033): Calcium lignosulfonate in immediate previous cargo tank - fish oil rejected",
     "lotes_afectados": "Lote notificado en alerta europea 2026.7033",
     "distribucion_geografica": "Unión Europea (Notificado por Noruega; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3280,12 +3445,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Calcium lignosulfonate in immediate previous cargo tank - fish oil rejected",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.6930): Calcium lignosulfonate in immediate previous cargo tank - fish oil rejected",
     "lotes_afectados": "Lote notificado en alerta europea 2026.6930",
     "distribucion_geografica": "Unión Europea (Notificado por Noruega; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3349,12 +3515,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Sensory deviation in black sesame oil from China, via the Netherlands",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.6893): Sensory deviation in black sesame oil from China, via the Netherlands",
     "lotes_afectados": "Lote notificado en alerta europea 2026.6893",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3378,6 +3545,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6868",
     "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: Pakistan)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3401,6 +3569,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6824",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Eslovenia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3470,6 +3639,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6805",
     "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Lituania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3493,6 +3663,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6799",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Grecia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3516,6 +3687,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6742",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3562,6 +3734,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6721",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3631,6 +3804,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6570",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Suiza)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2026-6499",
+    "id_original": "2026.6499",
+    "fecha_notificacion": "2026-07-22",
+    "mes_ano": "2026-07",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Países Bajos",
+    "pais_origen": "Países Bajos",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Potential breakage of packaging",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Potential breakage of packaging",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.6499): Potential breakage of packaging",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.6499",
+    "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3654,6 +3852,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6506",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Malaysia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3769,6 +3968,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6405",
     "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3809,12 +4009,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Epoxidised soy bean oil (ESBO) in excess of the maximum specific migration level permitted in s...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.6313): Epoxidised soy bean oil (ESBO) in excess of the maximum specific migration level permitted in sundried tomatoes in oil",
     "lotes_afectados": "Lote notificado en alerta europea 2026.6313",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3855,12 +4056,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Fraude / EMA",
     "subtipo_peligro": "Border Rejection of Cooking Wine from China due to Unsatisfactory Health Certificate",
     "tipo_fraude": "Falso Etiquetado / Origen",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.6278): Border Rejection of Cooking Wine from China due to Unsatisfactory Health Certificate",
     "lotes_afectados": "Lote notificado en alerta europea 2026.6278",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3884,6 +4086,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6279",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3907,6 +4110,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6253",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3930,6 +4134,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6199",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3976,6 +4181,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6103",
     "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Lituania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -3999,6 +4205,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6143",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Iran)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4022,6 +4229,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6134",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovaquia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4045,6 +4253,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6132",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4068,6 +4277,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6081",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Grecia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4091,6 +4301,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.6082",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4108,12 +4319,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Potential spoilage in cake from South Korea",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.5983): Potential spoilage in cake from South Korea",
     "lotes_afectados": "Lote notificado en alerta europea 2026.5983",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: South Korea)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4137,6 +4349,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5974",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4206,6 +4419,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5899",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4252,6 +4466,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5841",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Côte d'Ivoire)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2026-5684",
+    "id_original": "2026.5684",
+    "fecha_notificacion": "2026-06-26",
+    "mes_ano": "2026-06",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Bélgica",
+    "pais_origen": "Francia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "ethyl carbamate in eau de vie from France",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "ethyl carbamate in eau de vie from France",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.5684): ethyl carbamate in eau de vie from France",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.5684",
+    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4269,12 +4508,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Edible skins of swine shipment from the United Kingdom not submitted to inspection at the borde...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.5697): Edible skins of swine shipment from the United Kingdom not submitted to inspection at the border",
     "lotes_afectados": "Lote notificado en alerta europea 2026.5697",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Reino Unido)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4298,6 +4538,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5710",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Reino Unido)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4344,6 +4585,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5552",
     "distribucion_geografica": "Unión Europea (Notificado por Estonia; Origen: Estonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4436,6 +4678,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5438",
     "distribucion_geografica": "Unión Europea (Notificado por Grecia; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4459,6 +4702,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5432",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4482,6 +4726,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5468",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4551,6 +4796,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5391",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4574,6 +4820,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5390",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4620,6 +4867,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5316",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Hungría)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4643,6 +4891,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5261",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4666,6 +4915,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5280",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Estados Unidos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4735,6 +4985,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5185",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Ghana)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4781,6 +5032,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5147",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4804,6 +5056,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5136",
     "distribucion_geografica": "Unión Europea (Notificado por Croacia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4827,6 +5080,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5091",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Côte d'Ivoire)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4850,6 +5104,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5084",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Lituania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4873,6 +5128,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5064",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4896,6 +5152,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.5029",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4919,6 +5176,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4975",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovenia; Origen: Eslovenia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -4988,6 +5246,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4893",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Syria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5011,6 +5270,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4896",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Irlanda)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5034,6 +5294,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4847",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5103,6 +5364,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4818",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5149,6 +5411,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4774",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5218,6 +5481,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4719",
     "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5241,6 +5505,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4665",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5264,6 +5529,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4621",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5287,6 +5553,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4542",
     "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: Portugal)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5310,6 +5577,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4560",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5333,6 +5601,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4559",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5373,12 +5642,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Recall of various Baby Organic Fromage Frais products due to possible mould growth and spoilage",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.4477): Recall of various Baby Organic Fromage Frais products due to possible mould growth and spoilage",
     "lotes_afectados": "Lote notificado en alerta europea 2026.4477",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Irlanda)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5402,6 +5672,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4463",
     "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5425,6 +5696,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4480",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5448,6 +5720,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4332",
     "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5471,6 +5744,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4318",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5497,29 +5771,6 @@ window.INITIAL_ALERTS_DATA = [
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
-    "id": "EU-RASFF-2026-2915",
-    "id_original": "2026.2915",
-    "fecha_notificacion": "2026-05-18",
-    "mes_ano": "2026-05",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Francia",
-    "pais_origen": "Brasil",
-    "empresa_responsable": "Carnes do Sul Exportadora S.A.",
-    "producto": "Pechugas de pollo congeladas bloque 2kg",
-    "marca": "SulFrigo",
-    "categoria_alimento": "Carnes y Derivados",
-    "tipo_alerta": "Microbiológico",
-    "subtipo_peligro": "Salmonella enterica serotipo Infantis multirresistente",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Finalizada / Resuelta",
-    "descripcion": "Presencia de Salmonella ser. Infantis resistente a ciprofloxacino y cefotaxima en control veterinario fronterizo en el puerto de Le Havre. Rechazo y reexpedición obligatoria.",
-    "lotes_afectados": "Lote BR-FRIGO-26-051; Consumo 04/2027",
-    "distribucion_geografica": "Francia, Bélgica",
-    "cantidad_afectada": "26.000 kg",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/portal/"
-  },
-  {
     "id": "EU-RASFF-2026-4298",
     "id_original": "2026.4298",
     "fecha_notificacion": "2026-05-15",
@@ -5540,6 +5791,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4298",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Grecia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5563,6 +5815,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4228",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5580,12 +5833,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "presence of foreign bodies (pieces of foil) in cherry jam from Poland // wykryto obecność zanie...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.4147): presence of foreign bodies (pieces of foil) in cherry jam from Poland // wykryto obecność zanieczyszczeń fizycznych w wiśniach z amaretto",
     "lotes_afectados": "Lote notificado en alerta europea 2026.4147",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5609,6 +5863,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4170",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5632,6 +5887,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4108",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Nigeria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5678,6 +5934,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4066",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5701,6 +5958,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.4058",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5724,6 +5982,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3977",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5747,6 +6006,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3984",
     "distribucion_geografica": "Unión Europea (Notificado por European Commission; Origen: Moldova)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5770,6 +6030,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3960",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5793,6 +6054,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3902",
     "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5816,6 +6078,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3890",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5839,6 +6102,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3837",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5862,6 +6126,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3830",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5879,12 +6144,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Alérgeno",
     "subtipo_peligro": "Elevados niveles de ácido erúcico en aceite de mostaza y presentación engañosa como alimento pr...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.3781): Elevados niveles de ácido erúcico en aceite de mostaza y presentación engañosa como alimento procedente de Bangladesh vía Francia  ////  High levels of erucic acid in mustard oil and misleading presentation as a food product from Bangladesh via France",
     "lotes_afectados": "Lote notificado en alerta europea 2026.3781",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Bangladesh)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5902,12 +6168,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Alérgeno",
     "subtipo_peligro": "Elevados niveles de ácido erúcico en aceite de mostaza y presentación engañosa como alimento pr...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.3778): Elevados niveles de ácido erúcico en aceite de mostaza y presentación engañosa como alimento procedente de Bangladesh vía Irlanda // High levels of erucic acid in mustard oil and misleading labeling as a food product originating from Bangladesh via Ireland.",
     "lotes_afectados": "Lote notificado en alerta europea 2026.3778",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Bangladesh)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5925,12 +6192,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Alérgeno",
     "subtipo_peligro": "Elevados niveles de ácido erúcico en aceite de mostaza y presentación engañosa como alimento pr...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.3771): Elevados niveles de ácido erúcico en aceite de mostaza y presentación engañosa como alimento procedente de la India vía Irlanda//High levels of erucic acid in mustard oil and misleading presentation as food from India via Ireland",
     "lotes_afectados": "Lote notificado en alerta europea 2026.3771",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5954,6 +6222,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3752",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -5977,6 +6246,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3706",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6023,6 +6293,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3434",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Bulgaria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6046,6 +6317,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3374",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: República Checa)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6063,12 +6335,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Indications of spoilage (sensory deviations) of rice from India",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.3282): Indications of spoilage (sensory deviations) of rice from India",
     "lotes_afectados": "Lote notificado en alerta europea 2026.3282",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6092,6 +6365,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3190",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6161,6 +6435,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3111",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6184,6 +6459,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3101",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6207,6 +6483,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.3020",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Reino Unido)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6230,6 +6507,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2987",
     "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6253,6 +6531,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2975",
     "distribucion_geografica": "Unión Europea (Notificado por Luxemburgo; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6276,6 +6555,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2973",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2026-2915",
+    "id_original": "2026.2915",
+    "fecha_notificacion": "2026-04-07",
+    "mes_ano": "2026-04",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Países Bajos",
+    "pais_origen": "Francia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "sensory abnormalities in cottage cheese from The Netherlands",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Lácteos y Derivados",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "sensory abnormalities in cottage cheese from The Netherlands",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.2915): sensory abnormalities in cottage cheese from The Netherlands",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.2915",
+    "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Francia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6299,6 +6603,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2934",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Côte d'Ivoire)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6322,6 +6627,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2847",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6345,6 +6651,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2838",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6368,6 +6675,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2856",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6391,6 +6699,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2810",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6437,6 +6746,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2692",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6460,6 +6770,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2680",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6483,6 +6794,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2585",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6506,6 +6818,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2635",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Lituania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6523,12 +6836,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Mineral oil components in olive pomace oil from Italy",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.2475): Mineral oil components in olive pomace oil from Italy",
     "lotes_afectados": "Lote notificado en alerta europea 2026.2475",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6575,6 +6889,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2122",
     "distribucion_geografica": "Unión Europea (Notificado por Noruega; Origen: Suecia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6598,6 +6913,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2115",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6644,6 +6960,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2052",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Grecia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6667,6 +6984,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2039",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Portugal)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6684,12 +7002,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Fraude / EMA",
     "subtipo_peligro": "Border rejection of consignment of palm oil from Ghana due to unsatisfactory submission of the ...",
     "tipo_fraude": "Falso Etiquetado / Origen",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.2025): Border rejection of consignment of palm oil from Ghana due to unsatisfactory submission of the official certificate",
     "lotes_afectados": "Lote notificado en alerta europea 2026.2025",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Ghana)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6713,6 +7032,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2053",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Bélgica)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6736,6 +7056,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.2032",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Dinamarca)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6759,6 +7080,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1960",
     "distribucion_geografica": "Unión Europea (Notificado por Austria; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6782,6 +7104,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1927",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6805,6 +7128,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1886",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6828,6 +7152,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1817",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6851,6 +7176,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1806",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Estados Unidos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6874,6 +7200,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1800",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6897,6 +7224,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1752",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Peru)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6914,12 +7242,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Sensory deviation in Olive oil from Lebanon",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.1698): Sensory deviation in Olive oil from Lebanon",
     "lotes_afectados": "Lote notificado en alerta europea 2026.1698",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Lebanon)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6943,6 +7272,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1657",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -6989,6 +7319,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1603",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7012,6 +7343,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1573",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7029,12 +7361,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Non dioxin-like PCBs in Palm Acid Oil",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.1518): Non dioxin-like PCBs in Palm Acid Oil",
     "lotes_afectados": "Lote notificado en alerta europea 2026.1518",
     "distribucion_geografica": "Unión Europea (Notificado por Suecia; Origen: Singapore)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7058,6 +7391,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1494",
     "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7081,6 +7415,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1477",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7104,6 +7439,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1435",
     "distribucion_geografica": "Unión Europea (Notificado por Dinamarca; Origen: Malaysia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2026-1350",
+    "id_original": "2026.1350",
+    "fecha_notificacion": "2026-02-18",
+    "mes_ano": "2026-02",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Francia",
+    "pais_origen": "Francia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "risk of bottle explosion following refermentation",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "risk of bottle explosion following refermentation",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.1350): risk of bottle explosion following refermentation",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.1350",
+    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7121,12 +7481,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Anisakis simplex in anchovy fillets in sunflower seed oil with extra virgin olive oil",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.1370): Anisakis simplex in anchovy fillets in sunflower seed oil with extra virgin olive oil",
     "lotes_afectados": "Lote notificado en alerta europea 2026.1370",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Albania, España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7150,6 +7511,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1365",
     "distribucion_geografica": "Unión Europea (Notificado por Croacia; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7173,6 +7535,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1300",
     "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: Suiza)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7196,6 +7559,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1209",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7219,6 +7583,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.1194",
     "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7268,6 +7633,30 @@ window.INITIAL_ALERTS_DATA = [
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
+    "id": "EU-RASFF-2026-1003",
+    "id_original": "2026.1003",
+    "fecha_notificacion": "2026-02-06",
+    "mes_ano": "2026-02",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Chipre",
+    "pais_origen": "South Africa",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Unauthorized additives natamycin (E235) on the list of ingredients in spirits from South Africa",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Fraude / EMA",
+    "subtipo_peligro": "Unauthorized additives natamycin (E235) on the list of ingredients in spirits from South Africa",
+    "tipo_fraude": "Falso Etiquetado / Origen",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.1003): Unauthorized additives natamycin (E235) on the list of ingredients in spirits from South Africa",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.1003",
+    "distribucion_geografica": "Unión Europea (Notificado por Chipre; Origen: South Africa)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
     "id": "EU-RASFF-2026-0933",
     "id_original": "2026.0933",
     "fecha_notificacion": "2026-02-04",
@@ -7282,12 +7671,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Non-food oil in chocolate chips from Belgium",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.0933): Non-food oil in chocolate chips from Belgium",
     "lotes_afectados": "Lote notificado en alerta europea 2026.0933",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Bélgica)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7311,6 +7701,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0911",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7334,6 +7725,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0896",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Lituania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7351,12 +7743,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "High amount of residual oxygen in grated cheese from Italy, via Germany",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.0910): High amount of residual oxygen in grated cheese from Italy, via Germany",
     "lotes_afectados": "Lote notificado en alerta europea 2026.0910",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7380,6 +7773,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0877",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7403,6 +7797,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0779",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7426,6 +7821,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0766",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7443,12 +7839,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Físico",
     "subtipo_peligro": "small metalpieces in cheese rolls",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.0765): small metalpieces in cheese rolls",
     "lotes_afectados": "Lote notificado en alerta europea 2026.0765",
     "distribucion_geografica": "Unión Europea (Notificado por Dinamarca; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7472,6 +7869,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0688",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Austria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7495,6 +7893,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0678",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Malaysia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7518,6 +7917,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0228",
     "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Letonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7541,6 +7941,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0664",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Austria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7564,6 +7965,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0672",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7587,6 +7989,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0624",
     "distribucion_geografica": "Unión Europea (Notificado por European Commission; Origen: Estados Unidos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7604,12 +8007,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Unapproved novel food ingredient cannabidiol (CBD) in hemp oil from the Netherlands",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.0604): Unapproved novel food ingredient cannabidiol (CBD) in hemp oil from the Netherlands",
     "lotes_afectados": "Lote notificado en alerta europea 2026.0604",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7633,6 +8037,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0543",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Austria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7656,6 +8061,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0535",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7679,6 +8085,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0536",
     "distribucion_geografica": "Unión Europea (Notificado por Austria; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7702,6 +8109,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0504",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Tunisia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7719,12 +8127,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Riscontro di Escherichia Coli in formaggio a latte pastorizzato origine Francia///Escherichia c...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.0467): Riscontro di Escherichia Coli in formaggio a latte pastorizzato origine Francia///Escherichia coli found in pasteurized milk cheese from France",
     "lotes_afectados": "Lote notificado en alerta europea 2026.0467",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7748,6 +8157,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0444",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Grecia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7788,12 +8198,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Aceites de plantas medicianales desconocidas en complemento alimenticio de China/ Oils from unk...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.0368): Aceites de plantas medicianales desconocidas en complemento alimenticio de China/ Oils from unknown medicinal plants in food supplements from China/",
     "lotes_afectados": "Lote notificado en alerta europea 2026.0368",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Desconocido / Múltiples)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7817,6 +8228,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0331",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Nigeria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7863,6 +8275,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0193",
     "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7886,6 +8299,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0177",
     "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: China, Suiza)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7909,6 +8323,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2026.0033",
     "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7926,12 +8341,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Presence of CBD 30% in oil",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.10497): Presence of CBD 30% in oil",
     "lotes_afectados": "Lote notificado en alerta europea 2025.10497",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7955,6 +8371,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.10449",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovaquia; Origen: Eslovaquia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7972,12 +8389,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Early spoilage of potato gratin from the Netherlands",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.10405): Early spoilage of potato gratin from the Netherlands",
     "lotes_afectados": "Lote notificado en alerta europea 2025.10405",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -7995,12 +8413,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Unapproved novel food additive cannabidiol (CBD) in CBD oil from the Netherlands",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.10386): Unapproved novel food additive cannabidiol (CBD) in CBD oil from the Netherlands",
     "lotes_afectados": "Lote notificado en alerta europea 2025.10386",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8024,6 +8443,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.10382",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8047,6 +8467,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.10388",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-10319",
+    "id_original": "2025.10319",
+    "fecha_notificacion": "2025-12-22",
+    "mes_ano": "2025-12",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Países Bajos",
+    "pais_origen": "Rumanía",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "High pressure beer cans",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "High pressure beer cans",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.10319): High pressure beer cans",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.10319",
+    "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Rumanía)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8070,6 +8515,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.10318",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovenia; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8087,12 +8533,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "perfluoroalkyl substances (PFAS) above legal limits in meat of swine from Hungary",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.10254): perfluoroalkyl substances (PFAS) above legal limits in meat of swine from Hungary",
     "lotes_afectados": "Lote notificado en alerta europea 2025.10254",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Croacia, Hungría)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8110,12 +8557,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Campylobacter spp. in fresh chicken broiler breast fillet from Poland",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.10284): Campylobacter spp. in fresh chicken broiler breast fillet from Poland",
     "lotes_afectados": "Lote notificado en alerta europea 2025.10284",
     "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8133,12 +8581,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Aceite de oliva elaborado en establecimiento no registrado procedente de España // Olive oil pr...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.10281): Aceite de oliva elaborado en establecimiento no registrado procedente de España // Olive oil produced in an unregistered establishment from Spain",
     "lotes_afectados": "Lote notificado en alerta europea 2025.10281",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8162,6 +8611,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.10158",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8179,12 +8629,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Poor temperature control and rupture of the cold chain of frozen glazed cheese from Ukraine",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.10066): Poor temperature control and rupture of the cold chain of frozen glazed cheese from Ukraine",
     "lotes_afectados": "Lote notificado en alerta europea 2025.10066",
     "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8208,6 +8659,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.10005",
     "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-9885",
+    "id_original": "2025.9885",
+    "fecha_notificacion": "2025-12-10",
+    "mes_ano": "2025-12",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Italia",
+    "pais_origen": "Italia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "possible presence of micro glass fragments in  bottles from Italy/ possibile presenza di micro frammenti vetrosi in bott",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Físico",
+    "subtipo_peligro": "possible presence of micro glass fragments in  bottles from Italy/ possibile presenza di micro ...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.9885): possible presence of micro glass fragments in  bottles from Italy/ possibile presenza di micro frammenti vetrosi in bottiglia",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.9885",
+    "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8231,6 +8707,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.9758",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8248,12 +8725,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Microbiológico",
     "subtipo_peligro": "Presencia de E. coli en queso camembert congelado procedente de Francia// Presence of E. coli i...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.9708): Presencia de E. coli en queso camembert congelado procedente de Francia// Presence of E. coli in frozen camembert cheese from France",
     "lotes_afectados": "Lote notificado en alerta europea 2025.9708",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8277,6 +8755,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.9494",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8300,6 +8779,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.9325",
     "distribucion_geografica": "Unión Europea (Notificado por Noruega; Origen: Moldova)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8323,6 +8803,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.9347",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8346,6 +8827,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.9309",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Reino Unido)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8369,6 +8851,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.9284",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "no risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8392,6 +8875,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.9176",
     "distribucion_geografica": "Unión Europea (Notificado por Eslovaquia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "no risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8415,6 +8899,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8946",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: India)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8438,6 +8923,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8954",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8461,6 +8947,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8951",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-8793",
+    "id_original": "2025.8793",
+    "fecha_notificacion": "2025-11-11",
+    "mes_ano": "2025-11",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Luxemburgo",
+    "pais_origen": "República Checa",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "mead with hemp extract",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "mead with hemp extract",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Riesgo Potencial / Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.8793): mead with hemp extract",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.8793",
+    "distribucion_geografica": "Unión Europea (Notificado por Luxemburgo; Origen: República Checa)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8484,6 +8995,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8820",
     "distribucion_geografica": "Unión Europea (Notificado por Austria; Origen: Bulgaria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8507,6 +9019,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8765",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8530,6 +9043,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8713",
     "distribucion_geografica": "Unión Europea (Notificado por Dinamarca; Origen: Dinamarca)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-8646",
+    "id_original": "2025.8646",
+    "fecha_notificacion": "2025-11-06",
+    "mes_ano": "2025-11",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Dinamarca",
+    "pais_origen": "Bélgica",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Mislabeling due to missing alcohol percentage on label of beer from Belgien",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Mislabeling due to missing alcohol percentage on label of beer from Belgien",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.8646): Mislabeling due to missing alcohol percentage on label of beer from Belgien",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.8646",
+    "distribucion_geografica": "Unión Europea (Notificado por Dinamarca; Origen: Bélgica)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8553,6 +9091,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8650",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Países Bajos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-8597",
+    "id_original": "2025.8597",
+    "fecha_notificacion": "2025-11-05",
+    "mes_ano": "2025-11",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Lituania",
+    "pais_origen": "Kazakhstan",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Unauthorized young Siberian red deer antler tincture in vodka from Kazakhstan",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Fraude / EMA",
+    "subtipo_peligro": "Unauthorized young Siberian red deer antler tincture in vodka from Kazakhstan",
+    "tipo_fraude": "Falso Etiquetado / Origen",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.8597): Unauthorized young Siberian red deer antler tincture in vodka from Kazakhstan",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.8597",
+    "distribucion_geografica": "Unión Europea (Notificado por Lituania; Origen: Kazakhstan)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8576,6 +9139,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8478",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8599,6 +9163,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8406",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-8246",
+    "id_original": "2025.8246",
+    "fecha_notificacion": "2025-10-24",
+    "mes_ano": "2025-10",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Bélgica",
+    "pais_origen": "Francia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Ethylcarbamate in beverage from France",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Ethylcarbamate in beverage from France",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.8246): Ethylcarbamate in beverage from France",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.8246",
+    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8622,6 +9211,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8251",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Moldova)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8645,6 +9235,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8199",
     "distribucion_geografica": "Unión Europea (Notificado por Dinamarca; Origen: Irlanda)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8668,6 +9259,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8100",
     "distribucion_geografica": "Unión Europea (Notificado por Rumanía; Origen: Rumanía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8691,6 +9283,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8111",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia, Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8714,6 +9307,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8026",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8737,6 +9331,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.8019",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8760,6 +9355,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.7911",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Alemania, Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8783,6 +9379,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.7868",
     "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8800,12 +9397,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "migration of primary aromatic amines from cheese fondue forks from China",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.7764): migration of primary aromatic amines from cheese fondue forks from China",
     "lotes_afectados": "Lote notificado en alerta europea 2025.7764",
     "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8823,12 +9421,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Poor temperature control and rupture of the cold chain of frozen cottage cheese from Ukraine",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.7640): Poor temperature control and rupture of the cold chain of frozen cottage cheese from Ukraine",
     "lotes_afectados": "Lote notificado en alerta europea 2025.7640",
     "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8852,6 +9451,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.7598",
     "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: Eslovaquia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8875,6 +9475,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.7511",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Irlanda)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8892,12 +9493,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Azoxystrobin in wine leaves from Egypt",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.7467): Azoxystrobin in wine leaves from Egypt",
     "lotes_afectados": "Lote notificado en alerta europea 2025.7467",
     "distribucion_geografica": "Unión Europea (Notificado por Noruega; Origen: Egipto)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8921,6 +9523,55 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.7473",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-7280",
+    "id_original": "2025.7280",
+    "fecha_notificacion": "2025-09-24",
+    "mes_ano": "2025-09",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Bélgica",
+    "pais_origen": "Bélgica",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Presence of gluten in \"gluten free\" beer.",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "Presence of gluten in \"gluten free\" beer.",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.7280): Presence of gluten in \"gluten free\" beer.",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.7280",
+    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Bélgica)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-7276",
+    "id_original": "2025.7276",
+    "fecha_notificacion": "2025-09-24",
+    "mes_ano": "2025-09",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Bélgica",
+    "pais_origen": "Reino Unido",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "consignment of alcoholic beverage not presented for an official control at the border control post",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "consignment of alcoholic beverage not presented for an official control at the border control p...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.7276): consignment of alcoholic beverage not presented for an official control at the border control post",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.7276",
+    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Reino Unido)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8944,6 +9595,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.7321",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: South Africa)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8967,6 +9619,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.7259",
     "distribucion_geografica": "Unión Europea (Notificado por European Commission; Origen: Moldova)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -8984,12 +9637,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Difenoconazole, captan, and dithiocarbamate in cooked and salted wine leaves from Türkiye, via ...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.7218): Difenoconazole, captan, and dithiocarbamate in cooked and salted wine leaves from Türkiye, via Belgium",
     "lotes_afectados": "Lote notificado en alerta europea 2025.7218",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9013,6 +9667,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.7184",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9036,6 +9691,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.6936",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9059,6 +9715,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.6960",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9082,6 +9739,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.6946",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Irlanda)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9105,6 +9763,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.6710",
     "distribucion_geografica": "Unión Europea (Notificado por Irlanda; Origen: Irlanda)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9128,6 +9787,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.6661",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9151,6 +9811,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.6659",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9174,6 +9835,55 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.6623",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Dinamarca)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-6260",
+    "id_original": "2025.6260",
+    "fecha_notificacion": "2025-08-18",
+    "mes_ano": "2025-08",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Letonia",
+    "pais_origen": "Kazakhstan",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Unauthorized producing country - Kazakhstan for Bourbon whiskey, and unauthorized ingredients  - raisin infusion and dis",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Fraude / EMA",
+    "subtipo_peligro": "Unauthorized producing country - Kazakhstan for Bourbon whiskey, and unauthorized ingredients  ...",
+    "tipo_fraude": "Falso Etiquetado / Origen",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.6260): Unauthorized producing country - Kazakhstan for Bourbon whiskey, and unauthorized ingredients  - raisin infusion and distilled glycerin in vodka from Kazakhstan.",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.6260",
+    "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Kazakhstan)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-6071",
+    "id_original": "2025.6071",
+    "fecha_notificacion": "2025-08-11",
+    "mes_ano": "2025-08",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "España",
+    "pais_origen": "Países Bajos",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Nuevo ingrediente no autorizado (CBD) en bebidas alcohólicas procedentes de Países Bajos//Novel unauthorised ingredient ",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Nuevo ingrediente no autorizado (CBD) en bebidas alcohólicas procedentes de Países Bajos//Novel...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Riesgo Potencial / Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.6071): Nuevo ingrediente no autorizado (CBD) en bebidas alcohólicas procedentes de Países Bajos//Novel unauthorised ingredient (CBD) in alcoholic beverages from the Netherlands",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.6071",
+    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Países Bajos)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9197,6 +9907,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.5989",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9220,6 +9931,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.5850",
     "distribucion_geografica": "Unión Europea (Notificado por Luxemburgo; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9243,6 +9955,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.5836",
     "distribucion_geografica": "Unión Europea (Notificado por Luxemburgo; Origen: Tailandia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9260,12 +9973,37 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "High HMF (hydroxymethylfurfural) content in honey",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.5818): High HMF (hydroxymethylfurfural) content in honey",
     "lotes_afectados": "Lote notificado en alerta europea 2025.5818",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-5667",
+    "id_original": "2025.5667",
+    "fecha_notificacion": "2025-07-25",
+    "mes_ano": "2025-07",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Bélgica",
+    "pais_origen": "Francia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Alcoholic beverage containing added caffeine – French supplier",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Alcoholic beverage containing added caffeine – French supplier",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Riesgo Potencial / Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.5667): Alcoholic beverage containing added caffeine – French supplier",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.5667",
+    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9289,6 +10027,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.5591",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9312,6 +10051,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.5306",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-4960",
+    "id_original": "2025.4960",
+    "fecha_notificacion": "2025-07-01",
+    "mes_ano": "2025-07",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Polonia",
+    "pais_origen": "Polonia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Piwo Mango Man sort. Lasii Mango Sour Ale” możliwość wystąpienia wtórnej fermentacji powodującej wzrost ciśnienia w bute",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Piwo Mango Man sort. Lasii Mango Sour Ale” możliwość wystąpienia wtórnej fermentacji powodujące...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.4960): Piwo Mango Man sort. Lasii Mango Sour Ale” możliwość wystąpienia wtórnej fermentacji powodującej wzrost ciśnienia w butelce, która może ulec uszkodzeniu, wybuchowi. // risk of physical injury due to explosion of overpressurised (fermentation) bottles containing mango-flavoured beer",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.4960",
+    "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9335,6 +10099,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.4941",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Bulgaria)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9358,6 +10123,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.4738",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Nepal)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9381,6 +10147,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.4723",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9404,6 +10171,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.4294",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Egipto)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-4076",
+    "id_original": "2025.4076",
+    "fecha_notificacion": "2025-05-30",
+    "mes_ano": "2025-05",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "España",
+    "pais_origen": "Austria",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Alérgenos no declarados (leche) en licores procedentes de Austria//Undeclared allergen (milk) in liquors from Austria",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "Alérgenos no declarados (leche) en licores procedentes de Austria//Undeclared allergen (milk) i...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.4076): Alérgenos no declarados (leche) en licores procedentes de Austria//Undeclared allergen (milk) in liquors from Austria",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.4076",
+    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Austria)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9427,6 +10219,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.3852",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Portugal)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9450,6 +10243,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.3763",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9473,6 +10267,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.2752",
     "distribucion_geografica": "Unión Europea (Notificado por Dinamarca; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9496,6 +10291,55 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.2626",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Bangladesh)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-2456",
+    "id_original": "2025.2456",
+    "fecha_notificacion": "2025-04-02",
+    "mes_ano": "2025-04",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "España",
+    "pais_origen": "España",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Nuevo alimento no autorizado (Perilla) en bebida espirituosa procedente de España // Unauthorised novel food (Perilla) i",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Nuevo alimento no autorizado (Perilla) en bebida espirituosa procedente de España // Unauthoris...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Riesgo Potencial / Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.2456): Nuevo alimento no autorizado (Perilla) en bebida espirituosa procedente de España // Unauthorised novel food (Perilla) in spirit drink from Spain",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.2456",
+    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: España)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-2042",
+    "id_original": "2025.2042",
+    "fecha_notificacion": "2025-03-20",
+    "mes_ano": "2025-03",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Francia",
+    "pais_origen": "Francia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Presence of sulfites in an alcoholic beverage",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "Presence of sulfites in an alcoholic beverage",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.2042): Presence of sulfites in an alcoholic beverage",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.2042",
+    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9519,6 +10363,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.1782",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Malaysia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9542,6 +10387,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.1625",
     "distribucion_geografica": "Unión Europea (Notificado por Austria; Origen: Nepal)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9565,6 +10411,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.1605",
     "distribucion_geografica": "Unión Europea (Notificado por Austria; Origen: Nepal)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9582,12 +10429,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Royal jelly and honey (apiculture product) from non-approved establishment",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.1587): Royal jelly and honey (apiculture product) from non-approved establishment",
     "lotes_afectados": "Lote notificado en alerta europea 2025.1587",
     "distribucion_geografica": "Unión Europea (Notificado por Portugal; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9605,12 +10453,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "High content of Sulphur dioxide in  black wine from Bosnia and Herzegovina",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2025.1482): High content of Sulphur dioxide in  black wine from Bosnia and Herzegovina",
     "lotes_afectados": "Lote notificado en alerta europea 2025.1482",
     "distribucion_geografica": "Unión Europea (Notificado por Croacia; Origen: Bosnia and Herzegovina)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9634,6 +10483,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.1402",
     "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-0912",
+    "id_original": "2025.0912",
+    "fecha_notificacion": "2025-02-10",
+    "mes_ano": "2025-02",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Grecia",
+    "pais_origen": "Reino Unido",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Unauthorised use of benzoic acid in spirit drink from United Kingdom",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Unauthorised use of benzoic acid in spirit drink from United Kingdom",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.0912): Unauthorised use of benzoic acid in spirit drink from United Kingdom",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.0912",
+    "distribucion_geografica": "Unión Europea (Notificado por Grecia; Origen: Reino Unido)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9657,6 +10531,55 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.0857",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-0167",
+    "id_original": "2025.0167",
+    "fecha_notificacion": "2025-01-10",
+    "mes_ano": "2025-01",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Países Bajos",
+    "pais_origen": "Letonia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Risk of explosion of beercans from Letland",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Risk of explosion of beercans from Letland",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.0167): Risk of explosion of beercans from Letland",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.0167",
+    "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Letonia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2025-0065",
+    "id_original": "2025.0065",
+    "fecha_notificacion": "2025-01-06",
+    "mes_ano": "2025-01",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Países Bajos",
+    "pais_origen": "Países Bajos",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "undeclared oats on beer, from Dutch brewery",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "undeclared oats on beer, from Dutch brewery",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2025.0065): undeclared oats on beer, from Dutch brewery",
+    "lotes_afectados": "Lote notificado en alerta europea 2025.0065",
+    "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9680,6 +10603,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2025.0055",
     "distribucion_geografica": "Unión Europea (Notificado por Dinamarca; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-8732",
+    "id_original": "2024.8732",
+    "fecha_notificacion": "2024-12-04",
+    "mes_ano": "2024-12",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Dinamarca",
+    "pais_origen": "Alemania",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Unapproved additive in gin - clitoria ternatea",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Unapproved additive in gin - clitoria ternatea",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Riesgo Potencial / Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.8732): Unapproved additive in gin - clitoria ternatea",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.8732",
+    "distribucion_geografica": "Unión Europea (Notificado por Dinamarca; Origen: Alemania)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9697,12 +10645,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Ingredientes no autorizados (CBD y Hydne hérisson) en complementos alimenticios y de CBD en mie...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2024.6791): Ingredientes no autorizados (CBD y Hydne hérisson) en complementos alimenticios y de CBD en miel comercializados online // Unauthorised ingredients (CBD and Hydne hérisson) in food supplements and CBD in honey marketed online",
     "lotes_afectados": "Lote notificado en alerta europea 2024.6791",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9726,6 +10675,79 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.6584",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: España)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-6486",
+    "id_original": "2024.6486",
+    "fecha_notificacion": "2024-08-27",
+    "mes_ano": "2024-08",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Suecia",
+    "pais_origen": "Estados Unidos",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Undeclared sesame in whiskey from USA",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "Undeclared sesame in whiskey from USA",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.6486): Undeclared sesame in whiskey from USA",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.6486",
+    "distribucion_geografica": "Unión Europea (Notificado por Suecia; Origen: Estados Unidos)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-6052",
+    "id_original": "2024.6052",
+    "fecha_notificacion": "2024-08-07",
+    "mes_ano": "2024-08",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Bélgica",
+    "pais_origen": "Bélgica",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "possible presence of foreign objects in beer from Belgium",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Físico",
+    "subtipo_peligro": "possible presence of foreign objects in beer from Belgium",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.6052): possible presence of foreign objects in beer from Belgium",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.6052",
+    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Bélgica)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-5897",
+    "id_original": "2024.5897",
+    "fecha_notificacion": "2024-08-01",
+    "mes_ano": "2024-08",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Grecia",
+    "pais_origen": "Bulgaria",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "High content of sulfur dioxide and sorbic acid in alcoholic beverages from Bulgaria",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "High content of sulfur dioxide and sorbic acid in alcoholic beverages from Bulgaria",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.5897): High content of sulfur dioxide and sorbic acid in alcoholic beverages from Bulgaria",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.5897",
+    "distribucion_geografica": "Unión Europea (Notificado por Grecia; Origen: Bulgaria)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9749,6 +10771,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.5661",
     "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ucrania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9766,12 +10789,37 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Risk of bursting due to secondary fermentation in wine from Germany",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2024.5298): Risk of bursting due to secondary fermentation in wine from Germany",
     "lotes_afectados": "Lote notificado en alerta europea 2024.5298",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Alemania)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-5109",
+    "id_original": "2024.5109",
+    "fecha_notificacion": "2024-07-03",
+    "mes_ano": "2024-07",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Letonia",
+    "pais_origen": "Belarus",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Strong alcoholic drink with not permitted sodium benzoate (E211) from Belarus",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Strong alcoholic drink with not permitted sodium benzoate (E211) from Belarus",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.5109): Strong alcoholic drink with not permitted sodium benzoate (E211) from Belarus",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.5109",
+    "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Belarus)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9795,6 +10843,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.5121",
     "distribucion_geografica": "Unión Europea (Notificado por España; Origen: United Arab Emirates)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9818,6 +10867,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.5066",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9841,6 +10891,31 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.4537",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Malaysia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-4503",
+    "id_original": "2024.4503",
+    "fecha_notificacion": "2024-06-11",
+    "mes_ano": "2024-06",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "España",
+    "pais_origen": "Países Bajos",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Nuevo alimento no autorizado (Extracto de Cannabis sativa) en cerveza procedente de Países Bajos. // Novel unauthorised ",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Nuevo alimento no autorizado (Extracto de Cannabis sativa) en cerveza procedente de Países Bajo...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Riesgo Potencial / Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.4503): Nuevo alimento no autorizado (Extracto de Cannabis sativa) en cerveza procedente de Países Bajos. // Novel unauthorised food (Cannabis sativa extract) in beer from the Netherlands.",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.4503",
+    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Países Bajos)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9864,6 +10939,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.4373",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Turquía)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9881,12 +10957,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Desserts from Egypt with ingredients unauthorised (honey from countries without an EU-approved ...",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2024.4082): Desserts from Egypt with ingredients unauthorised (honey from countries without an EU-approved residue control program) and unsatisfactory labelling",
     "lotes_afectados": "Lote notificado en alerta europea 2024.4082",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Egipto)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9910,6 +10987,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.3809",
     "distribucion_geografica": "Unión Europea (Notificado por Portugal; Origen: Malaysia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "no risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9933,6 +11011,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.3224",
     "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Singapore)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9956,6 +11035,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.2764",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9979,6 +11059,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.2643",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -9996,12 +11077,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Presence of swine, bovine and chicken DNA in noodles from China",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2024.2614): Presence of swine, bovine and chicken DNA in noodles from China",
     "lotes_afectados": "Lote notificado en alerta europea 2024.2614",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10025,6 +11107,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.2494",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10048,6 +11131,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.2146",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10071,6 +11155,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.2024",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10088,12 +11173,37 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Presence of poultry, bovine and swine DNA in snack from China",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2024.1987): Presence of poultry, bovine and swine DNA in snack from China",
     "lotes_afectados": "Lote notificado en alerta europea 2024.1987",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-1808",
+    "id_original": "2024.1808",
+    "fecha_notificacion": "2024-03-12",
+    "mes_ano": "2024-03",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Chipre",
+    "pais_origen": "Polonia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "IMPORT OF ALCOHOLIC DRING 5% WITH EXCEEDED BEST BEFORE DATE FROM POLAND VIA ISRAEL",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "IMPORT OF ALCOHOLIC DRING 5% WITH EXCEEDED BEST BEFORE DATE FROM POLAND VIA ISRAEL",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.1808): IMPORT OF ALCOHOLIC DRING 5% WITH EXCEEDED BEST BEFORE DATE FROM POLAND VIA ISRAEL",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.1808",
+    "distribucion_geografica": "Unión Europea (Notificado por Chipre; Origen: Polonia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "no risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10117,6 +11227,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.1609",
     "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Reino Unido)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "not serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10140,6 +11251,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.1519",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10157,12 +11269,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Bovine and swine DNA detected in snacks from China via Hong Kong",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2024.1473): Bovine and swine DNA detected in snacks from China via Hong Kong",
     "lotes_afectados": "Lote notificado en alerta europea 2024.1473",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10180,12 +11293,37 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "Presence of swine DNA in vegetarian soy-based steak from China via Hong Kong",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
+    "gravedad": "Riesgo Potencial / Media",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2024.1396): Presence of swine DNA in vegetarian soy-based steak from China via Hong Kong",
     "lotes_afectados": "Lote notificado en alerta europea 2024.1396",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-1199",
+    "id_original": "2024.1199",
+    "fecha_notificacion": "2024-02-21",
+    "mes_ano": "2024-02",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Austria",
+    "pais_origen": "España",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Unauthorised novel food Gardenia jasminoides Ellis in gin from Spain, via Germany",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Unauthorised novel food Gardenia jasminoides Ellis in gin from Spain, via Germany",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Riesgo Potencial / Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.1199): Unauthorised novel food Gardenia jasminoides Ellis in gin from Spain, via Germany",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.1199",
+    "distribucion_geografica": "Unión Europea (Notificado por Austria; Origen: España)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10209,6 +11347,79 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.1116",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: China)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-1001",
+    "id_original": "2024.1001",
+    "fecha_notificacion": "2024-02-13",
+    "mes_ano": "2024-02",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Francia",
+    "pais_origen": "French Polynesia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Undeclared allergen gluten in beer from French Polynesia",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "Undeclared allergen gluten in beer from French Polynesia",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.1001): Undeclared allergen gluten in beer from French Polynesia",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.1001",
+    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: French Polynesia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-0866",
+    "id_original": "2024.0866",
+    "fecha_notificacion": "2024-02-07",
+    "mes_ano": "2024-02",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Bélgica",
+    "pais_origen": "Bélgica",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Wrong label of organic \"gluten free\" beer on bottle of organic \"non gluten free\" beer from Belgium",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "Wrong label of organic \"gluten free\" beer on bottle of organic \"non gluten free\" beer from Belg...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.0866): Wrong label of organic \"gluten free\" beer on bottle of organic \"non gluten free\" beer from Belgium",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.0866",
+    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Bélgica)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "EU-RASFF-2024-0311",
+    "id_original": "2024.0311",
+    "fecha_notificacion": "2024-01-16",
+    "mes_ano": "2024-01",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Letonia",
+    "pais_origen": "Belarus",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Temperature of transport not suitable for alcoholic beverages from Belarus",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Bebidas y Licores",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Temperature of transport not suitable for alcoholic beverages from Belarus",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2024.0311): Temperature of transport not suitable for alcoholic beverages from Belarus",
+    "lotes_afectados": "Lote notificado en alerta europea 2024.0311",
+    "distribucion_geografica": "Unión Europea (Notificado por Letonia; Origen: Belarus)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "no risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10232,6 +11443,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.0273",
     "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Bélgica)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10255,6 +11467,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.0109",
     "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -10278,1363 +11491,7 @@ window.INITIAL_ALERTS_DATA = [
     "lotes_afectados": "Lote notificado en alerta europea 2024.0017",
     "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-8477",
-    "id_original": "2023.8477",
-    "fecha_notificacion": "2023-12-08",
-    "mes_ano": "2023-12",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Francia",
-    "pais_origen": "Italia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "detection of listeria monocytogenes on ravioli with goat's cheese and honey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Alimentos Procesados y Conservas",
-    "tipo_alerta": "Microbiológico",
-    "subtipo_peligro": "detection of listeria monocytogenes on ravioli with goat's cheese and honey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.8477): detection of listeria monocytogenes on ravioli with goat's cheese and honey",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.8477",
-    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Italia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-6878",
-    "id_original": "2023.6878",
-    "fecha_notificacion": "2023-10-10",
-    "mes_ano": "2023-10",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Suiza",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Tetrahydrocannabinol (THC) and unauthorized novel food ingredient cannabidiol (CBD) in honey from Switzerland",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Fraude / EMA",
-    "subtipo_peligro": "Tetrahydrocannabinol (THC) and unauthorized novel food ingredient cannabidiol (CBD) in honey fr...",
-    "tipo_fraude": "Falso Etiquetado / Origen",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.6878): Tetrahydrocannabinol (THC) and unauthorized novel food ingredient cannabidiol (CBD) in honey from Switzerland",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.6878",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Suiza)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-6848",
-    "id_original": "2023.6848",
-    "fecha_notificacion": "2023-10-09",
-    "mes_ano": "2023-10",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Francia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Unauthorised novel food ingredient cannabidiol (CBD) in honey from France",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Unauthorised novel food ingredient cannabidiol (CBD) in honey from France",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.6848): Unauthorised novel food ingredient cannabidiol (CBD) in honey from France",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.6848",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Francia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-6239",
-    "id_original": "2023.6239",
-    "fecha_notificacion": "2023-09-13",
-    "mes_ano": "2023-09",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Alemania",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Possible risk of bursting (due to yeasts) of bottles with wine-based beverage from Germany",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Possible risk of bursting (due to yeasts) of bottles with wine-based beverage from Germany",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.6239): Possible risk of bursting (due to yeasts) of bottles with wine-based beverage from Germany",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.6239",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Alemania)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-5493",
-    "id_original": "2023.5493",
-    "fecha_notificacion": "2023-08-14",
-    "mes_ano": "2023-08",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Polonia",
-    "pais_origen": "Ucrania",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Kaptan w winie gronowym z Ukrainy /// Kaptan in grape wine from Ukraine",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Kaptan w winie gronowym z Ukrainy /// Kaptan in grape wine from Ukraine",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.5493): Kaptan w winie gronowym z Ukrainy /// Kaptan in grape wine from Ukraine",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.5493",
-    "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Ucrania)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-5490",
-    "id_original": "2023.5490",
-    "fecha_notificacion": "2023-08-14",
-    "mes_ano": "2023-08",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Eslovaquia",
-    "pais_origen": "República Checa",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Presence of ciprofloxacin in forest honey from the Czech Republic",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Presence of ciprofloxacin in forest honey from the Czech Republic",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.5490): Presence of ciprofloxacin in forest honey from the Czech Republic",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.5490",
-    "distribucion_geografica": "Unión Europea (Notificado por Eslovaquia; Origen: República Checa)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-5339",
-    "id_original": "2023.5339",
-    "fecha_notificacion": "2023-08-07",
-    "mes_ano": "2023-08",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "Turquía",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Unauthorised substance sildenafil and tadalafil in honey paste from Turkey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Unauthorised substance sildenafil and tadalafil in honey paste from Turkey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.5339): Unauthorised substance sildenafil and tadalafil in honey paste from Turkey",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.5339",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Turquía)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-5233",
-    "id_original": "2023.5233",
-    "fecha_notificacion": "2023-08-02",
-    "mes_ano": "2023-08",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Francia",
-    "pais_origen": "España",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Presence of tadalafil in sticks of aphrodisiac honey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Presence of tadalafil in sticks of aphrodisiac honey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.5233): Presence of tadalafil in sticks of aphrodisiac honey",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.5233",
-    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: España)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-4870",
-    "id_original": "2023.4870",
-    "fecha_notificacion": "2023-07-19",
-    "mes_ano": "2023-07",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Mexico",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Enrofloxacin and trimethoprim in honey from Mexico",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Enrofloxacin and trimethoprim in honey from Mexico",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.4870): Enrofloxacin and trimethoprim in honey from Mexico",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.4870",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Mexico)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-4376",
-    "id_original": "2023.4376",
-    "fecha_notificacion": "2023-07-07",
-    "mes_ano": "2023-07",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "China",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Labelling deficiencies and sulphur dioxide exceedance in wine leaves from Greece, produced in China",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Frutas, Hortalizas y Verduras",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Labelling deficiencies and sulphur dioxide exceedance in wine leaves from Greece, produced in C...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.4376): Labelling deficiencies and sulphur dioxide exceedance in wine leaves from Greece, produced in China",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.4376",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: China)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-4010",
-    "id_original": "2023.4010",
-    "fecha_notificacion": "2023-06-14",
-    "mes_ano": "2023-06",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "Rumanía",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "chloramphenicol in honey from Poland (origin Romania)",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "chloramphenicol in honey from Poland (origin Romania)",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.4010): chloramphenicol in honey from Poland (origin Romania)",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.4010",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Rumanía)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-3304",
-    "id_original": "2023.3304",
-    "fecha_notificacion": "2023-05-17",
-    "mes_ano": "2023-05",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Turquía",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Missing labelling of the allergenic ingredient sulphur dioxide in wine leaves in brine from Turkey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Frutas, Hortalizas y Verduras",
-    "tipo_alerta": "Alérgeno",
-    "subtipo_peligro": "Missing labelling of the allergenic ingredient sulphur dioxide in wine leaves in brine from Tur...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.3304): Missing labelling of the allergenic ingredient sulphur dioxide in wine leaves in brine from Turkey",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.3304",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Turquía)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-2942",
-    "id_original": "2023.2942",
-    "fecha_notificacion": "2023-05-05",
-    "mes_ano": "2023-05",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Italia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Strong sensory deviation in and physiological reaction after consumption of white wine from Italy",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Strong sensory deviation in and physiological reaction after consumption of white wine from Ita...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.2942): Strong sensory deviation in and physiological reaction after consumption of white wine from Italy",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.2942",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Italia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-1273",
-    "id_original": "2023.1273",
-    "fecha_notificacion": "2023-02-22",
-    "mes_ano": "2023-02",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Francia",
-    "pais_origen": "Francia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "risk of glass breakage due to a defect in the ring of the glass bottles of wine",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Físico",
-    "subtipo_peligro": "risk of glass breakage due to a defect in the ring of the glass bottles of wine",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.1273): risk of glass breakage due to a defect in the ring of the glass bottles of wine",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.1273",
-    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-1245",
-    "id_original": "2023.1245",
-    "fecha_notificacion": "2023-02-21",
-    "mes_ano": "2023-02",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Francia",
-    "pais_origen": "Desconocido / Múltiples",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Sildenafil in honey products",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Sildenafil in honey products",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.1245): Sildenafil in honey products",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.1245",
-    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Desconocido / Múltiples)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2023-0006",
-    "id_original": "2023.0006",
-    "fecha_notificacion": "2023-01-02",
-    "mes_ano": "2023-01",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Alemania",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Risk of injury (risk of bursting) due to secondary fermentation in alcohol-free organic wines from Germany",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Risk of injury (risk of bursting) due to secondary fermentation in alcohol-free organic wines f...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2023.0006): Risk of injury (risk of bursting) due to secondary fermentation in alcohol-free organic wines from Germany",
-    "lotes_afectados": "Lote notificado en alerta europea 2023.0006",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Alemania)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-7219",
-    "id_original": "2022.7219",
-    "fecha_notificacion": "2022-12-12",
-    "mes_ano": "2022-12",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "República Checa",
-    "pais_origen": "Alemania",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Undeclared sulphite in white wine from Germany",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Alérgeno",
-    "subtipo_peligro": "Undeclared sulphite in white wine from Germany",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.7219): Undeclared sulphite in white wine from Germany",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.7219",
-    "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: Alemania)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-6290",
-    "id_original": "2022.6290",
-    "fecha_notificacion": "2022-10-27",
-    "mes_ano": "2022-10",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Syria",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Exceeding of maximum limits and lack of labelling of the allergenic additive sulphur dioxide in wine leaves from Syria v",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Frutas, Hortalizas y Verduras",
-    "tipo_alerta": "Alérgeno",
-    "subtipo_peligro": "Exceeding of maximum limits and lack of labelling of the allergenic additive sulphur dioxide in...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.6290): Exceeding of maximum limits and lack of labelling of the allergenic additive sulphur dioxide in wine leaves from Syria via the Netherlands",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.6290",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Syria)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-6201",
-    "id_original": "2022.6201",
-    "fecha_notificacion": "2022-10-24",
-    "mes_ano": "2022-10",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "Países Bajos",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Suspicion of sildenafil in honey Epimedyumlu Macun on Dutch web shop",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Suspicion of sildenafil in honey Epimedyumlu Macun on Dutch web shop",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.6201): Suspicion of sildenafil in honey Epimedyumlu Macun on Dutch web shop",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.6201",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Países Bajos)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-5651",
-    "id_original": "2022.5651",
-    "fecha_notificacion": "2022-09-29",
-    "mes_ano": "2022-09",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Francia",
-    "pais_origen": "Francia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "defect on wine bottles",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "defect on wine bottles",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.5651): defect on wine bottles",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.5651",
-    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-5520",
-    "id_original": "2022.5520",
-    "fecha_notificacion": "2022-09-22",
-    "mes_ano": "2022-09",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Países Bajos",
-    "pais_origen": "Francia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Shard of glass may come loose in wine from France",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Físico",
-    "subtipo_peligro": "Shard of glass may come loose in wine from France",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.5520): Shard of glass may come loose in wine from France",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.5520",
-    "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Francia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-3489",
-    "id_original": "2022.3489",
-    "fecha_notificacion": "2022-06-14",
-    "mes_ano": "2022-06",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "China",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Oxymatrine in honey from China",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Oxymatrine in honey from China",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.3489): Oxymatrine in honey from China",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.3489",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: China)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-2792",
-    "id_original": "2022.2792",
-    "fecha_notificacion": "2022-05-12",
-    "mes_ano": "2022-05",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Chipre",
-    "pais_origen": "United Arab Emirates",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Unauthorised Third Country (UAE) for the export of honey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Unauthorised Third Country (UAE) for the export of honey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.2792): Unauthorised Third Country (UAE) for the export of honey",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.2792",
-    "distribucion_geografica": "Unión Europea (Notificado por Chipre; Origen: United Arab Emirates)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-2179",
-    "id_original": "2022.2179",
-    "fecha_notificacion": "2022-04-12",
-    "mes_ano": "2022-04",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Austria",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Mold in the screw cap and pouring rim of a wine bottle from Austria",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Microbiológico",
-    "subtipo_peligro": "Mold in the screw cap and pouring rim of a wine bottle from Austria",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.2179): Mold in the screw cap and pouring rim of a wine bottle from Austria",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.2179",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Austria)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-1292",
-    "id_original": "2022.1292",
-    "fecha_notificacion": "2022-03-04",
-    "mes_ano": "2022-03",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "Francia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Too high content of sulfites in wine",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Alérgeno",
-    "subtipo_peligro": "Too high content of sulfites in wine",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.1292): Too high content of sulfites in wine",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.1292",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-1068",
-    "id_original": "2022.1068",
-    "fecha_notificacion": "2022-02-23",
-    "mes_ano": "2022-02",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "China",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "(Oxy)matrine in honey from China",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "(Oxy)matrine in honey from China",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.1068): (Oxy)matrine in honey from China",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.1068",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: China)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-0979",
-    "id_original": "2022.0979",
-    "fecha_notificacion": "2022-02-18",
-    "mes_ano": "2022-02",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "Turquía",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Tetracyclines in honey from Turkey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Tetracyclines in honey from Turkey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.0979): Tetracyclines in honey from Turkey",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.0979",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Turquía)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-0733",
-    "id_original": "2022.0733",
-    "fecha_notificacion": "2022-02-07",
-    "mes_ano": "2022-02",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "España",
-    "pais_origen": "España",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Undeclared allergen (sulphites) in wine from Spain",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Alérgeno",
-    "subtipo_peligro": "Undeclared allergen (sulphites) in wine from Spain",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.0733): Undeclared allergen (sulphites) in wine from Spain",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.0733",
-    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: España)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2022-0257",
-    "id_original": "2022.0257",
-    "fecha_notificacion": "2022-01-14",
-    "mes_ano": "2022-01",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Francia",
-    "pais_origen": "Francia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "possible presence of glass in rosé wine (Cabernet d'Anjou) from France with bottles from Spain",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Físico",
-    "subtipo_peligro": "possible presence of glass in rosé wine (Cabernet d'Anjou) from France with bottles from Spain",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2022.0257): possible presence of glass in rosé wine (Cabernet d'Anjou) from France with bottles from Spain",
-    "lotes_afectados": "Lote notificado en alerta europea 2022.0257",
-    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-7020",
-    "id_original": "2021.7020",
-    "fecha_notificacion": "2021-12-21",
-    "mes_ano": "2021-12",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "Desconocido / Múltiples",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "unauthorised substance matrine (0.018 mg/kg - ppm) in acacia honey from China",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "unauthorised substance matrine (0.018 mg/kg - ppm) in acacia honey from China",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.7020): unauthorised substance matrine (0.018 mg/kg - ppm) in acacia honey from China",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.7020",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Desconocido / Múltiples)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-6807",
-    "id_original": "2021.6807",
-    "fecha_notificacion": "2021-12-10",
-    "mes_ano": "2021-12",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "España",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Delta-9-tetrahydrocannabinol in flavoured wine from Spain",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Delta-9-tetrahydrocannabinol in flavoured wine from Spain",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.6807): Delta-9-tetrahydrocannabinol in flavoured wine from Spain",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.6807",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: España)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-6604",
-    "id_original": "2021.6604",
-    "fecha_notificacion": "2021-12-03",
-    "mes_ano": "2021-12",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Eslovaquia",
-    "pais_origen": "Eslovaquia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "residues of veterinary medicinal products in honey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "residues of veterinary medicinal products in honey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.6604): residues of veterinary medicinal products in honey",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.6604",
-    "distribucion_geografica": "Unión Europea (Notificado por Eslovaquia; Origen: Eslovaquia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-6477",
-    "id_original": "2021.6477",
-    "fecha_notificacion": "2021-11-29",
-    "mes_ano": "2021-11",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "China",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Unauthorized substance matrine in honey from China",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Fraude / EMA",
-    "subtipo_peligro": "Unauthorized substance matrine in honey from China",
-    "tipo_fraude": "Falso Etiquetado / Origen",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.6477): Unauthorized substance matrine in honey from China",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.6477",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: China)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-5110",
-    "id_original": "2021.5110",
-    "fecha_notificacion": "2021-09-24",
-    "mes_ano": "2021-09",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "Bélgica, China, Rumanía",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "dihydrostreptomycin in acacia honey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "dihydrostreptomycin in acacia honey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.5110): dihydrostreptomycin in acacia honey",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.5110",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Bélgica, China, Rumanía)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-4926",
-    "id_original": "2021.4926",
-    "fecha_notificacion": "2021-09-15",
-    "mes_ano": "2021-09",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Polonia",
-    "pais_origen": "Republic of North Macedonia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "lead in wines from North Macedonia",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "lead in wines from North Macedonia",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.4926): lead in wines from North Macedonia",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.4926",
-    "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Republic of North Macedonia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-4501",
-    "id_original": "2021.4501",
-    "fecha_notificacion": "2021-08-23",
-    "mes_ano": "2021-08",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "España",
-    "pais_origen": "Hungría",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "PRESENCE OF RESIDUES OF PHARMATOLOGICALLY ACTIVE SUBSTANCES ABOVE THE MRL (COUMAPHOS, ACRINATHRIN AND T-FLUVALINATE) IN ",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "PRESENCE OF RESIDUES OF PHARMATOLOGICALLY ACTIVE SUBSTANCES ABOVE THE MRL (COUMAPHOS, ACRINATHR...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.4501): PRESENCE OF RESIDUES OF PHARMATOLOGICALLY ACTIVE SUBSTANCES ABOVE THE MRL (COUMAPHOS, ACRINATHRIN AND T-FLUVALINATE) IN COMB HONEY FROM HUNGARY",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.4501",
-    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Hungría)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-2810",
-    "id_original": "2021.2810",
-    "fecha_notificacion": "2021-06-01",
-    "mes_ano": "2021-06",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "España",
-    "pais_origen": "Bélgica, China",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "OXYMATRINE IN ORGANIC ACACIA HONEY FROM CHINA",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "OXYMATRINE IN ORGANIC ACACIA HONEY FROM CHINA",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.2810): OXYMATRINE IN ORGANIC ACACIA HONEY FROM CHINA",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.2810",
-    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Bélgica, China)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-2355",
-    "id_original": "2021.2355",
-    "fecha_notificacion": "2021-05-11",
-    "mes_ano": "2021-05",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Eslovenia",
-    "pais_origen": "Reino Unido",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Rancid granola nuts and seeds with honey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Rancid granola nuts and seeds with honey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.2355): Rancid granola nuts and seeds with honey",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.2355",
-    "distribucion_geografica": "Unión Europea (Notificado por Eslovenia; Origen: Reino Unido)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-1831",
-    "id_original": "2021.1831",
-    "fecha_notificacion": "2021-04-13",
-    "mes_ano": "2021-04",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "China",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Migration of lead and nickel from electric mulled wine boiler from China",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Aceites y Grasas",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Migration of lead and nickel from electric mulled wine boiler from China",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.1831): Migration of lead and nickel from electric mulled wine boiler from China",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.1831",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: China)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-1473",
-    "id_original": "2021.1473",
-    "fecha_notificacion": "2021-03-23",
-    "mes_ano": "2021-03",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Turquía",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Sildenafil and epimedium in honey/sugar based paste with herbs, from Turkey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Sildenafil and epimedium in honey/sugar based paste with herbs, from Turkey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.1473): Sildenafil and epimedium in honey/sugar based paste with herbs, from Turkey",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.1473",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Turquía)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-1330",
-    "id_original": "2021.1330",
-    "fecha_notificacion": "2021-03-15",
-    "mes_ano": "2021-03",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Italia",
-    "pais_origen": "Italia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Presence of lead beyond the limits in white wine",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Frutas, Hortalizas y Verduras",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Presence of lead beyond the limits in white wine",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.1330): Presence of lead beyond the limits in white wine",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.1330",
-    "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-1097",
-    "id_original": "2021.1097",
-    "fecha_notificacion": "2021-03-04",
-    "mes_ano": "2021-03",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "España",
-    "pais_origen": "Reino Unido",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "unauthorised ingredient (honey from countries without an EU-approved residue control program) in toast bread from the Un",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Cereales y Productos de Panadería",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "unauthorised ingredient (honey from countries without an EU-approved residue control program) i...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.1097): unauthorised ingredient (honey from countries without an EU-approved residue control program) in toast bread from the United Kingdom",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.1097",
-    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Reino Unido)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2021-0989",
-    "id_original": "2021.0989",
-    "fecha_notificacion": "2021-02-26",
-    "mes_ano": "2021-02",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "España",
-    "pais_origen": "Reino Unido",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "toast from the UK with honey from countries without a residue control program",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Cereales y Productos de Panadería",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "toast from the UK with honey from countries without a residue control program",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2021.0989): toast from the UK with honey from countries without a residue control program",
-    "lotes_afectados": "Lote notificado en alerta europea 2021.0989",
-    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Reino Unido)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-5024",
-    "id_original": "2020.5024",
-    "fecha_notificacion": "2020-11-16",
-    "mes_ano": "2020-11",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Estados Unidos",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "unauthorised substance iprodione in rosé wine from the United States, via Italy",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "unauthorised substance iprodione in rosé wine from the United States, via Italy",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.5024): unauthorised substance iprodione in rosé wine from the United States, via Italy",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.5024",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Estados Unidos)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-4330",
-    "id_original": "2020.4330",
-    "fecha_notificacion": "2020-10-15",
-    "mes_ano": "2020-10",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Alemania",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Sulfites in wine from Germany",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Alérgeno",
-    "subtipo_peligro": "Sulfites in wine from Germany",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.4330): Sulfites in wine from Germany",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.4330",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Alemania)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-3912",
-    "id_original": "2020.3912",
-    "fecha_notificacion": "2020-09-24",
-    "mes_ano": "2020-09",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Reino Unido",
-    "pais_origen": "Estados Unidos",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "'Lucky Charms Honey Clovers' Breakfast cereal rejected due to excess colours",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Cereales y Productos de Panadería",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "'Lucky Charms Honey Clovers' Breakfast cereal rejected due to excess colours",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.3912): 'Lucky Charms Honey Clovers' Breakfast cereal rejected due to excess colours",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.3912",
-    "distribucion_geografica": "Unión Europea (Notificado por Reino Unido; Origen: Estados Unidos)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-3829",
-    "id_original": "2020.3829",
-    "fecha_notificacion": "2020-09-18",
-    "mes_ano": "2020-09",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Turquía",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Missing warning notice for food supplement (Propolis throat spray with honey) from Germany, manufactured in Turkey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Missing warning notice for food supplement (Propolis throat spray with honey) from Germany, man...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.3829): Missing warning notice for food supplement (Propolis throat spray with honey) from Germany, manufactured in Turkey",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.3829",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Turquía)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-2600",
-    "id_original": "2020.2600",
-    "fecha_notificacion": "2020-07-22",
-    "mes_ano": "2020-07",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Singapore",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Not authorised ingredient in chrysanthemum drink with honey from Singapore, via the Netherlands",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Not authorised ingredient in chrysanthemum drink with honey from Singapore, via the Netherlands",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.2600): Not authorised ingredient in chrysanthemum drink with honey from Singapore, via the Netherlands",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.2600",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Singapore)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-2618",
-    "id_original": "2020.2618",
-    "fecha_notificacion": "2020-06-26",
-    "mes_ano": "2020-06",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "España",
-    "pais_origen": "Alemania",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "INGREDIENTS (SUGAR AND HONEY) NOT DECLARED ON THE LABELLING OF SEA-BUCKTHORN JUICE FROM GERMANY",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "INGREDIENTS (SUGAR AND HONEY) NOT DECLARED ON THE LABELLING OF SEA-BUCKTHORN JUICE FROM GERMANY",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.2618): INGREDIENTS (SUGAR AND HONEY) NOT DECLARED ON THE LABELLING OF SEA-BUCKTHORN JUICE FROM GERMANY",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.2618",
-    "distribucion_geografica": "Unión Europea (Notificado por España; Origen: Alemania)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-2601",
-    "id_original": "2020.2601",
-    "fecha_notificacion": "2020-06-25",
-    "mes_ano": "2020-06",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Alemania",
-    "pais_origen": "Italia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Exceedance of maximum level for ochratoxin A in wine from Italy",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Exceedance of maximum level for ochratoxin A in wine from Italy",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.2601): Exceedance of maximum level for ochratoxin A in wine from Italy",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.2601",
-    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Italia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-2102",
-    "id_original": "2020.2102",
-    "fecha_notificacion": "2020-05-20",
-    "mes_ano": "2020-05",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Bélgica",
-    "pais_origen": "Ucrania",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "nitrofuran in honey",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "nitrofuran in honey",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.2102): nitrofuran in honey",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.2102",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Ucrania)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-2046",
-    "id_original": "2020.2046",
-    "fecha_notificacion": "2020-05-15",
-    "mes_ano": "2020-05",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Francia",
-    "pais_origen": "Francia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "LISTERIA MONOCYTOGENES IN GOAT CHEESE BALLS FILLED WITH HONEY",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Lácteos y Derivados",
-    "tipo_alerta": "Microbiológico",
-    "subtipo_peligro": "LISTERIA MONOCYTOGENES IN GOAT CHEESE BALLS FILLED WITH HONEY",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.2046): LISTERIA MONOCYTOGENES IN GOAT CHEESE BALLS FILLED WITH HONEY",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.2046",
-    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Francia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-1793",
-    "id_original": "2020.1793",
-    "fecha_notificacion": "2020-04-28",
-    "mes_ano": "2020-04",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Francia",
-    "pais_origen": "Bélgica",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "DIMETRIDAZOLE in a blend of organic EC and non-EC honeys assembled in Belgium",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "DIMETRIDAZOLE in a blend of organic EC and non-EC honeys assembled in Belgium",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.1793): DIMETRIDAZOLE in a blend of organic EC and non-EC honeys assembled in Belgium",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.1793",
-    "distribucion_geografica": "Unión Europea (Notificado por Francia; Origen: Bélgica)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-0209",
-    "id_original": "2020.0209",
-    "fecha_notificacion": "2020-01-16",
-    "mes_ano": "2020-01",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Reino Unido",
-    "pais_origen": "Reino Unido",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Recall due to undeclared gluten in Waitrose Aberdeen Angus Beef Burgers with red wine and herbs",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Carnes y Derivados",
-    "tipo_alerta": "Alérgeno",
-    "subtipo_peligro": "Recall due to undeclared gluten in Waitrose Aberdeen Angus Beef Burgers with red wine and herbs",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.0209): Recall due to undeclared gluten in Waitrose Aberdeen Angus Beef Burgers with red wine and herbs",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.0209",
-    "distribucion_geografica": "Unión Europea (Notificado por Reino Unido; Origen: Reino Unido)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-0203",
-    "id_original": "2020.0203",
-    "fecha_notificacion": "2020-01-15",
-    "mes_ano": "2020-01",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Hungría",
-    "pais_origen": "Ucrania",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "organic honey stored in drums not suitable to contain food (rusty) from Ukraine",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "organic honey stored in drums not suitable to contain food (rusty) from Ukraine",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.0203): organic honey stored in drums not suitable to contain food (rusty) from Ukraine",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.0203",
-    "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ucrania)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-0105",
-    "id_original": "2020.0105",
-    "fecha_notificacion": "2020-01-09",
-    "mes_ano": "2020-01",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "República Checa",
-    "pais_origen": "Polonia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Residue of prohibited substance Dapson in honey from Slovakia",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Residue of prohibited substance Dapson in honey from Slovakia",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.0105): Residue of prohibited substance Dapson in honey from Slovakia",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.0105",
-    "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: Polonia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2020-0077",
-    "id_original": "2020.0077",
-    "fecha_notificacion": "2020-01-07",
-    "mes_ano": "2020-01",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Hungría",
-    "pais_origen": "Ucrania",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "organic honey stored in drums not suitable to contain food (rusty) from UA",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "organic honey stored in drums not suitable to contain food (rusty) from UA",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Media",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2020.0077): organic honey stored in drums not suitable to contain food (rusty) from UA",
-    "lotes_afectados": "Lote notificado en alerta europea 2020.0077",
-    "distribucion_geografica": "Unión Europea (Notificado por Hungría; Origen: Ucrania)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2019-4389",
-    "id_original": "2019.4389",
-    "fecha_notificacion": "2019-12-12",
-    "mes_ano": "2019-12",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "República Checa",
-    "pais_origen": "Eslovaquia",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "Hydroxymethylfurfural in forest bee honey from Slovakia",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Miel y Endulzantes",
-    "tipo_alerta": "Químico",
-    "subtipo_peligro": "Hydroxymethylfurfural in forest bee honey from Slovakia",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2019.4389): Hydroxymethylfurfural in forest bee honey from Slovakia",
-    "lotes_afectados": "Lote notificado en alerta europea 2019.4389",
-    "distribucion_geografica": "Unión Europea (Notificado por República Checa; Origen: Eslovaquia)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-  },
-  {
-    "id": "EU-RASFF-2019-4321",
-    "id_original": "2019.4321",
-    "fecha_notificacion": "2019-12-10",
-    "mes_ano": "2019-12",
-    "fuente_origen": "EU_RASFF",
-    "pais_notificador": "Polonia",
-    "pais_origen": "Hungría",
-    "empresa_responsable": "Operadores comerciales de la red UE",
-    "producto": "wine - no information on the product label in Polish regarding the presence of an allergenic substance - sulfur dioxide",
-    "marca": "No especificada / Marca comunitaria",
-    "categoria_alimento": "Bebidas y Licores",
-    "tipo_alerta": "Alérgeno",
-    "subtipo_peligro": "wine - no information on the product label in Polish regarding the presence of an allergenic su...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Notificación oficial RASFF (2019.4321): wine - no information on the product label in Polish regarding the presence of an allergenic substance - sulfur dioxide",
-    "lotes_afectados": "Lote notificado en alerta europea 2019.4321",
-    "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Hungría)",
-    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   }
 ];

@@ -30,6 +30,16 @@ def load_existing_alerts():
     return []
 
 def save_alerts(alerts):
+    # Restringir estrictamente a los últimos 3 años (2024, 2025, 2026)
+    valid_years = {"2024", "2025", "2026"}
+    filtered = []
+    for a in alerts:
+        d = a.get("fecha_notificacion") or a.get("mes_ano") or ""
+        y = d[:4] if len(d) >= 4 else ""
+        if y in valid_years:
+            filtered.append(a)
+    alerts = filtered
+
     os.makedirs(os.path.dirname(DATA_PATH), exist_ok=True)
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(alerts, f, ensure_ascii=False, indent=2)
@@ -45,7 +55,7 @@ def save_alerts(alerts):
     with open(static_js_data_path, "w", encoding="utf-8") as f:
         f.write("window.INITIAL_ALERTS_DATA = " + json.dumps(alerts, ensure_ascii=False, indent=2) + ";\n")
 
-    print(f"[INFO] Guardadas {len(alerts)} alertas en {DATA_PATH}, static/data/ y alerts_data.js")
+    print(f"[INFO] Guardadas {len(alerts)} alertas (años 2024-2026) en {DATA_PATH}, static/data/ y alerts_data.js")
 
 def classify_food_category(description):
     desc_lower = description.lower()
@@ -294,7 +304,9 @@ def fetch_rasff_notifications():
 
     sub_queries = [
         {"desc": "Alertas generales recientes", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}}},
-        {"desc": "Sector Vinos y Bebidas", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "wine"}},
+        {"desc": "Sector Vinos (Búsqueda textual)", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "wine"}},
+        {"desc": "Sector Vinos (Categoría oficial 18459)", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "productCategory": [18459]}},
+        {"desc": "Sector Bebidas Alcohólicas (Categoría 18431)", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "productCategory": [18431]}},
         {"desc": "Sector Aceites y Grasas", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "oil"}},
         {"desc": "Sector Miel y Endulzantes", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "honey"}},
         {"desc": "Sector Lácteos y Quesos", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "cheese"}}
@@ -360,11 +372,11 @@ def fetch_rasff_notifications():
             if tipo_alerta == "Fraude / EMA":
                 tipo_fraude = "Adición No Autorizada" if any(k in sub_low for k in ["syrup", "sugar", "dye"]) else "Falso Etiquetado / Origen"
 
-            risk_desc = n.get("riskDecision", {}).get("description", "").lower()
+            risk_desc = (n.get("riskDecision", {}).get("description") or "").lower()
             if "serious" in risk_desc:
                 gravedad = "Crítica / Alta"
             elif "potential" in risk_desc:
-                gravedad = "Media"
+                gravedad = "Riesgo Potencial / Media"
             else:
                 gravedad = "Media"
 
@@ -390,6 +402,7 @@ def fetch_rasff_notifications():
                 "lotes_afectados": f"Lote notificado en alerta europea {ref}",
                 "distribucion_geografica": f"Unión Europea (Notificado por {notif_c}; Origen: {orig_c})",
                 "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+                "decision_rasff": n.get("riskDecision", {}).get("description", ""),
                 "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
             }
             mapped_alerts.append(item)
@@ -509,6 +522,10 @@ def run_sync():
         if item["id"] not in existing_ids:
             new_alerts.append(item)
             existing_ids.add(item["id"])
+        else:
+            for i, ex in enumerate(existing):
+                if ex["id"] == item["id"]:
+                    existing[i] = item
 
     # 3. Ingesta en vivo de UK FSA
     fsa_alerts = fetch_uk_fsa_alerts()
@@ -516,6 +533,10 @@ def run_sync():
         if item["id"] not in existing_ids:
             new_alerts.append(item)
             existing_ids.add(item["id"])
+        else:
+            for i, ex in enumerate(existing):
+                if ex["id"] == item["id"]:
+                    existing[i] = item
 
     # Combine: new alerts on top, preserving all existing alerts and Food Fraud cases
     total_alerts = new_alerts + existing

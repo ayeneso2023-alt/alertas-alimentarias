@@ -125,8 +125,15 @@ function applyFilters() {
     }
 
     // Category match
-    if (categoryVal !== 'all' && a.categoria_alimento !== categoryVal) {
-      return false;
+    if (categoryVal !== 'all') {
+      if (categoryVal === 'Bebidas y Licores') {
+        const cat = (a.categoria_alimento || '').toLowerCase();
+        const prod = (a.producto || '').toLowerCase();
+        const isDrink = cat.includes('bebida') || cat.includes('licor') || cat.includes('vino') || prod.includes('wine') || prod.includes('vino');
+        if (!isDrink) return false;
+      } else if (a.categoria_alimento !== categoryVal) {
+        return false;
+      }
     }
 
     // Type match

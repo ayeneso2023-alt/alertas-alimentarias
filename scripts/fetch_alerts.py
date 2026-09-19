@@ -222,6 +222,7 @@ RASFF_COUNTRY_MAP = {
     "Denmark": "Dinamarca",
     "Finland": "Finlandia",
     "Czech Republic": "República Checa",
+    "Czechia": "República Checa",
     "Slovakia": "Eslovaquia",
     "Hungary": "Hungría",
     "Romania": "Rumanía",
@@ -237,6 +238,7 @@ RASFF_COUNTRY_MAP = {
     "Norway": "Noruega",
     "United Kingdom": "Reino Unido",
     "United States": "Estados Unidos",
+    "Ukraine": "Ucrania",
     "Türkiye": "Turquía",
     "Turkey": "Turquía",
     "China": "China",
@@ -252,6 +254,9 @@ RASFF_COUNTRY_MAP = {
 }
 
 RASFF_CATEGORY_MAP = {
+    "wine": "Bebidas y Licores",
+    "alcoholic beverages": "Bebidas y Licores",
+    "non-alcoholic beverages": "Bebidas y Licores",
     "nuts, nut products and seeds": "Frutos Secos y Semillas",
     "cereals and bakery products": "Cereales y Productos de Panadería",
     "fruits and vegetables": "Frutas, Hortalizas y Verduras",
@@ -263,29 +268,22 @@ RASFF_CATEGORY_MAP = {
     "milk and milk products": "Lácteos y Derivados",
     "fats and oils": "Aceites y Grasas",
     "herbs and spices": "Especias y Condimentos",
-    "non-alcoholic beverages": "Bebidas y Zumos",
-    "alcoholic beverages": "Bebidas y Zumos",
     "confectionery": "Alimentos Procesados y Conservas",
     "cocoa and cocoa preparations, coffee and tea": "Alimentos Procesados y Conservas",
-    "dietetic foods, food supplements, fortified foods": "Alimentos Procesados y Conservas",
+    "dietetic foods, food supplements, fortified foods": "Complementos Alimenticios",
     "prepared dishes and snacks": "Alimentos Procesados y Conservas",
-    "honey and royal jelly": "Miel y Derivados"
+    "honey and royal jelly": "Miel y Endulzantes"
 }
 
-def fetch_rasff_notifications(limit=60):
+def fetch_rasff_notifications():
     """
     Alertas oficiales europeas en tiempo real desde la API del sistema RASFF
-    (Rapid Alert System for Food and Feed) de la Comisión Europea / DG SANTE
-    (https://webgate.ec.europa.eu/rasff-window/screen/search).
+    (Rapid Alert System for Food and Feed) de la Comisión Europea / DG SANTE.
+    Realiza una búsqueda multi-dominio para capturar tanto las alertas generales
+    recientes como las incidencias sectoriales clave (Vinos, Aceites, Miel, Lácteos).
     """
     print("[RASFF] Conectando con la API oficial en vivo de la Comisión Europea (RASFF Window)...")
     url = "https://webgate.ec.europa.eu/rasff-window/backend/public/notification/search/consolidated/"
-    payload = {
-        "parameters": {
-            "pageNumber": 1,
-            "itemsPerPage": limit
-        }
-    }
     
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
@@ -294,93 +292,110 @@ def fetch_rasff_notifications(limit=60):
         "Referer": "https://webgate.ec.europa.eu/rasff-window/screen/search"
     }
 
+    sub_queries = [
+        {"desc": "Alertas generales recientes", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}}},
+        {"desc": "Sector Vinos y Bebidas", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "wine"}},
+        {"desc": "Sector Aceites y Grasas", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "oil"}},
+        {"desc": "Sector Miel y Endulzantes", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "honey"}},
+        {"desc": "Sector Lácteos y Quesos", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "cheese"}}
+    ]
+
+    combined_notifs = {}
+
     try:
         import ssl
         ctx = ssl._create_unverified_context()
-        req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers)
-        with urllib.request.urlopen(req, context=ctx, timeout=15) as resp:
-            if resp.status == 200:
-                res_json = json.loads(resp.read().decode("utf-8"))
-                notifs = res_json.get("notifications", [])
-                print(f"[RASFF] Recibidas {len(notifs)} notificaciones oficiales en vivo de la Comisión Europea.")
-                
-                mapped_alerts = []
-                for n in notifs:
-                    ref = n.get("reference", "")
-                    if not ref:
-                        continue
-                    
-                    sub = (n.get("subject") or "").strip()
-                    sub_low = sub.lower()
-                    cat_desc = n.get("productCategory", {}).get("description", "").lower()
-                    cat = RASFF_CATEGORY_MAP.get(cat_desc, "Alimentos Procesados y Conservas")
-                    
-                    raw_date = n.get("ecValidationDate", "")
-                    m_date = re.search(r"(\d{2})-(\d{2})-(\d{4})", raw_date)
-                    if m_date:
-                        date_str = f"{m_date.group(3)}-{m_date.group(2)}-{m_date.group(1)}"
-                    else:
-                        date_str = datetime.now().strftime("%Y-%m-%d")
+        
+        for q in sub_queries:
+            try:
+                req = urllib.request.Request(url, data=json.dumps(q["payload"]).encode("utf-8"), headers=headers)
+                with urllib.request.urlopen(req, context=ctx, timeout=15) as resp:
+                    if resp.status == 200:
+                        res_json = json.loads(resp.read().decode("utf-8"))
+                        notifs = res_json.get("notifications", [])
+                        print(f"[RASFF] {q['desc']}: obtenidas {len(notifs)} notificaciones.")
+                        for n in notifs:
+                            ref = n.get("reference")
+                            if ref and ref not in combined_notifs:
+                                combined_notifs[ref] = n
+            except Exception as q_err:
+                print(f"[WARN] Error en consulta RASFF '{q['desc']}': {q_err}")
 
-                    notif_raw = n.get("notifyingCountry", {}).get("organizationName", "Unión Europea")
-                    notif_c = RASFF_COUNTRY_MAP.get(notif_raw, notif_raw)
+        print(f"[RASFF] Total notificaciones únicas consolidadas en vivo: {len(combined_notifs)}")
+        
+        mapped_alerts = []
+        for ref, n in combined_notifs.items():
+            sub = (n.get("subject") or "").strip()
+            sub_low = sub.lower()
+            cat_desc = n.get("productCategory", {}).get("description", "").lower()
+            cat = RASFF_CATEGORY_MAP.get(cat_desc, classify_food_category(sub))
+            
+            raw_date = n.get("ecValidationDate", "")
+            m_date = re.search(r"(\d{2})-(\d{2})-(\d{4})", raw_date)
+            if m_date:
+                date_str = f"{m_date.group(3)}-{m_date.group(2)}-{m_date.group(1)}"
+            else:
+                date_str = datetime.now().strftime("%Y-%m-%d")
 
-                    orig_list = [c.get("organizationName", "") for c in n.get("originCountries", [])]
-                    orig_c = ", ".join([RASFF_COUNTRY_MAP.get(c, c) for c in orig_list]) if orig_list else "Desconocido / Múltiples"
+            notif_raw = n.get("notifyingCountry", {}).get("organizationName", "Unión Europea")
+            notif_c = RASFF_COUNTRY_MAP.get(notif_raw, notif_raw)
 
-                    if any(k in sub_low for k in ["salmonella", "listeria", "e. coli", "escherichia", "norovirus", "campylobacter", "bacillus", "mold", "mould"]):
-                        tipo_alerta = "Microbiológico"
-                    elif any(k in sub_low for k in ["foreign object", "foreign body", "glass", "metal", "plastic", "corpo estraneo", "cuerpo extraño"]):
-                        tipo_alerta = "Físico"
-                    elif any(k in sub_low for k in ["undeclared", "allergen", "alérgeno", "gluten", "milk", "mustard", "peanuts", "soya", "egg"]):
-                        tipo_alerta = "Alérgeno"
-                    elif any(k in sub_low for k in ["aflatoxin", "ochratoxin", "cadmium", "lead", "mercury", "pesticide", "chlorpyrifos", "alkaloid", "tropane", "mycotoxin", "nitrate", "chemical"]):
-                        tipo_alerta = "Químico"
-                    elif any(k in sub_low for k in ["fraud", "adulterat", "unauthorized", "counterfeit"]):
-                        tipo_alerta = "Fraude / EMA"
-                    else:
-                        tipo_alerta = "Químico"
+            orig_list = [c.get("organizationName", "") for c in n.get("originCountries", [])]
+            orig_c = ", ".join([RASFF_COUNTRY_MAP.get(c, c) for c in orig_list]) if orig_list else "Desconocido / Múltiples"
 
-                    tipo_fraude = "No Aplica"
-                    if tipo_alerta == "Fraude / EMA":
-                        tipo_fraude = "Adición No Autorizada"
+            if any(k in sub_low for k in ["salmonella", "listeria", "e. coli", "escherichia", "norovirus", "campylobacter", "bacillus", "mold", "mould"]):
+                tipo_alerta = "Microbiológico"
+            elif any(k in sub_low for k in ["foreign object", "foreign body", "glass", "metal", "plastic", "corpo estraneo", "cuerpo extraño", "glas fracments"]):
+                tipo_alerta = "Físico"
+            elif any(k in sub_low for k in ["undeclared", "allergen", "alérgeno", "sulfite", "sulphite", "sulfito", "gluten", "milk", "mustard", "peanuts", "soya", "egg"]):
+                tipo_alerta = "Alérgeno"
+            elif any(k in sub_low for k in ["aflatoxin", "ochratoxin", "ocratoxina", "cadmium", "lead", "mercury", "pesticide", "chlorpyrifos", "alkaloid", "tropane", "mycotoxin", "nitrate", "chemical", "pfas"]):
+                tipo_alerta = "Químico"
+            elif any(k in sub_low for k in ["fraud", "adulterat", "unauthorized", "counterfeit", "health certificate", "border rejection"]):
+                tipo_alerta = "Fraude / EMA"
+            else:
+                tipo_alerta = "Químico"
 
-                    risk_desc = n.get("riskDecision", {}).get("description", "").lower()
-                    if "serious" in risk_desc:
-                        gravedad = "Crítica / Alta"
-                    elif "potential" in risk_desc:
-                        gravedad = "Media"
-                    else:
-                        gravedad = "Media"
+            tipo_fraude = "No Aplica"
+            if tipo_alerta == "Fraude / EMA":
+                tipo_fraude = "Adición No Autorizada" if any(k in sub_low for k in ["syrup", "sugar", "dye"]) else "Falso Etiquetado / Origen"
 
-                    clean_ref = ref.replace(".", "-")
-                    item = {
-                        "id": f"EU-RASFF-{clean_ref}",
-                        "id_original": ref,
-                        "fecha_notificacion": date_str,
-                        "mes_ano": date_str[:7],
-                        "fuente_origen": "EU_RASFF",
-                        "pais_notificador": notif_c,
-                        "pais_origen": orig_c,
-                        "empresa_responsable": "Operadores comerciales de la red UE",
-                        "producto": sub[:120],
-                        "marca": "No especificada / Marca comunitaria",
-                        "categoria_alimento": cat,
-                        "tipo_alerta": tipo_alerta,
-                        "subtipo_peligro": sub[:95] + ("..." if len(sub) > 95 else ""),
-                        "tipo_fraude": tipo_fraude,
-                        "gravedad": gravedad,
-                        "estado_accion": "Activa / En curso",
-                        "descripcion": f"Notificación oficial RASFF ({ref}): {sub}",
-                        "lotes_afectados": f"Lote notificado en alerta europea {ref}",
-                        "distribucion_geografica": f"Unión Europea (Notificado por {notif_c}; Origen: {orig_c})",
-                        "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-                        "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
-                    }
-                    mapped_alerts.append(item)
-                return mapped_alerts
+            risk_desc = n.get("riskDecision", {}).get("description", "").lower()
+            if "serious" in risk_desc:
+                gravedad = "Crítica / Alta"
+            elif "potential" in risk_desc:
+                gravedad = "Media"
+            else:
+                gravedad = "Media"
+
+            clean_ref = ref.replace(".", "-")
+            item = {
+                "id": f"EU-RASFF-{clean_ref}",
+                "id_original": ref,
+                "fecha_notificacion": date_str,
+                "mes_ano": date_str[:7],
+                "fuente_origen": "EU_RASFF",
+                "pais_notificador": notif_c,
+                "pais_origen": orig_c,
+                "empresa_responsable": "Operadores comerciales de la red UE",
+                "producto": sub[:120],
+                "marca": "No especificada / Marca comunitaria",
+                "categoria_alimento": cat,
+                "tipo_alerta": tipo_alerta,
+                "subtipo_peligro": sub[:95] + ("..." if len(sub) > 95 else ""),
+                "tipo_fraude": tipo_fraude,
+                "gravedad": gravedad,
+                "estado_accion": "Activa / En curso",
+                "descripcion": f"Notificación oficial RASFF ({ref}): {sub}",
+                "lotes_afectados": f"Lote notificado en alerta europea {ref}",
+                "distribucion_geografica": f"Unión Europea (Notificado por {notif_c}; Origen: {orig_c})",
+                "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+                "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+            }
+            mapped_alerts.append(item)
+        return mapped_alerts
     except Exception as e:
-        print(f"[WARN] Error consultando API en vivo de RASFF Window: {e}")
+        print(f"[WARN] Error general en módulo RASFF: {e}")
 
     # Fallback si hay corte de red
     print("[RASFF] Utilizando catálogo base verificado de RASFF...")

@@ -61,9 +61,13 @@ async function fetchInitialData() {
         if (Array.isArray(fetchedData) && fetchedData.length > 0) {
           allAlerts = fetchedData;
           loaded = true;
-          console.log(`[INFO] Datos actualizados desde ${ep} (${allAlerts.length} alertas)`);
           populateFilterOptions();
           applyFilters();
+          const latest = allAlerts[0]?.fecha_notificacion || '';
+          const badgeText = document.getElementById('lastUpdatedText');
+          if (badgeText && latest) {
+            badgeText.textContent = `Auto-sync activo • Alertas hasta ${latest} (${allAlerts.length} alertas)`;
+          }
           break;
         }
       }
@@ -1017,9 +1021,9 @@ async function triggerLiveSync() {
   btn.disabled = true;
   btn.classList.add('opacity-75');
   icon.classList.add('animate-spin');
-  badgeText.textContent = 'Verificando alertas y feeds en vivo...';
+  badgeText.textContent = 'Consultando últimas alertas oficiales...';
 
-  // 1. Si estamos en entorno local, prueba /api/sync
+  // 1. Si estamos en entorno local, ejecuta /api/sync
   let localSyncDone = false;
   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
     try {
@@ -1035,35 +1039,15 @@ async function triggerLiveSync() {
 
   // 2. En GitHub Pages o modo web
   if (!localSyncDone) {
-    try {
-      const cacheBuster = Date.now();
-      const endpoints = [
-        `data/alerts.json?v=${cacheBuster}`,
-        `static/data/alerts.json?v=${cacheBuster}`,
-        `./data/alerts.json?v=${cacheBuster}`
-      ];
-      for (const ep of endpoints) {
-        try {
-          const r = await fetch(ep);
-          if (r.ok) {
-            const data = await r.json();
-            if (Array.isArray(data) && data.length > 0) {
-              allAlerts = data;
-              populateFilterOptions();
-              applyFilters();
-              break;
-            }
-          }
-        } catch (_) {}
-      }
-    } catch (_) {}
+    await fetchInitialData();
   }
 
   // Feedback visual
-  await new Promise(r => setTimeout(r, 700));
+  await new Promise(r => setTimeout(r, 600));
 
+  const latest = allAlerts[0]?.fecha_notificacion || 'reciente';
   const now = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-  badgeText.textContent = `Sincronizado con bases oficiales • ${now} (${allAlerts.length} alertas)`;
+  badgeText.textContent = `Actualizado • Última alerta: ${latest} • ${now} (${allAlerts.length} alertas)`;
 
   btn.disabled = false;
   btn.classList.remove('opacity-75');

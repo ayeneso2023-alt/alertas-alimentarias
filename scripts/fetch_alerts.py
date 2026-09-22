@@ -99,7 +99,7 @@ def classify_alert_type(reason, description=""):
         return "Químico"
     return "Etiquetado / Regulatorio"
 
-def fetch_aesan_alerts(limit=35):
+def fetch_aesan_alerts(limit=80):
     """
     Rastrea las alertas oficiales más recientes publicadas en el portal de la AESAN
     a través de su sitemap oficial (https://www.aesan.gob.es/sitemap.xml).
@@ -113,10 +113,10 @@ def fetch_aesan_alerts(limit=35):
         ctx = ssl._create_unverified_context()
         with urllib.request.urlopen(req, context=ctx, timeout=10) as r:
             xml = r.read().decode('utf-8', errors='ignore')
-        matches = re.findall(r'<loc>(https://www.aesan.gob.es/alertas/2026_.*?)</loc>', xml)
+        matches = re.findall(r'<loc>(https://www.aesan.gob.es/alertas/(?:2024|2025|2026)_.*?)</loc>', xml)
         # Orden descendente (más recientes primero)
         target_urls = matches[::-1][:limit]
-        print(f"[AESAN] Extrayendo {len(target_urls)} alertas recientes de España...")
+        print(f"[AESAN] Extrayendo {len(target_urls)} alertas recientes de España (2024-2026)...")
 
         for url in target_urls:
             try:
@@ -302,22 +302,49 @@ def fetch_rasff_notifications():
         "Referer": "https://webgate.ec.europa.eu/rasff-window/screen/search"
     }
 
-    sub_queries = [
-        {"desc": "Alertas generales recientes", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}}},
-        {"desc": "Sector Vinos (Búsqueda textual)", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "wine"}},
-        {"desc": "Sector Vinos (Categoría oficial 18459)", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "productCategory": [18459]}},
-        {"desc": "Sector Bebidas Alcohólicas (Categoría 18431)", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "productCategory": [18431]}},
-        {"desc": "Sector Aceites y Grasas", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "oil"}},
-        {"desc": "Sector Miel y Endulzantes", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "honey"}},
-        {"desc": "Sector Lácteos y Quesos", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "cheese"}}
-    ]
-
     combined_notifs = {}
 
     try:
         import ssl
         ctx = ssl._create_unverified_context()
-        
+
+        # 1. Paginación profunda de Alertas Generales recientes (15 páginas x 100 = hasta 1.500 notificaciones)
+        print("[RASFF] Iniciando paginación profunda de alertas generales (15 páginas)...")
+        for page in range(1, 16):
+            try:
+                payload = {"parameters": {"pageNumber": page, "itemsPerPage": 100}}
+                req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers)
+                with urllib.request.urlopen(req, context=ctx, timeout=15) as resp:
+                    if resp.status == 200:
+                        res_json = json.loads(resp.read().decode("utf-8"))
+                        notifs = res_json.get("notifications", [])
+                        if not notifs:
+                            break
+                        new_count = 0
+                        for n in notifs:
+                            ref = n.get("reference")
+                            if ref and ref not in combined_notifs:
+                                combined_notifs[ref] = n
+                                new_count += 1
+                        print(f"[RASFF] Página general {page}/15: {len(notifs)} alertas ({new_count} nuevas). Total acumulado: {len(combined_notifs)}")
+            except Exception as page_err:
+                print(f"[WARN] Error en página general {page}: {page_err}")
+
+        # 2. Consultas temáticas y sectoriales clave para asegurar cobertura histórica del 100%
+        sub_queries = [
+            {"desc": "Sector Vinos (Categoría oficial 18459)", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "productCategory": [18459]}},
+            {"desc": "Sector Vinos (Búsqueda textual)", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "wine"}},
+            {"desc": "Sector Bebidas Alcohólicas (Categoría 18431)", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "productCategory": [18431]}},
+            {"desc": "Sector Aceites y Grasas", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "oil"}},
+            {"desc": "Sector Miel y Endulzantes", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "honey"}},
+            {"desc": "Sector Lácteos y Quesos", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "cheese"}},
+            {"desc": "Sector Pescados y Mariscos", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "fish"}},
+            {"desc": "Sector Carnes y Aves", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "meat"}},
+            {"desc": "Sector Frutas y Vegetales", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "fruit"}},
+            {"desc": "Sector Frutos Secos", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "nuts"}},
+            {"desc": "Notificaciones España en RASFF", "payload": {"parameters": {"pageNumber": 1, "itemsPerPage": 100}, "subject": "Spain"}}
+        ]
+
         for q in sub_queries:
             try:
                 req = urllib.request.Request(url, data=json.dumps(q["payload"]).encode("utf-8"), headers=headers)
@@ -325,11 +352,13 @@ def fetch_rasff_notifications():
                     if resp.status == 200:
                         res_json = json.loads(resp.read().decode("utf-8"))
                         notifs = res_json.get("notifications", [])
-                        print(f"[RASFF] {q['desc']}: obtenidas {len(notifs)} notificaciones.")
+                        new_in_sec = 0
                         for n in notifs:
                             ref = n.get("reference")
                             if ref and ref not in combined_notifs:
                                 combined_notifs[ref] = n
+                                new_in_sec += 1
+                        print(f"[RASFF] {q['desc']}: obtenidas {len(notifs)} notificaciones (+{new_in_sec} nuevas).")
             except Exception as q_err:
                 print(f"[WARN] Error en consulta RASFF '{q['desc']}': {q_err}")
 
@@ -439,7 +468,7 @@ def fetch_rasff_notifications():
     ]
 
 def fetch_uk_fsa_alerts():
-    url = "https://data.food.gov.uk/food-alerts/id.json?_sort=-created&_limit=15"
+    url = "https://data.food.gov.uk/food-alerts/id.json?_sort=-created&_limit=50"
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", "Accept": "application/json"}
     try:
         import ssl
@@ -495,9 +524,77 @@ def fetch_uk_fsa_alerts():
         print(f"[WARN] No se pudo obtener datos de UK FSA en vivo: {e}")
     return []
 
+def fetch_openfda_alerts(limit=50):
+    """
+    Rastrea alertas oficiales de retirada de alimentos de la FDA (Estados Unidos)
+    a través de la API abierta openFDA (https://api.fda.gov/food/enforcement.json).
+    """
+    print("[openFDA] Consultando recalls oficiales de alimentos de US FDA...")
+    url = f"https://api.fda.gov/food/enforcement.json?sort=report_date:desc&limit={limit}"
+    results = []
+    try:
+        import ssl
+        ctx = ssl._create_unverified_context()
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, context=ctx, timeout=10) as r:
+            if r.status == 200:
+                data = json.loads(r.read().decode('utf-8'))
+                items = data.get("results", [])
+                for it in items:
+                    raw_date = it.get("report_date", "")
+                    if len(raw_date) == 8:
+                        date_str = f"{raw_date[:4]}-{raw_date[4:6]}-{raw_date[6:]}"
+                    else:
+                        date_str = datetime.now().strftime("%Y-%m-%d")
+                    
+                    prod_desc = it.get("product_description", "Alimento retirado")
+                    reason = it.get("reason_for_recall", prod_desc)
+                    recall_num = it.get("recall_number", "FDA-RECALL")
+                    firm = it.get("recalling_firm", "Empresa estadounidense")
+                    
+                    tipo_alerta = classify_alert_type(reason, prod_desc)
+                    cat = classify_food_category(prod_desc)
+                    
+                    classification = it.get("classification", "")
+                    if "Class I" in classification:
+                        gravedad = "Crítica / Alta"
+                    elif "Class II" in classification:
+                        gravedad = "Media"
+                    else:
+                        gravedad = "Baja / Informativa"
+                    
+                    item = {
+                        "id": f"US-FDA-{recall_num.replace('/', '-')}",
+                        "id_original": recall_num,
+                        "fecha_notificacion": date_str,
+                        "mes_ano": date_str[:7],
+                        "fuente_origen": "US_FDA",
+                        "pais_notificador": "Estados Unidos",
+                        "pais_origen": "Estados Unidos",
+                        "empresa_responsable": firm,
+                        "producto": prod_desc[:120],
+                        "marca": firm[:50],
+                        "categoria_alimento": cat,
+                        "tipo_alerta": tipo_alerta,
+                        "subtipo_peligro": reason[:95] + ("..." if len(reason) > 95 else ""),
+                        "tipo_fraude": "No Aplica",
+                        "gravedad": gravedad,
+                        "estado_accion": "Activa / En curso",
+                        "descripcion": f"Retirada oficial US FDA ({recall_num}): {reason}",
+                        "lotes_afectados": it.get("code_info", "Consulte lote en reporte FDA")[:100],
+                        "distribucion_geografica": it.get("distribution_pattern", "Estados Unidos")[:120],
+                        "cantidad_afectada": it.get("product_quantity", "En evaluación por FDA")[:100],
+                        "fuente_url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
+                    }
+                    results.append(item)
+                print(f"[openFDA] Obtenidas con éxito {len(results)} alertas oficiales de US FDA")
+    except Exception as e:
+        print(f"[WARN] Error consultando openFDA: {e}")
+    return results
+
 def run_sync():
     print("==================================================================")
-    print("🚀 SINCRONIZACIÓN MULTI-FUENTE: AESAN, RASFF, UK FSA & FOOD FRAUD")
+    print("🚀 SINCRONIZACIÓN MULTI-FUENTE: AESAN, RASFF, UK FSA, FDA & FRAUD")
     print("==================================================================")
     existing = load_existing_alerts()
     existing_ids = {a.get("id") for a in existing}
@@ -505,18 +602,17 @@ def run_sync():
     new_alerts = []
     
     # 1. Ingesta oficial en vivo de AESAN (España)
-    aesan_alerts = fetch_aesan_alerts(limit=35)
+    aesan_alerts = fetch_aesan_alerts(limit=80)
     for item in aesan_alerts:
         if item["id"] not in existing_ids:
             new_alerts.append(item)
             existing_ids.add(item["id"])
         else:
-            # Actualizar si ya existe para enriquecer datos
             for i, ex in enumerate(existing):
                 if ex["id"] == item["id"]:
                     existing[i] = item
 
-    # 2. Ingesta oficial de alertas europeas RASFF
+    # 2. Ingesta oficial de alertas europeas RASFF (15 páginas + sectores)
     rasff_alerts = fetch_rasff_notifications()
     for item in rasff_alerts:
         if item["id"] not in existing_ids:
@@ -538,10 +634,21 @@ def run_sync():
                 if ex["id"] == item["id"]:
                     existing[i] = item
 
-    # Combine: new alerts on top, preserving all existing alerts and Food Fraud cases
+    # 4. Ingesta en vivo de US FDA (openFDA)
+    fda_alerts = fetch_openfda_alerts(limit=50)
+    for item in fda_alerts:
+        if item["id"] not in existing_ids:
+            new_alerts.append(item)
+            existing_ids.add(item["id"])
+        else:
+            for i, ex in enumerate(existing):
+                if ex["id"] == item["id"]:
+                    existing[i] = item
+
+    # Combinar: nuevas alertas primero, preservando casos históricos y de Food Fraud
     total_alerts = new_alerts + existing
     
-    # Sort by fecha_notificacion descending
+    # Ordenar por fecha_notificacion descendente
     total_alerts.sort(key=lambda x: x.get("fecha_notificacion", ""), reverse=True)
     
     save_alerts(total_alerts)

@@ -1,0 +1,40 @@
+name: Sincronización Automática de Alertas Alimentarias
+
+on:
+  schedule:
+    # Ejecutar cada 3 horas (a las :15 para evitar sobrecarga en horas en punto)
+    - cron: '15 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sincronizar alertas mundiales
+        run: |
+          python3 scripts/fetch_alerts.py
+
+      - name: Guardar cambios y push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/alerts.json data/metadata.json static/data/alerts.json static/data/metadata.json static/js/alerts_data.js
+          if ! git diff --staged --quiet; then
+            FECHA=$(date -u "+%Y-%m-%d %H:%M:%S UTC")
+            git commit -m "Auto-sync GitHub Actions: alertas y fecha actualizada ($FECHA)"
+            git push
+          else
+            echo "Sin cambios en este ciclo."
+          fi

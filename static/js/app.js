@@ -20,6 +20,95 @@ if (window.INITIAL_ALERTS_DATA && Array.isArray(window.INITIAL_ALERTS_DATA) && w
   allAlerts = [...window.INITIAL_ALERTS_DATA];
 }
 
+function getFormattedDateTime(d = new Date()) {
+  const dias = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+  const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+  const diaSemana = dias[d.getDay()];
+  const dia = d.getDate();
+  const mes = meses[d.getMonth()];
+  const ano = d.getFullYear();
+  const hora = String(d.getHours()).padStart(2, '0');
+  const min = String(d.getMinutes()).padStart(2, '0');
+  const seg = String(d.getSeconds()).padStart(2, '0');
+  return {
+    fechaFormateada: `${diaSemana}, ${dia} de ${mes} de ${ano} • ${hora}:${min}:${seg}`,
+    fechaCorta: `${String(dia).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}/${ano}`,
+    hora: `${hora}:${min}:${seg}`,
+    diaSemana
+  };
+}
+
+function updateDashboardMetadata(meta) {
+  if (!meta) return;
+  const exactEl = document.getElementById('dashboardExactTimestamp');
+  const badgeText = document.getElementById('lastUpdatedText');
+  const statusEl = document.getElementById('instantSyncStatusText');
+
+  let text = meta.ultima_actualizacion_formateada;
+  if (!text && meta.ultima_actualizacion_fecha) {
+    text = `${meta.dia_semana ? meta.dia_semana + ', ' : ''}${meta.ultima_actualizacion_fecha} • ${meta.ultima_actualizacion_hora || ''}`;
+  }
+  if (!text) {
+    const f = getFormattedDateTime();
+    text = f.fechaFormateada;
+  }
+
+  if (exactEl) {
+    exactEl.textContent = text;
+  }
+  if (badgeText) {
+    const hora = meta.ultima_actualizacion_hora || (text.includes('•') ? text.split('•')[1].trim() : '');
+    const total = meta.total_alertas || allAlerts.length;
+    badgeText.textContent = `Sincronizado ${hora ? '• ' + hora : ''} (${total})`;
+  }
+  if (statusEl) {
+    const total = meta.total_alertas || allAlerts.length;
+    statusEl.textContent = `Sincronización instantánea activa • ${total} alertas`;
+  }
+}
+
+async function fetchMetadata() {
+  const ts = Date.now();
+  const metaEndpoints = [
+    `/api/metadata?t=${ts}`,
+    `data/metadata.json?t=${ts}`,
+    `./data/metadata.json?t=${ts}`,
+    `static/data/metadata.json?t=${ts}`,
+    'data/metadata.json'
+  ];
+  for (const ep of metaEndpoints) {
+    try {
+      const res = await fetch(ep, { cache: 'no-store' });
+      if (res.ok) {
+        const meta = await res.json();
+        updateDashboardMetadata(meta);
+        return meta;
+      }
+    } catch (e) {}
+  }
+  return null;
+}
+
+function showInstantNotification(msg) {
+  let toast = document.getElementById('dashboardToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'dashboardToast';
+    toast.className = 'fixed bottom-5 right-5 z-50 bg-slate-900/95 border border-emerald-500/40 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 text-xs transition-all duration-300 transform translate-y-10 opacity-0';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `
+    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+    <span class="font-medium text-emerald-300">${msg}</span>
+  `;
+  toast.classList.remove('translate-y-10', 'opacity-0');
+  toast.classList.add('translate-y-0', 'opacity-100');
+  setTimeout(() => {
+    toast.classList.add('translate-y-10', 'opacity-0');
+    toast.classList.remove('translate-y-0', 'opacity-100');
+  }, 3500);
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   // Renderizado instantáneo si ya tenemos datos
   if (allAlerts.length > 0) {
@@ -27,15 +116,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     applyFilters();
   }
 
+  // Carga inmediata de metadatos (0 ms)
+  if (window.DASHBOARD_METADATA) {
+    updateDashboardMetadata(window.DASHBOARD_METADATA);
+  } else {
+    const defaultDt = getFormattedDateTime();
+    updateDashboardMetadata({ ultima_actualizacion_formateada: defaultDt.fechaFormateada, total_alertas: allAlerts.length });
+  }
+
   if (window.lucide) {
     window.lucide.createIcons();
   }
 
-  await fetchInitialData();
+  await Promise.allSettled([
+    fetchInitialData(),
+    fetchMetadata()
+  ]);
+
   setupEventListeners();
+
+  // Comprobación periódica automática en segundo plano (cada 60s)
+  setInterval(async () => {
+    try {
+      const meta = await fetchMetadata();
+      if (meta && meta.ultima_actualizacion_iso) {
+        if (!window.__lastMetaIso || window.__lastMetaIso !== meta.ultima_actualizacion_iso) {
+          window.__lastMetaIso = meta.ultima_actualizacion_iso;
+          await fetchInitialData();
+        }
+      }
+    } catch (e) {}
+  }, 60000);
 });
 
-async function fetchInitialData() {
+async function fetchAlertsDirectly() {
   const ts = Date.now();
   const endpoints = [
     `/api/alerts?t=${ts}`,
@@ -45,8 +159,6 @@ async function fetchInitialData() {
     'data/alerts.json',
     'static/data/alerts.json'
   ];
-  let loaded = false;
-
   for (const ep of endpoints) {
     try {
       const res = await fetch(ep, {
@@ -59,24 +171,21 @@ async function fetchInitialData() {
       if (res.ok) {
         const fetchedData = await res.json();
         if (Array.isArray(fetchedData) && fetchedData.length > 0) {
-          allAlerts = fetchedData;
-          loaded = true;
-          populateFilterOptions();
-          applyFilters();
-          const latest = allAlerts[0]?.fecha_notificacion || '';
-          const badgeText = document.getElementById('lastUpdatedText');
-          if (badgeText && latest) {
-            badgeText.textContent = `Auto-sync activo • Alertas hasta ${latest} (${allAlerts.length} alertas)`;
-          }
-          break;
+          return fetchedData;
         }
       }
-    } catch (e) {
-      // Intenta siguiente endpoint si fetch falla
-    }
+    } catch (e) {}
   }
+  return null;
+}
 
-  if (!loaded && allAlerts.length === 0 && window.INITIAL_ALERTS_DATA) {
+async function fetchInitialData() {
+  const fetched = await fetchAlertsDirectly();
+  if (fetched && Array.isArray(fetched) && fetched.length > 0) {
+    allAlerts = fetched;
+    populateFilterOptions();
+    applyFilters();
+  } else if (allAlerts.length === 0 && window.INITIAL_ALERTS_DATA) {
     allAlerts = window.INITIAL_ALERTS_DATA;
     populateFilterOptions();
     applyFilters();
@@ -1013,46 +1122,158 @@ function closeModal() {
 
 // ---------------- LIVE SYNC ----------------
 
+async function fetchLiveOpenFDA() {
+  try {
+    const res = await fetch('https://api.fda.gov/food/enforcement.json?limit=25&sort=report_date:desc', {
+      signal: AbortSignal.timeout(3000)
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    if (!data.results) return [];
+    return data.results.map(r => ({
+      id: `US-FDA-${r.recall_number || r.event_id}`,
+      fecha_notificacion: r.recall_initiation_date ? `${r.recall_initiation_date.substring(0, 4)}-${r.recall_initiation_date.substring(4, 6)}-${r.recall_initiation_date.substring(6, 8)}` : new Date().toISOString().slice(0, 10),
+      mes_ano: r.recall_initiation_date ? `${r.recall_initiation_date.substring(0, 4)}-${r.recall_initiation_date.substring(4, 6)}` : new Date().toISOString().slice(0, 7),
+      pais_notificador: "Estados Unidos",
+      pais_origen: r.country || "Estados Unidos",
+      producto: (r.product_description || "Alimento objeto de recall FDA").slice(0, 200),
+      categoria_alimento: "Otros",
+      tipo_alerta: (r.reason_for_recall || '').toLowerCase().includes('salmonella') || (r.reason_for_recall || '').toLowerCase().includes('listeria') ? 'Microbiológico' : (r.reason_for_recall || '').toLowerCase().includes('allergen') ? 'Alérgeno' : 'Regulatorio',
+      subtipo_peligro: (r.reason_for_recall || "").slice(0, 150),
+      tipo_fraude: "No Aplica",
+      gravedad: r.classification === "Class I" ? "Crítica" : r.classification === "Class II" ? "Alta" : "Media",
+      cantidad_afectada: r.product_quantity || "Lotes comerciales",
+      lotes_afectados: (r.code_info || "").slice(0, 120) || "Consultar aviso oficial",
+      empresa_responsable: r.recalling_firm || "Empresa en EE.UU.",
+      descripcion: r.reason_for_recall || r.product_description || "",
+      medidas_adoptadas: "Retirada voluntaria del mercado / Enforcement FDA",
+      fuente_oficial: "US FDA (openFDA)",
+      fuente_url: "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
+    }));
+  } catch (e) {
+    return [];
+  }
+}
+
+async function fetchLiveUKFSA() {
+  try {
+    const res = await fetch('https://data.food.gov.uk/food-alerts/id?_limit=20', {
+      signal: AbortSignal.timeout(3000)
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    const items = data.items || [];
+    return items.map(item => {
+      const idRaw = item['@id'] || '';
+      const notation = item.notation || idRaw.split('/').pop() || 'FSA-ALERT';
+      const created = item.created ? item.created.substring(0, 10) : new Date().toISOString().slice(0, 10);
+      return {
+        id: `UK-FSA-${notation}`,
+        fecha_notificacion: created,
+        mes_ano: created.substring(0, 7),
+        pais_notificador: "Reino Unido",
+        pais_origen: "Reino Unido",
+        producto: item.title || "Food Alert UK",
+        categoria_alimento: "Otros",
+        tipo_alerta: "Alérgeno",
+        subtipo_peligro: item.title || "Riesgo de seguridad alimentaria",
+        tipo_fraude: "No Aplica",
+        gravedad: "Alta",
+        cantidad_afectada: "Distribución en UK",
+        lotes_afectados: "Consultar alerta FSA",
+        empresa_responsable: "Operador de alimentos UK",
+        descripcion: item.description || item.title || "",
+        medidas_adoptadas: "Retirada del producto (Product Recall Information Notice)",
+        fuente_oficial: "UK FSA",
+        fuente_url: item['@id'] || "https://www.food.gov.uk/news-alerts/alerts"
+      };
+    });
+  } catch (e) {
+    return [];
+  }
+}
+
 async function triggerLiveSync() {
   const btn = document.getElementById('btnSync');
   const icon = document.getElementById('syncIcon');
   const badgeText = document.getElementById('lastUpdatedText');
+  const exactEl = document.getElementById('dashboardExactTimestamp');
+  const instantBadge = document.getElementById('instantSyncBadge');
+  const statusEl = document.getElementById('instantSyncStatusText');
 
   btn.disabled = true;
   btn.classList.add('opacity-75');
   icon.classList.add('animate-spin');
-  badgeText.textContent = 'Consultando últimas alertas oficiales...';
+  if (instantBadge) instantBadge.classList.remove('hidden');
 
-  // 1. Si estamos en entorno local, ejecuta /api/sync
-  let localSyncDone = false;
-  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    try {
-      const res = await fetch('/api/sync', { method: 'POST' });
-      if (res.ok) {
-        await fetchInitialData();
-        localSyncDone = true;
-      }
-    } catch (e) {
-      // Ignora y continúa
+  const nowDt = getFormattedDateTime(new Date());
+  if (exactEl) exactEl.textContent = `${nowDt.fechaFormateada} (Sincronizando...)`;
+  if (statusEl) statusEl.textContent = 'Consultando fuentes oficiales en tiempo real...';
+
+  try {
+    // 1. Si estamos en local, llamar a /api/sync
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      try {
+        await fetch('/api/sync', { method: 'POST', signal: AbortSignal.timeout(3000) });
+      } catch (e) {}
     }
+
+    // 2. Fetch fresh data en paralelo: alerts, metadata y APIs CORS en vivo
+    const [fetchedAlerts, fetchedMeta, fdaRecalls, fsaRecalls] = await Promise.allSettled([
+      fetchAlertsDirectly(),
+      fetchMetadata(),
+      fetchLiveOpenFDA(),
+      fetchLiveUKFSA()
+    ]);
+
+    if (fetchedAlerts.status === 'fulfilled' && Array.isArray(fetchedAlerts.value) && fetchedAlerts.value.length > 0) {
+      allAlerts = fetchedAlerts.value;
+    }
+
+    // Integrar alertas en vivo si no están presentes
+    const existingIds = new Set(allAlerts.map(a => a.id));
+    if (fdaRecalls.status === 'fulfilled' && Array.isArray(fdaRecalls.value)) {
+      for (const a of fdaRecalls.value) {
+        if (!existingIds.has(a.id)) {
+          allAlerts.unshift(a);
+          existingIds.add(a.id);
+        }
+      }
+    }
+    if (fsaRecalls.status === 'fulfilled' && Array.isArray(fsaRecalls.value)) {
+      for (const a of fsaRecalls.value) {
+        if (!existingIds.has(a.id)) {
+          allAlerts.unshift(a);
+          existingIds.add(a.id);
+        }
+      }
+    }
+
+    populateFilterOptions();
+    applyFilters();
+
+    const finalDt = getFormattedDateTime(new Date());
+    const finalMeta = {
+      ultima_actualizacion_formateada: finalDt.fechaFormateada,
+      ultima_actualizacion_fecha: finalDt.fechaCorta,
+      ultima_actualizacion_hora: finalDt.hora,
+      dia_semana: finalDt.diaSemana,
+      total_alertas: allAlerts.length
+    };
+    updateDashboardMetadata(finalMeta);
+
+    showInstantNotification(`⚡ Sincronización instantánea completada • ${finalDt.hora} (${allAlerts.length} alertas)`);
+  } catch (err) {
+    console.warn("Live sync error:", err);
+  } finally {
+    btn.disabled = false;
+    btn.classList.remove('opacity-75');
+    icon.classList.remove('animate-spin');
+    if (window.lucide) window.lucide.createIcons();
+    setTimeout(() => {
+      if (instantBadge) instantBadge.classList.add('hidden');
+    }, 4000);
   }
-
-  // 2. En GitHub Pages o modo web
-  if (!localSyncDone) {
-    await fetchInitialData();
-  }
-
-  // Feedback visual
-  await new Promise(r => setTimeout(r, 600));
-
-  const latest = allAlerts[0]?.fecha_notificacion || 'reciente';
-  const now = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-  badgeText.textContent = `Actualizado • Última alerta: ${latest} • ${now} (${allAlerts.length} alertas)`;
-
-  btn.disabled = false;
-  btn.classList.remove('opacity-75');
-  icon.classList.remove('animate-spin');
-  if (window.lucide) window.lucide.createIcons();
 }
 
 // ---------------- EXPORT MENU ----------------

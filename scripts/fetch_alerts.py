@@ -40,9 +40,34 @@ def save_alerts(alerts):
             filtered.append(a)
     alerts = filtered
 
+    now = datetime.now()
+    dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+    meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+    dia_str = dias_semana[now.weekday()]
+    mes_str = meses[now.month - 1]
+    
+    fecha_formateada = f"{dia_str}, {now.day} de {mes_str} de {now.year} a las {now.strftime('%H:%M:%S')}"
+    
+    metadata = {
+        "ultima_actualizacion_iso": now.isoformat(),
+        "ultima_actualizacion_fecha": now.strftime("%d/%m/%Y"),
+        "ultima_actualizacion_hora": now.strftime("%H:%M:%S"),
+        "ultima_actualizacion_formateada": fecha_formateada,
+        "dia_semana": dia_str,
+        "total_alertas": len(alerts),
+        "alerta_mas_reciente": alerts[0].get("fecha_notificacion") if alerts else None,
+        "id_mas_reciente": alerts[0].get("id") if alerts else None,
+        "producto_mas_reciente": alerts[0].get("producto") if alerts else None
+    }
+
     os.makedirs(os.path.dirname(DATA_PATH), exist_ok=True)
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(alerts, f, ensure_ascii=False, indent=2)
+
+    # Guardar metadatos en data/metadata.json
+    meta_path = os.path.join(BASE_DIR, "data", "metadata.json")
+    with open(meta_path, "w", encoding="utf-8") as f:
+        json.dump(metadata, f, ensure_ascii=False, indent=2)
     
     # Also write to static/data/alerts.json
     static_data_path = os.path.join(BASE_DIR, "static", "data", "alerts.json")
@@ -50,12 +75,18 @@ def save_alerts(alerts):
     with open(static_data_path, "w", encoding="utf-8") as f:
         json.dump(alerts, f, ensure_ascii=False, indent=2)
 
+    # Guardar metadatos en static/data/metadata.json
+    static_meta_path = os.path.join(BASE_DIR, "static", "data", "metadata.json")
+    with open(static_meta_path, "w", encoding="utf-8") as f:
+        json.dump(metadata, f, ensure_ascii=False, indent=2)
+
     # Also write to static/js/alerts_data.js for offline and file:// compatibility
     static_js_data_path = os.path.join(BASE_DIR, "static", "js", "alerts_data.js")
     with open(static_js_data_path, "w", encoding="utf-8") as f:
         f.write("window.INITIAL_ALERTS_DATA = " + json.dumps(alerts, ensure_ascii=False, indent=2) + ";\n")
+        f.write("window.DASHBOARD_METADATA = " + json.dumps(metadata, ensure_ascii=False, indent=2) + ";\n")
 
-    print(f"[INFO] Guardadas {len(alerts)} alertas (años 2024-2026) en {DATA_PATH}, static/data/ y alerts_data.js")
+    print(f"[INFO] Guardadas {len(alerts)} alertas (años 2024-2026) y metadatos ({fecha_formateada})")
 
 def classify_food_category(description):
     desc_lower = description.lower()

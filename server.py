@@ -208,6 +208,21 @@ class DashboardRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.path = "/data/alerts.json"
             return super().do_GET()
 
+        elif path == "/data/metadata.json" or path == "/api/metadata":
+            meta_path = os.path.join(BASE_DIR, "data", "metadata.json")
+            if os.path.exists(meta_path):
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+                self.end_headers()
+                with open(meta_path, "rb") as mf:
+                    self.wfile.write(mf.read())
+                return
+            else:
+                self.send_response(404)
+                self.end_headers()
+                return
+
         return super().do_GET()
 
     def do_POST(self):

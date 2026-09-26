@@ -66,15 +66,15 @@
       </div>
 
       <!-- Sync Status & Action Controls -->
-      <div class="flex items-center space-x-3">
-        <!-- Live status badge -->
-        <div id="syncBadge" class="hidden sm:flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 text-xs text-slate-300">
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <!-- Live status badge (visible on all screens) -->
+        <div id="syncBadge" class="flex items-center space-x-2 px-2.5 sm:px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 text-xs text-slate-300">
           <span class="w-2 h-2 rounded-full bg-emerald-500 live-pulse"></span>
-          <span id="lastUpdatedText">Sincronizado con APIs oficiales</span>
+          <span id="lastUpdatedText" class="truncate max-w-[110px] sm:max-w-none">Sincronizado</span>
         </div>
 
         <!-- Live Sync Button -->
-        <button id="btnSync" onclick="triggerLiveSync()" class="flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all shadow-md shadow-indigo-600/20">
+        <button id="btnSync" onclick="triggerLiveSync()" class="flex items-center space-x-1.5 sm:space-x-2 bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white px-3 sm:px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all shadow-md shadow-indigo-600/20">
           <i data-lucide="refresh-cw" id="syncIcon" class="w-3.5 h-3.5"></i>
           <span>Sincronizar en Vivo</span>
         </button>
@@ -83,7 +83,7 @@
         <div class="relative inline-block text-left">
           <button id="btnExportMenu" onclick="toggleExportMenu()" class="flex items-center space-x-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 transition-colors">
             <i data-lucide="download" class="w-3.5 h-3.5"></i>
-            <span>Exportar</span>
+            <span class="hidden sm:inline">Exportar</span>
             <i data-lucide="chevron-down" class="w-3 h-3"></i>
           </button>
           <div id="exportMenu" class="hidden absolute right-0 mt-2 w-44 rounded-xl bg-slate-900 border border-slate-800 shadow-2xl py-1 z-50 text-xs">
@@ -101,6 +101,39 @@
 
     </div>
   </header>
+
+  <!-- TOP BANNER: FECHA Y HORA EXACTA DE ACTUALIZACIÓN & AUTO-SYNC INSTANTÁNEO -->
+  <section class="bg-slate-900/95 border-b border-slate-800/80 px-4 sm:px-6 lg:px-8 py-2.5 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5">
+      
+      <!-- Indicador principal de fecha y hora exacta -->
+      <div class="flex items-center space-x-2.5">
+        <span class="inline-flex items-center justify-center p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+          <i data-lucide="clock" class="w-4 h-4"></i>
+        </span>
+        <div class="flex flex-wrap items-center gap-1.5 text-xs">
+          <span class="text-slate-400 font-medium">Última actualización oficial:</span>
+          <span id="dashboardExactTimestamp" class="font-bold text-white bg-slate-800 px-2.5 py-0.5 rounded-md border border-slate-700/80 shadow-sm text-emerald-300 tracking-wide">
+            Cargando fecha y hora...
+          </span>
+          <span id="instantSyncBadge" class="hidden text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+            ⚡ Instantáneo
+          </span>
+        </div>
+      </div>
+
+      <!-- Estado de sincronización en vivo y fuentes -->
+      <div class="flex items-center space-x-3 text-xs">
+        <div class="flex items-center space-x-1.5 bg-slate-950/80 px-3 py-1 rounded-full border border-slate-800 shadow-inner">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 live-pulse"></span>
+          <span id="instantSyncStatusText" class="text-slate-300 font-medium">Sincronización instantánea activa</span>
+        </div>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:inline text-slate-400 text-[11px]">Fuentes: <strong class="text-slate-200">AESAN</strong> • <strong class="text-slate-200">EU RASFF</strong> • <strong class="text-slate-200">UK FSA</strong> • <strong class="text-slate-200">US FDA</strong></span>
+      </div>
+
+    </div>
+  </section>
 
   <!-- MAIN CONTAINER -->
   <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
@@ -552,8 +585,8 @@
   </footer>
 
   <!-- Alerts Data (Synchronous Preload) -->
-  <script src="js/alerts_data.js?v=5.0"></script>
+  <script src="js/alerts_data.js?v=5.1"></script>
   <!-- App Script -->
-  <script src="js/app.js?v=5.0"></script>
+  <script src="js/app.js?v=5.1"></script>
 </body>
 </html>

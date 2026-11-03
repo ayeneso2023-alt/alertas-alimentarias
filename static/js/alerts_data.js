@@ -1,5 +1,29 @@
 window.INITIAL_ALERTS_DATA = [
   {
+    "id": "EU-RASFF-2026-9728",
+    "id_original": "2026.9728",
+    "fecha_notificacion": "2026-11-02",
+    "mes_ano": "2026-11",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Alemania",
+    "pais_origen": "Ucrania",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "polycyclic aromatic hydrocarbons in milk thistle oil from Ukraine, via Germany",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Aceites y Grasas",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "polycyclic aromatic hydrocarbons in milk thistle oil from Ukraine, via Germany",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.9728): polycyclic aromatic hydrocarbons in milk thistle oil from Ukraine, via Germany",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.9728",
+    "distribucion_geografica": "Unión Europea (Notificado por Alemania; Origen: Ucrania)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
     "id": "EU-RASFF-2026-9727",
     "id_original": "2026.9727",
     "fecha_notificacion": "2026-11-02",
@@ -70379,13 +70403,13 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-03T16:18:07.722362",
+  "ultima_actualizacion_iso": "2026-11-03T23:25:43.837233",
   "ultima_actualizacion_fecha": "03/11/2026",
-  "ultima_actualizacion_hora": "16:18:07",
-  "ultima_actualizacion_formateada": "Martes, 3 de noviembre de 2026 a las 16:18:07",
+  "ultima_actualizacion_hora": "23:25:43",
+  "ultima_actualizacion_formateada": "Martes, 3 de noviembre de 2026 a las 23:25:43",
   "dia_semana": "Martes",
-  "total_alertas": 2946,
+  "total_alertas": 2947,
   "alerta_mas_reciente": "2026-11-02",
-  "id_mas_reciente": "EU-RASFF-2026-9727",
-  "producto_mas_reciente": "Presence of Anisakis sp. in sterilised canned mackerel in tomato sauce “Kaija”"
+  "id_mas_reciente": "EU-RASFF-2026-9728",
+  "producto_mas_reciente": "polycyclic aromatic hydrocarbons in milk thistle oil from Ukraine, via Germany"
 };

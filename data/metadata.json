@@ -1,11 +1,11 @@
 {
-  "ultima_actualizacion_iso": "2026-11-03T06:51:01.471088",
+  "ultima_actualizacion_iso": "2026-11-03T16:18:07.722362",
   "ultima_actualizacion_fecha": "03/11/2026",
-  "ultima_actualizacion_hora": "06:51:01",
-  "ultima_actualizacion_formateada": "Martes, 3 de noviembre de 2026 a las 06:51:01",
+  "ultima_actualizacion_hora": "16:18:07",
+  "ultima_actualizacion_formateada": "Martes, 3 de noviembre de 2026 a las 16:18:07",
   "dia_semana": "Martes",
-  "total_alertas": 2942,
-  "alerta_mas_reciente": "2026-10-30",
-  "id_mas_reciente": "EU-RASFF-2026-9701",
-  "producto_mas_reciente": "Shiga toxin-producing Escherichia coli (STEC) in frozen goat meat from the Netherlands"
+  "total_alertas": 2946,
+  "alerta_mas_reciente": "2026-11-02",
+  "id_mas_reciente": "EU-RASFF-2026-9727",
+  "producto_mas_reciente": "Presence of Anisakis sp. in sterilised canned mackerel in tomato sauce “Kaija”"
 }

@@ -1,5 +1,51 @@
 window.INITIAL_ALERTS_DATA = [
   {
+    "id": "ES-AESAN-ES2026_665",
+    "id_original": "ES2026/665",
+    "fecha_notificacion": "2026-11-04",
+    "mes_ano": "2026-11",
+    "fuente_origen": "ES_AESAN",
+    "pais_notificador": "España",
+    "pais_origen": "España",
+    "empresa_responsable": "URKABE",
+    "producto": "Jamón cocido",
+    "marca": "URKABE",
+    "categoria_alimento": "Otros",
+    "tipo_alerta": "Microbiológico",
+    "subtipo_peligro": "Alerta por presencia de Listeria monocytogenes en jamón cocido procedente de España (Ref. ES202...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Alerta por presencia de Listeria monocytogenes en jamón cocido procedente de España (Ref. ES2026/665)",
+    "lotes_afectados": "61027",
+    "distribucion_geografica": "España (notificado a través del SCIRI a todas las CCAA)",
+    "cantidad_afectada": "Retirada cautelar de canales de comercialización",
+    "fuente_url": "https://www.aesan.gob.es/alertas/2026_80"
+  },
+  {
+    "id": "UK-FSA-FSA-AA-51-2026",
+    "id_original": "FSA-AA-51-2026",
+    "fecha_notificacion": "2026-11-04",
+    "mes_ano": "2026-11",
+    "fuente_origen": "UK_FSA",
+    "pais_notificador": "Reino Unido",
+    "pais_origen": "Reino Unido",
+    "empresa_responsable": "AG Barr",
+    "producto": "AG Barr recalls Rubicon Yuzu & Pink Grapefruit Cartons because of undeclared sulphites",
+    "marca": "AG Barr",
+    "categoria_alimento": "Frutas, Hortalizas y Verduras",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "This product may contain sulphites making it a possible health risk for anyone with a sens...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "This product may contain sulphites making it a possible health risk for anyone with a sensitivity to sulphur dioxide and/or sulphites.",
+    "lotes_afectados": "Consulte boletín de aviso de cliente de FSA",
+    "distribucion_geografica": "Reino Unido",
+    "cantidad_afectada": "Distribución minorista",
+    "fuente_url": "https://data.food.gov.uk/food-alerts/id/FSA-AA-51-2026"
+  },
+  {
     "id": "ES-AESAN-ES2026_659",
     "id_original": "ES2026/659",
     "fecha_notificacion": "2026-11-04",
@@ -71194,13 +71240,13 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-04T16:21:41.220266",
+  "ultima_actualizacion_iso": "2026-11-04T23:41:56.082213",
   "ultima_actualizacion_fecha": "04/11/2026",
-  "ultima_actualizacion_hora": "16:21:41",
-  "ultima_actualizacion_formateada": "Miércoles, 4 de noviembre de 2026 a las 16:21:41",
+  "ultima_actualizacion_hora": "23:41:56",
+  "ultima_actualizacion_formateada": "Miércoles, 4 de noviembre de 2026 a las 23:41:56",
   "dia_semana": "Miércoles",
-  "total_alertas": 2980,
+  "total_alertas": 2982,
   "alerta_mas_reciente": "2026-11-04",
-  "id_mas_reciente": "ES-AESAN-ES2026_659",
-  "producto_mas_reciente": "Kéfir de cabra con probióticos"
+  "id_mas_reciente": "ES-AESAN-ES2026_665",
+  "producto_mas_reciente": "Jamón cocido"
 };

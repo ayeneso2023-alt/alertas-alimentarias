@@ -70403,11 +70403,11 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-03T23:25:43.837233",
-  "ultima_actualizacion_fecha": "03/11/2026",
-  "ultima_actualizacion_hora": "23:25:43",
-  "ultima_actualizacion_formateada": "Martes, 3 de noviembre de 2026 a las 23:25:43",
-  "dia_semana": "Martes",
+  "ultima_actualizacion_iso": "2026-11-04T06:25:58.878666",
+  "ultima_actualizacion_fecha": "04/11/2026",
+  "ultima_actualizacion_hora": "06:25:58",
+  "ultima_actualizacion_formateada": "Miércoles, 4 de noviembre de 2026 a las 06:25:58",
+  "dia_semana": "Miércoles",
   "total_alertas": 2947,
   "alerta_mas_reciente": "2026-11-02",
   "id_mas_reciente": "EU-RASFF-2026-9728",

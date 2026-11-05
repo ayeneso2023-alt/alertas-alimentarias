@@ -23,6 +23,30 @@ window.INITIAL_ALERTS_DATA = [
     "fuente_url": "https://data.food.gov.uk/food-alerts/id/FSA-AA-51-2026"
   },
   {
+    "id": "EU-RASFF-2026-9821",
+    "id_original": "2026.9821",
+    "fecha_notificacion": "2026-11-04",
+    "mes_ano": "2026-11",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Países Bajos",
+    "pais_origen": "Países Bajos",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Salmonella in minced chicken, from the Netherlands",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Carnes y Derivados",
+    "tipo_alerta": "Microbiológico",
+    "subtipo_peligro": "Salmonella in minced chicken, from the Netherlands",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.9821): Salmonella in minced chicken, from the Netherlands",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.9821",
+    "distribucion_geografica": "Unión Europea (Notificado por Países Bajos; Origen: Países Bajos)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
     "id": "EU-RASFF-2026-9820",
     "id_original": "2026.9820",
     "fecha_notificacion": "2026-11-04",
@@ -71720,12 +71744,12 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-05T16:31:12.341389",
+  "ultima_actualizacion_iso": "2026-11-05T23:40:34.657300",
   "ultima_actualizacion_fecha": "05/11/2026",
-  "ultima_actualizacion_hora": "16:31:12",
-  "ultima_actualizacion_formateada": "Jueves, 5 de noviembre de 2026 a las 16:31:12",
+  "ultima_actualizacion_hora": "23:40:34",
+  "ultima_actualizacion_formateada": "Jueves, 5 de noviembre de 2026 a las 23:40:34",
   "dia_semana": "Jueves",
-  "total_alertas": 3002,
+  "total_alertas": 3003,
   "alerta_mas_reciente": "2026-11-05",
   "id_mas_reciente": "UK-FSA-FSA-AA-51-2026",
   "producto_mas_reciente": "AG Barr recalls Rubicon Yuzu & Pink Grapefruit Cartons because they may contain undeclared sulphites"

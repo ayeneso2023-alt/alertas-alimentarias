@@ -1,5 +1,28 @@
 [
   {
+    "id": "UK-FSA-FSA-PRIN-52-2026",
+    "id_original": "FSA-PRIN-52-2026",
+    "fecha_notificacion": "2026-11-06",
+    "mes_ano": "2026-11",
+    "fuente_origen": "UK_FSA",
+    "pais_notificador": "Reino Unido",
+    "pais_origen": "Reino Unido",
+    "empresa_responsable": "Baxters",
+    "producto": "Baxters recalls Chef Selections Cullen Skink soup because of a manufacturing fault which may cause spoilage and cans to ",
+    "marca": "Baxters",
+    "categoria_alimento": "Aceites y Grasas",
+    "tipo_alerta": "Etiquetado / Regulatorio",
+    "subtipo_peligro": "A manufacturing fault has occurred which may result in spoilage causing unpleasant odour a...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "A manufacturing fault has occurred which may result in spoilage causing unpleasant odour and flavour, swelling and possible rupture of the can.",
+    "lotes_afectados": "Consulte boletín de aviso de cliente de FSA",
+    "distribucion_geografica": "Reino Unido",
+    "cantidad_afectada": "Distribución minorista",
+    "fuente_url": "https://data.food.gov.uk/food-alerts/id/FSA-PRIN-52-2026"
+  },
+  {
     "id": "EU-RASFF-2026-9858",
     "id_original": "2026.9858",
     "fecha_notificacion": "2026-11-05",

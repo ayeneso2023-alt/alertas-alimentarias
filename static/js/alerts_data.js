@@ -1,5 +1,28 @@
 window.INITIAL_ALERTS_DATA = [
   {
+    "id": "UK-FSA-FSA-PRIN-52-2026",
+    "id_original": "FSA-PRIN-52-2026",
+    "fecha_notificacion": "2026-11-06",
+    "mes_ano": "2026-11",
+    "fuente_origen": "UK_FSA",
+    "pais_notificador": "Reino Unido",
+    "pais_origen": "Reino Unido",
+    "empresa_responsable": "Baxters",
+    "producto": "Baxters recalls Chef Selections Cullen Skink soup because of a manufacturing fault which may cause spoilage and cans to ",
+    "marca": "Baxters",
+    "categoria_alimento": "Aceites y Grasas",
+    "tipo_alerta": "Etiquetado / Regulatorio",
+    "subtipo_peligro": "A manufacturing fault has occurred which may result in spoilage causing unpleasant odour a...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "A manufacturing fault has occurred which may result in spoilage causing unpleasant odour and flavour, swelling and possible rupture of the can.",
+    "lotes_afectados": "Consulte boletín de aviso de cliente de FSA",
+    "distribucion_geografica": "Reino Unido",
+    "cantidad_afectada": "Distribución minorista",
+    "fuente_url": "https://data.food.gov.uk/food-alerts/id/FSA-PRIN-52-2026"
+  },
+  {
     "id": "EU-RASFF-2026-9858",
     "id_original": "2026.9858",
     "fecha_notificacion": "2026-11-05",
@@ -72200,13 +72223,13 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-06T15:57:17.222042",
+  "ultima_actualizacion_iso": "2026-11-06T21:31:35.279618",
   "ultima_actualizacion_fecha": "06/11/2026",
-  "ultima_actualizacion_hora": "15:57:17",
-  "ultima_actualizacion_formateada": "Viernes, 6 de noviembre de 2026 a las 15:57:17",
+  "ultima_actualizacion_hora": "21:31:35",
+  "ultima_actualizacion_formateada": "Viernes, 6 de noviembre de 2026 a las 21:31:35",
   "dia_semana": "Viernes",
-  "total_alertas": 3022,
-  "alerta_mas_reciente": "2026-11-05",
-  "id_mas_reciente": "EU-RASFF-2026-9858",
-  "producto_mas_reciente": "Salmonella Kentucky in organic sunflower seed cakes from Bulgaria"
+  "total_alertas": 3023,
+  "alerta_mas_reciente": "2026-11-06",
+  "id_mas_reciente": "UK-FSA-FSA-PRIN-52-2026",
+  "producto_mas_reciente": "Baxters recalls Chef Selections Cullen Skink soup because of a manufacturing fault which may cause spoilage and cans to "
 };

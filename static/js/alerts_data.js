@@ -72799,10 +72799,10 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-08T01:29:34.585821",
+  "ultima_actualizacion_iso": "2026-11-08T09:01:34.835922",
   "ultima_actualizacion_fecha": "08/11/2026",
-  "ultima_actualizacion_hora": "01:29:34",
-  "ultima_actualizacion_formateada": "Domingo, 8 de noviembre de 2026 a las 01:29:34",
+  "ultima_actualizacion_hora": "09:01:34",
+  "ultima_actualizacion_formateada": "Domingo, 8 de noviembre de 2026 a las 09:01:34",
   "dia_semana": "Domingo",
   "total_alertas": 3047,
   "alerta_mas_reciente": "2026-11-06",

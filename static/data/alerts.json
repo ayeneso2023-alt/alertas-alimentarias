@@ -2482,13 +2482,13 @@
     "tipo_alerta": "Químico",
     "subtipo_peligro": "3-Monochloro-1,2-propanediol (3-MCPD) and glycidyl fatty acid esters in cookies",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Riesgo Potencial / Media",
+    "gravedad": "Crítica / Alta",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.9716): 3-Monochloro-1,2-propanediol (3-MCPD) and glycidyl fatty acid esters in cookies",
     "lotes_afectados": "Lote notificado en alerta europea 2026.9716",
     "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: unknown origin)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "decision_rasff": "potential risk",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {

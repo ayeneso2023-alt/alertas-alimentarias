@@ -2482,13 +2482,13 @@ window.INITIAL_ALERTS_DATA = [
     "tipo_alerta": "Químico",
     "subtipo_peligro": "3-Monochloro-1,2-propanediol (3-MCPD) and glycidyl fatty acid esters in cookies",
     "tipo_fraude": "No Aplica",
-    "gravedad": "Riesgo Potencial / Media",
+    "gravedad": "Crítica / Alta",
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.9716): 3-Monochloro-1,2-propanediol (3-MCPD) and glycidyl fatty acid esters in cookies",
     "lotes_afectados": "Lote notificado en alerta europea 2026.9716",
     "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: unknown origin)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
-    "decision_rasff": "potential risk",
+    "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
   },
   {
@@ -72799,10 +72799,10 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-09T01:45:57.431021",
+  "ultima_actualizacion_iso": "2026-11-09T09:51:24.844980",
   "ultima_actualizacion_fecha": "09/11/2026",
-  "ultima_actualizacion_hora": "01:45:57",
-  "ultima_actualizacion_formateada": "Lunes, 9 de noviembre de 2026 a las 01:45:57",
+  "ultima_actualizacion_hora": "09:51:24",
+  "ultima_actualizacion_formateada": "Lunes, 9 de noviembre de 2026 a las 09:51:24",
   "dia_semana": "Lunes",
   "total_alertas": 3047,
   "alerta_mas_reciente": "2026-11-06",

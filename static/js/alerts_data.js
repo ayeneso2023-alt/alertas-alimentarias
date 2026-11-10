@@ -1,5 +1,29 @@
 window.INITIAL_ALERTS_DATA = [
   {
+    "id": "EU-RASFF-2026-9917",
+    "id_original": "2026.9917",
+    "fecha_notificacion": "2026-11-06",
+    "mes_ano": "2026-11",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Italia",
+    "pais_origen": "Italia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Chlorpyrifos in coriander powder from India",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Especias y Condimentos",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Chlorpyrifos in coriander powder from India",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.9917): Chlorpyrifos in coriander powder from India",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.9917",
+    "distribucion_geografica": "Unión Europea (Notificado por Italia; Origen: Italia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
     "id": "EU-RASFF-2026-9916",
     "id_original": "2026.9916",
     "fecha_notificacion": "2026-11-06",
@@ -72799,13 +72823,13 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-09T20:46:26.209273",
-  "ultima_actualizacion_fecha": "09/11/2026",
-  "ultima_actualizacion_hora": "20:46:26",
-  "ultima_actualizacion_formateada": "Lunes, 9 de noviembre de 2026 a las 20:46:26",
-  "dia_semana": "Lunes",
-  "total_alertas": 3047,
+  "ultima_actualizacion_iso": "2026-11-10T04:09:22.197160",
+  "ultima_actualizacion_fecha": "10/11/2026",
+  "ultima_actualizacion_hora": "04:09:22",
+  "ultima_actualizacion_formateada": "Martes, 10 de noviembre de 2026 a las 04:09:22",
+  "dia_semana": "Martes",
+  "total_alertas": 3048,
   "alerta_mas_reciente": "2026-11-06",
-  "id_mas_reciente": "EU-RASFF-2026-9916",
-  "producto_mas_reciente": "Presencia de Salmonella thyphimurium en carne fresca de ave procedente de España  // Presence of Salmonella Typhimurium "
+  "id_mas_reciente": "EU-RASFF-2026-9917",
+  "producto_mas_reciente": "Chlorpyrifos in coriander powder from India"
 };

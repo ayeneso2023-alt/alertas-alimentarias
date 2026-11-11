@@ -1,5 +1,29 @@
 window.INITIAL_ALERTS_DATA = [
   {
+    "id": "EU-RASFF-2026-9961",
+    "id_original": "2026.9961",
+    "fecha_notificacion": "2026-11-10",
+    "mes_ano": "2026-11",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Polonia",
+    "pais_origen": "Polonia",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Doksycyklina w mięsie drobiowym /// Doxycycline in poultry meat",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Carnes y Derivados",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Doksycyklina w mięsie drobiowym /// Doxycycline in poultry meat",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.9961): Doksycyklina w mięsie drobiowym /// Doxycycline in poultry meat",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.9961",
+    "distribucion_geografica": "Unión Europea (Notificado por Polonia; Origen: Polonia)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "potentially serious",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
     "id": "ES-AESAN-2026_81",
     "id_original": "2026_81",
     "fecha_notificacion": "2026-11-10",
@@ -73604,13 +73628,13 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-11T01:58:38.029722",
+  "ultima_actualizacion_iso": "2026-11-11T09:29:10.375639",
   "ultima_actualizacion_fecha": "11/11/2026",
-  "ultima_actualizacion_hora": "01:58:38",
-  "ultima_actualizacion_formateada": "Miércoles, 11 de noviembre de 2026 a las 01:58:38",
+  "ultima_actualizacion_hora": "09:29:10",
+  "ultima_actualizacion_formateada": "Miércoles, 11 de noviembre de 2026 a las 09:29:10",
   "dia_semana": "Miércoles",
-  "total_alertas": 3081,
+  "total_alertas": 3082,
   "alerta_mas_reciente": "2026-11-10",
-  "id_mas_reciente": "ES-AESAN-2026_81",
-  "producto_mas_reciente": "Alerta alimentaria AESAN"
+  "id_mas_reciente": "EU-RASFF-2026-9961",
+  "producto_mas_reciente": "Doksycyklina w mięsie drobiowym /// Doxycycline in poultry meat"
 };

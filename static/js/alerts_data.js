@@ -101,7 +101,7 @@ window.INITIAL_ALERTS_DATA = [
     "mes_ano": "2026-11",
     "fuente_origen": "EU_RASFF",
     "pais_notificador": "Bélgica",
-    "pais_origen": "Países Bajos",
+    "pais_origen": "Egipto",
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Chlorpyrifos in thyme from the Netherlands",
     "marca": "No especificada / Marca comunitaria",
@@ -113,7 +113,7 @@ window.INITIAL_ALERTS_DATA = [
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.9990): Chlorpyrifos in thyme from the Netherlands",
     "lotes_afectados": "Lote notificado en alerta europea 2026.9990",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Países Bajos)",
+    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Egipto)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
     "decision_rasff": "serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
@@ -23849,7 +23849,7 @@ window.INITIAL_ALERTS_DATA = [
     "mes_ano": "2026-09",
     "fuente_origen": "EU_RASFF",
     "pais_notificador": "Bélgica",
-    "pais_origen": "Francia",
+    "pais_origen": "Dinamarca",
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Maximum levels exceeded for ragweed (Ambrosia spp.) seeds in white millet from France",
     "marca": "No especificada / Marca comunitaria",
@@ -23861,7 +23861,7 @@ window.INITIAL_ALERTS_DATA = [
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.8238): Maximum levels exceeded for ragweed (Ambrosia spp.) seeds in white millet from France",
     "lotes_afectados": "Lote notificado en alerta europea 2026.8238",
-    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Francia)",
+    "distribucion_geografica": "Unión Europea (Notificado por Bélgica; Origen: Dinamarca)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
     "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
@@ -74131,10 +74131,10 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-12T00:46:57.936963",
+  "ultima_actualizacion_iso": "2026-11-12T09:53:53.546667",
   "ultima_actualizacion_fecha": "12/11/2026",
-  "ultima_actualizacion_hora": "00:46:57",
-  "ultima_actualizacion_formateada": "Jueves, 12 de noviembre de 2026 a las 00:46:57",
+  "ultima_actualizacion_hora": "09:53:53",
+  "ultima_actualizacion_formateada": "Jueves, 12 de noviembre de 2026 a las 09:53:53",
   "dia_semana": "Jueves",
   "total_alertas": 3103,
   "alerta_mas_reciente": "2026-11-11",

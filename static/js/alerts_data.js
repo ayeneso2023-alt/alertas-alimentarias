@@ -1,5 +1,29 @@
 window.INITIAL_ALERTS_DATA = [
   {
+    "id": "EU-RASFF-2026-10056",
+    "id_original": "2026.10056",
+    "fecha_notificacion": "2026-11-11",
+    "mes_ano": "2026-11",
+    "fuente_origen": "EU_RASFF",
+    "pais_notificador": "Croacia",
+    "pais_origen": "Albania",
+    "empresa_responsable": "Operadores comerciales de la red UE",
+    "producto": "Deltamethrin and propamocarb in fresh lemon from Albania",
+    "marca": "No especificada / Marca comunitaria",
+    "categoria_alimento": "Frutas, Hortalizas y Verduras",
+    "tipo_alerta": "Químico",
+    "subtipo_peligro": "Deltamethrin and propamocarb in fresh lemon from Albania",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Notificación oficial RASFF (2026.10056): Deltamethrin and propamocarb in fresh lemon from Albania",
+    "lotes_afectados": "Lote notificado en alerta europea 2026.10056",
+    "distribucion_geografica": "Unión Europea (Notificado por Croacia; Origen: Albania)",
+    "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
+    "decision_rasff": "no risk",
+    "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
     "id": "EU-RASFF-2026-10045",
     "id_original": "2026.10045",
     "fecha_notificacion": "2026-11-11",
@@ -3947,7 +3971,7 @@ window.INITIAL_ALERTS_DATA = [
     "mes_ano": "2026-11",
     "fuente_origen": "EU_RASFF",
     "pais_notificador": "Suiza",
-    "pais_origen": "Hungría, Suiza, Estados Unidos",
+    "pais_origen": "Alemania, Hungría, Suiza, Estados Unidos",
     "empresa_responsable": "Operadores comerciales de la red UE",
     "producto": "Ethoxyquin in dried algae for animal feed",
     "marca": "No especificada / Marca comunitaria",
@@ -3959,7 +3983,7 @@ window.INITIAL_ALERTS_DATA = [
     "estado_accion": "Activa / En curso",
     "descripcion": "Notificación oficial RASFF (2026.9747): Ethoxyquin in dried algae for animal feed",
     "lotes_afectados": "Lote notificado en alerta europea 2026.9747",
-    "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: Hungría, Suiza, Estados Unidos)",
+    "distribucion_geografica": "Unión Europea (Notificado por Suiza; Origen: Alemania, Hungría, Suiza, Estados Unidos)",
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
     "decision_rasff": "potential risk",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
@@ -74731,13 +74755,13 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-13T01:07:36.378894",
+  "ultima_actualizacion_iso": "2026-11-13T09:33:19.357285",
   "ultima_actualizacion_fecha": "13/11/2026",
-  "ultima_actualizacion_hora": "01:07:36",
-  "ultima_actualizacion_formateada": "Viernes, 13 de noviembre de 2026 a las 01:07:36",
+  "ultima_actualizacion_hora": "09:33:19",
+  "ultima_actualizacion_formateada": "Viernes, 13 de noviembre de 2026 a las 09:33:19",
   "dia_semana": "Viernes",
-  "total_alertas": 3128,
+  "total_alertas": 3129,
   "alerta_mas_reciente": "2026-11-11",
-  "id_mas_reciente": "EU-RASFF-2026-10045",
-  "producto_mas_reciente": "Presence of Lytta vesicatoria (Cantharid) in a food supplement from the Netherlands ////  Presencia de Lytta vesicatoria"
+  "id_mas_reciente": "EU-RASFF-2026-10056",
+  "producto_mas_reciente": "Deltamethrin and propamocarb in fresh lemon from Albania"
 };

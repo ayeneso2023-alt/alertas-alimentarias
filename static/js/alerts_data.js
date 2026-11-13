@@ -1,5 +1,28 @@
 window.INITIAL_ALERTS_DATA = [
   {
+    "id": "UK-FSA-FSA-AA-53-2026",
+    "id_original": "FSA-AA-53-2026",
+    "fecha_notificacion": "2026-11-13",
+    "mes_ano": "2026-11",
+    "fuente_origen": "UK_FSA",
+    "pais_notificador": "Reino Unido",
+    "pais_origen": "Reino Unido",
+    "empresa_responsable": "Tesco",
+    "producto": "Tesco recalls various Tesco Steak and Guinness Pie products because of undeclared milk",
+    "marca": "Tesco",
+    "categoria_alimento": "Lácteos y Derivados",
+    "tipo_alerta": "Alérgeno",
+    "subtipo_peligro": "Milk\nThese products contain milk making them a possible health risk for anyone with an all...",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Media",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Milk\nThese products contain milk making them a possible health risk for anyone with an allergy to milk or intolerance to milk or milk constituents.",
+    "lotes_afectados": "Consulte boletín de aviso de cliente de FSA",
+    "distribucion_geografica": "Reino Unido",
+    "cantidad_afectada": "Distribución minorista",
+    "fuente_url": "https://data.food.gov.uk/food-alerts/id/FSA-AA-53-2026"
+  },
+  {
     "id": "ES-AESAN-2026_83",
     "id_original": "2026_83",
     "fecha_notificacion": "2026-11-13",
@@ -75282,13 +75305,13 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-13T17:47:50.034758",
+  "ultima_actualizacion_iso": "2026-11-13T23:37:38.350507",
   "ultima_actualizacion_fecha": "13/11/2026",
-  "ultima_actualizacion_hora": "17:47:50",
-  "ultima_actualizacion_formateada": "Viernes, 13 de noviembre de 2026 a las 17:47:50",
+  "ultima_actualizacion_hora": "23:37:38",
+  "ultima_actualizacion_formateada": "Viernes, 13 de noviembre de 2026 a las 23:37:38",
   "dia_semana": "Viernes",
-  "total_alertas": 3151,
+  "total_alertas": 3152,
   "alerta_mas_reciente": "2026-11-13",
-  "id_mas_reciente": "ES-AESAN-2026_83",
-  "producto_mas_reciente": "Alerta alimentaria AESAN"
+  "id_mas_reciente": "UK-FSA-FSA-AA-53-2026",
+  "producto_mas_reciente": "Tesco recalls various Tesco Steak and Guinness Pie products because of undeclared milk"
 };

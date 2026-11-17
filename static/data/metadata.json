@@ -1,11 +1,11 @@
 {
-  "ultima_actualizacion_iso": "2026-11-17T13:30:04.145714",
+  "ultima_actualizacion_iso": "2026-11-17T22:27:03.645744",
   "ultima_actualizacion_fecha": "17/11/2026",
-  "ultima_actualizacion_hora": "13:30:04",
-  "ultima_actualizacion_formateada": "Martes, 17 de noviembre de 2026 a las 13:30:04",
+  "ultima_actualizacion_hora": "22:27:03",
+  "ultima_actualizacion_formateada": "Martes, 17 de noviembre de 2026 a las 22:27:03",
   "dia_semana": "Martes",
-  "total_alertas": 3192,
+  "total_alertas": 3214,
   "alerta_mas_reciente": "2026-11-16",
-  "id_mas_reciente": "EU-RASFF-2026-10152",
-  "producto_mas_reciente": "consignment of poultry meat product was reimported from the United Kingdom without official control at the border contro"
+  "id_mas_reciente": "EU-RASFF-2026-10176",
+  "producto_mas_reciente": "Listeria monocytogenes in frozen cooked roasted chicken legs from Poland"
 }

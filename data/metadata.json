@@ -1,11 +1,11 @@
 {
-  "ultima_actualizacion_iso": "2026-11-19T10:23:58.482603",
+  "ultima_actualizacion_iso": "2026-11-19T20:39:51.806111",
   "ultima_actualizacion_fecha": "19/11/2026",
-  "ultima_actualizacion_hora": "10:23:58",
-  "ultima_actualizacion_formateada": "Jueves, 19 de noviembre de 2026 a las 10:23:58",
+  "ultima_actualizacion_hora": "20:39:51",
+  "ultima_actualizacion_formateada": "Jueves, 19 de noviembre de 2026 a las 20:39:51",
   "dia_semana": "Jueves",
-  "total_alertas": 3250,
+  "total_alertas": 3272,
   "alerta_mas_reciente": "2026-11-18",
-  "id_mas_reciente": "EU-RASFF-2026-10242",
-  "producto_mas_reciente": "Salmonella spp. in poultry feed from Germany"
+  "id_mas_reciente": "EU-RASFF-2026-10279",
+  "producto_mas_reciente": "Presence of viable Anisakis larvae in smoked capelin from Germany   ////   Presencia de larva viable de anisakis origen "
 }

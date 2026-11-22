@@ -47460,29 +47460,6 @@ window.INITIAL_ALERTS_DATA = [
     "fuente_url": "https://data.food.gov.uk/food-alerts/id/FSA-AA-40-2026"
   },
   {
-    "id": "ES-AESAN-ES2026_469",
-    "id_original": "ES2026/469",
-    "fecha_notificacion": "2026-07-31",
-    "mes_ano": "2026-07",
-    "fuente_origen": "ES_AESAN",
-    "pais_notificador": "España",
-    "pais_origen": "España",
-    "empresa_responsable": "Varios",
-    "producto": "Ampliación de información sobre la alerta por presencia de Salmonella spp",
-    "marca": "Varios",
-    "categoria_alimento": "Pescados y Mariscos",
-    "tipo_alerta": "Microbiológico",
-    "subtipo_peligro": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en salchichón proced...",
-    "tipo_fraude": "No Aplica",
-    "gravedad": "Crítica / Alta",
-    "estado_accion": "Activa / En curso",
-    "descripcion": "Ampliación de información sobre la alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
-    "lotes_afectados": "Consulte lote en ficha oficial",
-    "distribucion_geografica": "España (notificado a través del SCIRI a todas las CCAA)",
-    "cantidad_afectada": "Retirada cautelar de canales de comercialización",
-    "fuente_url": "https://www.aesan.gob.es/alertas/2026_55_ampliacion_1"
-  },
-  {
     "id": "EU-RASFF-2026-6814",
     "id_original": "2026.6814",
     "fecha_notificacion": "2026-07-30",
@@ -48057,6 +48034,29 @@ window.INITIAL_ALERTS_DATA = [
     "cantidad_afectada": "Notificado a través del sistema de alerta rápida europeo (RASFF)",
     "decision_rasff": "potentially serious",
     "fuente_url": "https://webgate.ec.europa.eu/rasff-window/screen/search"
+  },
+  {
+    "id": "ES-AESAN-ES2026_469",
+    "id_original": "ES2026/469",
+    "fecha_notificacion": "2026-07-29",
+    "mes_ano": "2026-07",
+    "fuente_origen": "ES_AESAN",
+    "pais_notificador": "España",
+    "pais_origen": "España",
+    "empresa_responsable": "Varios",
+    "producto": "Alerta por presencia de Salmonella spp",
+    "marca": "Varios",
+    "categoria_alimento": "Pescados y Mariscos",
+    "tipo_alerta": "Microbiológico",
+    "subtipo_peligro": "Alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
+    "tipo_fraude": "No Aplica",
+    "gravedad": "Crítica / Alta",
+    "estado_accion": "Activa / En curso",
+    "descripcion": "Alerta por presencia de Salmonella spp. en salchichón procedente de España (Ref. ES2026/469)",
+    "lotes_afectados": "Consulte lote en ficha oficial",
+    "distribucion_geografica": "España (notificado a través del SCIRI a todas las CCAA)",
+    "cantidad_afectada": "Retirada cautelar de canales de comercialización",
+    "fuente_url": "https://www.aesan.gob.es/alertas/2026_55"
   },
   {
     "id": "EU-RASFF-2026-6763",
@@ -79632,10 +79632,10 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-22T17:51:55.558720",
+  "ultima_actualizacion_iso": "2026-11-22T23:39:54.084110",
   "ultima_actualizacion_fecha": "22/11/2026",
-  "ultima_actualizacion_hora": "17:51:55",
-  "ultima_actualizacion_formateada": "Domingo, 22 de noviembre de 2026 a las 17:51:55",
+  "ultima_actualizacion_hora": "23:39:54",
+  "ultima_actualizacion_formateada": "Domingo, 22 de noviembre de 2026 a las 23:39:54",
   "dia_semana": "Domingo",
   "total_alertas": 3333,
   "alerta_mas_reciente": "2026-11-21",

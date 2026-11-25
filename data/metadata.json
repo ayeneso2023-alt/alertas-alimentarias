@@ -1,11 +1,11 @@
 {
-  "ultima_actualizacion_iso": "2026-11-25T02:33:21.874911",
+  "ultima_actualizacion_iso": "2026-11-25T14:28:14.122618",
   "ultima_actualizacion_fecha": "25/11/2026",
-  "ultima_actualizacion_hora": "02:33:21",
-  "ultima_actualizacion_formateada": "Miércoles, 25 de noviembre de 2026 a las 02:33:21",
+  "ultima_actualizacion_hora": "14:28:14",
+  "ultima_actualizacion_formateada": "Miércoles, 25 de noviembre de 2026 a las 14:28:14",
   "dia_semana": "Miércoles",
-  "total_alertas": 3352,
-  "alerta_mas_reciente": "2026-11-23",
-  "id_mas_reciente": "EU-RASFF-2026-10406",
-  "producto_mas_reciente": "Traces of mustard in noodles from Australia"
+  "total_alertas": 3378,
+  "alerta_mas_reciente": "2026-11-25",
+  "id_mas_reciente": "UK-FSA-FSA-AA-54-2026",
+  "producto_mas_reciente": "Healthy Fit recalls Vegan Protein Bar Hazelnut Nougat because of undeclared peanuts"
 }

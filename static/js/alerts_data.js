@@ -81869,11 +81869,11 @@ window.INITIAL_ALERTS_DATA = [
   }
 ];
 window.DASHBOARD_METADATA = {
-  "ultima_actualizacion_iso": "2026-11-27T16:43:07.470981",
-  "ultima_actualizacion_fecha": "27/11/2026",
-  "ultima_actualizacion_hora": "16:43:07",
-  "ultima_actualizacion_formateada": "Viernes, 27 de noviembre de 2026 a las 16:43:07",
-  "dia_semana": "Viernes",
+  "ultima_actualizacion_iso": "2026-11-28T01:29:05.176914",
+  "ultima_actualizacion_fecha": "28/11/2026",
+  "ultima_actualizacion_hora": "01:29:05",
+  "ultima_actualizacion_formateada": "Sábado, 28 de noviembre de 2026 a las 01:29:05",
+  "dia_semana": "Sábado",
   "total_alertas": 3427,
   "alerta_mas_reciente": "2026-11-27",
   "id_mas_reciente": "ES-AESAN-ES2026_716",
